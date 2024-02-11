@@ -32,7 +32,7 @@ Es gibt drei Haupttypen von Wasserrädern:
 
 ![Wasserrad-Typen](./src/images/Unter-vs-Oberschlaechtig.drawio.svg)  
 
-Das unterschlächtige Wasserrad ist der am weitesten verbreitete Radtyp. Im Vergleich zum oberschlächtigen und mittelschlächtigen Wasserrad hat es den geringsten Wirkungsgrad, da die Schwerkraft nicht genutzt wird Das Wasser "fällt" nicht nach unten. Dafür braucht es nur einen sehr geringen Höhenunterschied zwischen Ein- und Auslauf.
+Das unterschlächtige Wasserrad ist der am weitesten verbreitete Rad-Typ. Im Vergleich zum oberschlächtigen und mittelschlächtigen Wasserrad hat es den geringsten Wirkungsgrad, da die Schwerkraft nicht genutzt wird Das Wasser "fällt" nicht nach unten. Dafür braucht es nur einen sehr geringen Höhenunterschied zwischen Ein- und Auslauf.
 
 > ✅ Für das Vorhaben wird ein **Unterschlächtiges Wasserrad** gewählt.
 
@@ -41,7 +41,7 @@ Das unterschlächtige Wasserrad ist der am weitesten verbreitete Radtyp. Im Verg
 Auf der [Höhe Restaurant Falken](https://maps.app.goo.gl/M48FYfqZdci4fe548) ist das Bachbett des Nuolenbach betoniert. Der Querschnitt entspricht einem [Trapez](https://de.wikipedia.org/wiki/Trapez_(Geometrie)), bei welchem die obere Grundseite etwas breiter ist.
 
 ![Bachbettgeometrie](./src/images/2024-02-02_Nuolenbach_Bachbett_Geometrie.jpg)  
-*Der maximale Wasserstand varriert je nach Position zischen 290 und 360 mm.*
+*Der maximale Wasserstand variiert je nach Position zwischen 290 und 360 mm.*
 
 ![Höhe und Tiefe des Bettes](./src/images/2023-02-11_Nuolenbach_Tiefe_und_Breite.jpg)  
 *Bachbett vor der Kurve mit einer Breite von 3.5 und einer Tiefe von 1.3 Meter.*
@@ -70,7 +70,7 @@ Auf die Strömung bezogen wäre es am besten, das Rad in der Aussenseite der fol
 ![Rechtskurve des Nuolenbach](./src/images/2023-02-11_Nuolenbach_Rechtskurve.jpg)  
 *Rechtskurve auf der Höhe Mühlestrasse 27 in Siebnen*
 
-> ✅ Trotz der geringeren Strömung am Rand, wird das Rad an einem **gerden Abschnitt vor der Kurve montiert**.
+> ✅ Trotz der geringeren Strömung am Rand, wird das Rad an einem **geraden Abschnitt vor der Kurve montiert**.
 
 Die Geschwindigkeit des Wassers wird empirisch ermittelt.
 
@@ -88,14 +88,14 @@ Aus Strecke und Zeit kann anschliessend die Geschwindigkeit errechnet werden. Fo
 
 Beim idealen Wasserrad ist die Umlaufgeschwindigkeit des Rades gleich der Fliessgeschwindigkeit des Wassers.
 
-Das ist in der Realität natürlich nicht der Fall. Es gibt Reibungverluste sowie fliesst ein Teil des Wassers rechts und links sowie unten an der Schaufel vorbei. Zusätzlich wird die Schaufel nicht immer im 90°-Winkel angeströmt.
+Das ist in der Realität natürlich nicht der Fall. Es gibt Reibungsverluste sowie fliesst ein Teil des Wassers rechts und links sowie unten an der Schaufel vorbei. Zusätzlich wird die Schaufel nicht immer im 90°-Winkel angeströmt.
 
 Die Umlaufgeschwindigkeit des Rades (und somit auch die Drehzahl) wird geringer sein als die Geschwindigkeit des fliessenden Wassers.
 
 Dennoch wird im folgenden Beispiel mit den Idealbedingungen gerechnet.
 
 ![Umlaufgeschwindigkeit](./src/images/Umlaufgeschwindigkeit.drawio.svg)  
-*Um die Berechnung zu Vereinfachen, wird angenommen, dass die Umlaufgeschwindigkeit des Wasserrades gleich der Fliessgeschwindigkeit des Wassers ist.*
+*Um die Berechnung zu vereinfachen, wird angenommen, dass die Umlaufgeschwindigkeit des Wasserrades gleich der Fliessgeschwindigkeit des Wassers ist.*
 
 ### 2.1 Drehzahl berechnen
 
