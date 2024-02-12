@@ -8,6 +8,7 @@ Inhalt
     1. [Wasserrad-Typ](#11-wasserrad-typ)
     2. [Geometrie des Bachbettes](#12-geometrie-des-bachbettes)
     3. [Fliessgeschwindigkeit des Wassers](#13-fliessgeschwindigkeit-des-wassers)
+        1. [Messung der Geschwindigket](#131-messung-der-geschwindigket)
 2. [Drehzahl des Wasserrades bestimmen](#2-drehzahl-des-wasserrades-bestimmen)
     1. [Drehzahl berechnen](#21-drehzahl-berechnen)
 3. [Konstruktion und Bau](#3-konstruktion-und-bau)
@@ -18,7 +19,7 @@ Das Wasserrad soll so gebaut werden, dass es auf einfache Weise im Bachbett des 
 
 * 💡 Geometrie und Gegebenheiten des Bachbettes.
 * 💡 Je grösser der Durchmesser, je geringer die Drehzahl und je grösser das Drehmoment.
-* 💡 Strömungsgeschwindigkeit (Fliessgeschwindigkeit des Wassers). Je schneller die Fliessgeschwindigkeit, je höher die Drehzahl des Wasserrades.
+* 💡 Strömungsgeschwindigkeit (Fliessgeschwindigkeit des Wassers). Je schneller die Fliessgeschwindigkeit, je höher die Drehzahl und das Drehmoment des Wasserrades.
 
 ### 1.1 Wasserrad-Typ
 
@@ -32,7 +33,7 @@ Es gibt drei Haupttypen von Wasserrädern:
 
 ![Wasserrad-Typen](./src/images/Unter-vs-Oberschlaechtig.drawio.svg)  
 
-Das unterschlächtige Wasserrad ist der am weitesten verbreitete Rad-Typ. Im Vergleich zum oberschlächtigen und mittelschlächtigen Wasserrad hat es den geringsten Wirkungsgrad, da die Schwerkraft nicht genutzt wird Das Wasser "fällt" nicht nach unten. Dafür braucht es nur einen sehr geringen Höhenunterschied zwischen Ein- und Auslauf.
+Das unterschlächtige Wasserrad ist der am weitesten verbreitete Rad-Typ. Im Vergleich zum oberschlächtigen und mittelschlächtigen Wasserrad hat es den geringsten Wirkungsgrad, da es sich die Schwerkraft nicht zu Nutze macht. Das Wasser "fällt" nicht nach unten. Dafür braucht es nur einen sehr geringen Höhenunterschied zwischen Ein- und Auslauf.
 
 > ✅ Für das Vorhaben wird ein **Unterschlächtiges Wasserrad** gewählt.
 
@@ -46,7 +47,7 @@ Auf der [Höhe Restaurant Falken](https://maps.app.goo.gl/M48FYfqZdci4fe548) ist
 ![Höhe und Tiefe des Bettes](./src/images/2023-02-11_Nuolenbach_Tiefe_und_Breite.jpg)  
 *Bachbett vor der Kurve mit einer Breite von 3.5 und einer Tiefe von 1.3 Meter.*
 
-Damit die Schaufeln des Rades auch wirklich ins Wasser eintauchen, muss es einen Radius von mehr als 290 mm haben. Respektive es sollte deutlich mehr sein. Denn nicht nur die Schaufel muss ins Wasser eintauchen, auch die Welle kann nicht direkt an der Oberkante des Bachbettes montiert werden.
+Damit die Schaufeln des Wasserrades tatsächlich ins Wasser eintauchen können, ist ein Radius von mehr als 290 mm erforderlich. Idealerweise sollte er sogar deutlich grösser sein. Denn nicht nur die Schaufel muss ins Wasser eintauchen, auch die Welle kann nicht direkt an der Oberkante des Bachbettes montiert werden, wie in folgender Grafik gezeigt wird.
 
 ![Bachbettgeometrie](./src/images/Bachbett.drawio.svg)  
 *Bachbett mit einer Breite von 3.5 und einer Tiefe von 1.3 Meter.*
@@ -72,17 +73,19 @@ Auf die Strömung bezogen wäre es am besten, das Rad in der Aussenseite der fol
 
 > ✅ Trotz der geringeren Strömung am Rand, wird das Rad an einem **geraden Abschnitt vor der Kurve montiert**.
 
+#### 1.3.1 Messung der Geschwindigket
+
 Die Geschwindigkeit des Wassers wird empirisch ermittelt.
 
-Empirisch bedeutet in diesem Fall, dass wir ein Experiment durchgeführt haben, denn errechnen wäre zu schwierig gewesen😉 Gemessen wird die Zeit, welche schwimmendes Laub benötigt, um eine Strecke von 10 Metern zu überwinden.
+Empirisch bedeutet in diesem Fall, dass wir ein Experiment durchgeführt haben, denn errechnen wäre zu schwierig gewesen😉 Gemessen wird die Zeit, welche schwimmendes Laub und Moos benötigt, um eine Strecke von 10 Metern zu überwinden.
 
 ![Geschwindigkeitsmessung](./src/images/2024-02-02_Nuolenbach_Geschwindigkeit.jpg)  
 *Empirische Ermittlung der Geschwindigkeit*
 
-Aus Strecke und Zeit kann anschliessend die Geschwindigkeit errechnet werden. Folgende Messungen wurden am 02. Februar 2024 durchgeführt:
+Aus Strecke und Zeit kann anschliessend die Geschwindigkeit errechnet werden. Folgende Messungen wurden am 2. Februar 2024 durchgeführt:
 
-* 14.39 sec für 10m im ersten Versuch ➡️ **Geschwindigkeit 0.6949 m/s** oder 2.5017 km/h
-* 15.44 sec für 10m im zweiten Versuch ➡️ **Geschwindigkeit 0.6477 m/s** oder 2.3316 km/h
+* 14.39 sec für 10 m im ersten Versuch ➡️ **Geschwindigkeit 0.6949 m/s** oder 2.5017 km/h
+* 15.44 sec für 10 m im zweiten Versuch ➡️ **Geschwindigkeit 0.6477 m/s** oder 2.3316 km/h
 
 ## 2. Drehzahl des Wasserrades bestimmen
 
@@ -144,7 +147,7 @@ disp('Umdrehungen pro Minute nMin [1/min]')
 nMin = n * 60               % 14.747
 ```
 
-> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die Drehzahl **14.7 Umdrehungen pro Minute**.
+> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl **14.7 Umdrehungen pro Minute**.
 
 ## 3. Konstruktion und Bau
 
