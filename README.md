@@ -152,3 +152,5 @@ nMin = n * 60               % 14.747
 ## 3. Konstruktion und Bau
 
 ToDo
+
+![Rad](./src/images/Rad.drawio.svg)  
