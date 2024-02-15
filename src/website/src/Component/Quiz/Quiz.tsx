@@ -1,21 +1,25 @@
-import { MouseEvent, useRef, useState } from 'react';
+import { MouseEvent, useEffect, useRef, useState } from 'react';
 import './Quiz.css';
 import { data } from '../../assets/data';
 import type { QuizQuestion } from '../../assets/data';
 
 function Quiz() {
-  let [index, setIndex] = useState<number>(0);
-  let [questions, setQuestions] = useState<QuizQuestion>(data[index]);
-  let [locked, setLocked] = useState<boolean>(false);
-  let [score, setScore] = useState<number>(0);
+  const [index, setIndex] = useState<number>(0);
+  const [questions, setQuestions] = useState<QuizQuestion>(data[index]);
+  const [locked, setLocked] = useState<boolean>(false);
+  const [score, setScore] = useState<number>(0);
   const [result, setResult] = useState<boolean>(false);
 
-  let Option1 = useRef<HTMLLIElement>(null);
-  let Option2 = useRef<HTMLLIElement>(null);
-  let Option3 = useRef<HTMLLIElement>(null);
-  let Option4 = useRef<HTMLLIElement>(null);
+  const Option1 = useRef<HTMLLIElement>(null);
+  const Option2 = useRef<HTMLLIElement>(null);
+  const Option3 = useRef<HTMLLIElement>(null);
+  const Option4 = useRef<HTMLLIElement>(null);
 
-  let option_array = [Option1, Option2, Option3, Option4];
+  const option_array = [Option1, Option2, Option3, Option4];
+
+  useEffect(() => {
+    setQuestions(data[index]);
+  }, [index]);
 
   const checkAns = (e: MouseEvent, ans: number) => {
     const target = e.target as HTMLLIElement;
@@ -34,10 +38,10 @@ function Quiz() {
     if (locked) {
       if (index < data.length - 1) {
         setIndex(index + 1);
-        setQuestions(data[index]);
         option_array.forEach((option) => {
           option.current?.classList.remove('correct');
           option.current?.classList.remove('wrong');
+          return null;
         });
         setLocked(false);
       } else {
@@ -48,23 +52,18 @@ function Quiz() {
 
   const reset = () => {
     setIndex(0);
-    setQuestions(data[0]);
+    setLocked(false);
     setScore(0);
     setResult(false);
   }
 
   return (
     <div className="container">
-      <h1>{ index+1 }. {questions.question}</h1>
+      {result ? <h1>Result: {score} of {data.length}</h1> : <h1>{ index+1 }. {questions.question}</h1>}
       <hr />
-      {result ? 
+      {result ? <button onClick={reset}>Reset</button>
+       :
         <>
-          <h1>Result: {score} of {data.length}</h1>
-          <button onClick={reset}>Reset</button>
-        </>
-        :
-        <>
-          <h2>Question 1</h2>
           <ul>
             <li ref={Option1} onClick={(e) => {checkAns(e, 1);}}>{questions.option1}</li>
             <li ref={Option2} onClick={(e) => {checkAns(e, 2);}}>{questions.option2}</li>
