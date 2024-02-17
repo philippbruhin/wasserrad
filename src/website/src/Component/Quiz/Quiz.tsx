@@ -49,19 +49,14 @@ function Quiz() {
     }
   }
 
-  const reset = () => {
-    setIndex(0);
-    setLocked(false);
-    setScore(0);
-    setQuestionAns(false);
-    setResult(false);
-  }
-
   return (
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
       {result ? <h1>Result: {score} of {data.length}</h1> : <h1 className="text-3xl font-bold">{questions.question}</h1>}
       <hr />
-      {result ? <button onClick={reset}>Reset</button>
+      {result ?
+        <>
+          <p>Hier kommt zuszätzlicher Text oder ein Bild</p>
+        </>
        :
         <>
           {questions.image && <img className="rounded-lg shadow" src={`./questions/${questions.image}`} alt="Description of the image" />}
