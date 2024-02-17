@@ -51,7 +51,7 @@ function Quiz() {
 
   return (
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
-      {result ? <h1>Result: {score} of {data.length}</h1> : <h1 className="text-3xl font-bold">{questions.question}</h1>}
+      {result ? <h1>Resultat: {score} von {data.length} Punkten</h1> : <h1 className="text-3xl font-bold">{questions.question}</h1>}
       <hr />
       {result ?
         <>
@@ -81,7 +81,7 @@ function Quiz() {
                 ) : (
                   <h4 className="!mt-0 text-red-700">Falsch</h4>
                 )}
-                <p className="!mb-0">Hier kommt die Beschreibung für richtig oder falsch.</p>
+                {questions.description && <p className="!mb-0">{questions.description}</p>}
               </div>
               <button
                 type="button"
