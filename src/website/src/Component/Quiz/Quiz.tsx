@@ -10,11 +10,12 @@ function Quiz() {
   const [score, setScore] = useState<number>(0);
   const [result, setResult] = useState<boolean>(false);
 
-  const questionRefs = data.map(() => useRef<HTMLLIElement>(null));
-
   useEffect(() => {
     setQuestions(data[index]);
   }, [index]);
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const questionRefs = data.map(() => useRef<HTMLLIElement>(null));
 
   const checkAns = (e: MouseEvent, ans: number) => {
     const target = e.target as HTMLLIElement;
