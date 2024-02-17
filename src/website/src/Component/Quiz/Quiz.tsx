@@ -10,12 +10,7 @@ function Quiz() {
   const [score, setScore] = useState<number>(0);
   const [result, setResult] = useState<boolean>(false);
 
-  const Option1 = useRef<HTMLLIElement>(null);
-  const Option2 = useRef<HTMLLIElement>(null);
-  const Option3 = useRef<HTMLLIElement>(null);
-  const Option4 = useRef<HTMLLIElement>(null);
-
-  const option_array = [Option1, Option2, Option3, Option4];
+  const questionRefs = data.map(() => useRef<HTMLLIElement>(null));
 
   useEffect(() => {
     setQuestions(data[index]);
@@ -29,7 +24,7 @@ function Quiz() {
       setScore(score + 1);
     } else {
       target.classList.add('wrong');
-      option_array[questions.ans-1].current?.classList.add('correct');
+      questionRefs[questions.ans].current?.classList.add('correct');
     }
     setLocked(true);
   }
@@ -38,7 +33,7 @@ function Quiz() {
     if (locked) {
       if (index < data.length - 1) {
         setIndex(index + 1);
-        option_array.forEach((option) => {
+        questionRefs.forEach((option) => {
           option.current?.classList.remove('correct');
           option.current?.classList.remove('wrong');
           return null;
@@ -64,11 +59,17 @@ function Quiz() {
       {result ? <button onClick={reset}>Reset</button>
        :
         <>
+          {questions.image && <img src={`./questions/${questions.image}`} alt="Description of the image" />}
           <ul>
-            <li ref={Option1} onClick={(e) => {checkAns(e, 1);}}>{questions.option1}</li>
-            <li ref={Option2} onClick={(e) => {checkAns(e, 2);}}>{questions.option2}</li>
-            <li ref={Option3} onClick={(e) => {checkAns(e, 3);}}>{questions.option3}</li>
-            <li ref={Option4} onClick={(e) => {checkAns(e, 4);}}>{questions.option4}</li>
+            {questions.options.map((option, index) => (
+              <li
+                key={index}
+                ref={questionRefs[index]}
+                onClick={(e) => {checkAns(e, index);}}
+              >
+                  {option}
+              </li>
+            ))}
           </ul>
           <button onClick={next}>Next</button>
           <div className="index">{index+1} of {data.length} questions</div>
