@@ -60,7 +60,7 @@ function Quiz() {
        :
         <>
           {questions.image && <img className="rounded-lg shadow" src={`./questions/${questions.image}`} alt="Description of the image" />}
-          <ul className="list-none !pl-0 ">
+          <ul className="list-none !pl-0">
             {questions.options.map((option, index) => (
               <li
                 className="bg-gray-200 !px-4 !py-2 !my-4 cursor-pointer hover:bg-gray-300 rounded-lg shadow-sm"
