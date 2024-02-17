@@ -6,6 +6,7 @@ import type { QuizQuestion } from '../../assets/data';
 function Quiz() {
   const [index, setIndex] = useState<number>(0);
   const [questions, setQuestions] = useState<QuizQuestion>(data[index]);
+  const [questionAns, setQuestionAns] = useState<boolean>(false);
   const [locked, setLocked] = useState<boolean>(false);
   const [score, setScore] = useState<number>(0);
   const [result, setResult] = useState<boolean>(false);
@@ -22,9 +23,11 @@ function Quiz() {
     if (locked) return;
     if (questions.ans === ans) {
       target.classList.add('correct');
+      setQuestionAns(true);
       setScore(score + 1);
     } else {
       target.classList.add('wrong');
+      setQuestionAns(false);
       questionRefs[questions.ans].current?.classList.add('correct');
     }
     setLocked(true);
@@ -50,20 +53,22 @@ function Quiz() {
     setIndex(0);
     setLocked(false);
     setScore(0);
+    setQuestionAns(false);
     setResult(false);
   }
 
   return (
-    <div className="container">
-      {result ? <h1>Result: {score} of {data.length}</h1> : <h1>{ index+1 }. {questions.question}</h1>}
+    <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
+      {result ? <h1>Result: {score} of {data.length}</h1> : <h1 className="text-3xl font-bold">{questions.question}</h1>}
       <hr />
       {result ? <button onClick={reset}>Reset</button>
        :
         <>
-          {questions.image && <img src={`./questions/${questions.image}`} alt="Description of the image" />}
-          <ul>
+          {questions.image && <img className="rounded-lg shadow" src={`./questions/${questions.image}`} alt="Description of the image" />}
+          <ul className="list-none !pl-0 ">
             {questions.options.map((option, index) => (
               <li
+                className="bg-gray-200 !px-4 !py-2 !my-4 cursor-pointer hover:bg-gray-300 rounded-lg shadow-sm"
                 key={index}
                 ref={questionRefs[index]}
                 onClick={(e) => {checkAns(e, index);}}
@@ -72,8 +77,27 @@ function Quiz() {
               </li>
             ))}
           </ul>
-          <button onClick={next}>Next</button>
-          <div className="index">{index+1} of {data.length} questions</div>
+
+          {locked && (
+            <>
+              <div className="border rounded-lg p-4 mb-10">
+                {questionAns ? (
+                  <h4 className="!mt-0 text-green-700">Richtig</h4>
+                ) : (
+                  <h4 className="!mt-0 text-red-700">Falsch</h4>
+                )}
+                <p className="!mb-0">Hier kommt die Beschreibung für richtig oder falsch.</p>
+              </div>
+              <button
+                type="button"
+                className="rounded-md bg-blue-600 px-10 py-3 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                onClick={next}
+              >
+                Weiter
+              </button>
+            </>
+          )}
+          <p className="index">Frage {index+1} von {data.length}</p>
         </>
       }
     </div>
