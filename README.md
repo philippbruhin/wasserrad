@@ -31,7 +31,7 @@ Es gibt drei Haupttypen von Wasserrädern:
 
 * **Unterschlächtiges Wasserrad:** Das Rad wird durch den Wasserstrom von unten angetrieben, während es in Bewegung ist.
 
-![Wasserrad-Typen](./src/images/Unter-vs-Oberschlaechtig.drawio.svg)  
+![Wasserrad-Typen](./docs/images/Unter-vs-Oberschlaechtig.drawio.svg)  
 
 Das unterschlächtige Wasserrad ist der am weitesten verbreitete Rad-Typ. Im Vergleich zum oberschlächtigen und mittelschlächtigen Wasserrad hat es den geringsten Wirkungsgrad, da es sich die Schwerkraft nicht zu Nutze macht. Das Wasser "fällt" nicht nach unten. Dafür braucht es nur einen sehr geringen Höhenunterschied zwischen Ein- und Auslauf.
 
@@ -41,15 +41,15 @@ Das unterschlächtige Wasserrad ist der am weitesten verbreitete Rad-Typ. Im Ver
 
 Auf der [Höhe Restaurant Falken](https://maps.app.goo.gl/M48FYfqZdci4fe548) ist das Bachbett des Nuolenbach betoniert. Der Querschnitt entspricht einem [Trapez](https://de.wikipedia.org/wiki/Trapez_(Geometrie)), bei welchem die obere Grundseite etwas breiter ist.
 
-![Bachbettgeometrie](./src/images/2024-02-02_Nuolenbach_Bachbett_Geometrie.jpg)  
+![Bachbettgeometrie](./docs/images/2024-02-02_Nuolenbach_Bachbett_Geometrie.jpg)  
 *Der maximale Wasserstand variiert je nach Position zwischen 290 und 360 mm.*
 
-![Höhe und Tiefe des Bettes](./src/images/2023-02-11_Nuolenbach_Tiefe_und_Breite.jpg)  
+![Höhe und Tiefe des Bettes](./docs/images/2023-02-11_Nuolenbach_Tiefe_und_Breite.jpg)  
 *Bachbett vor der Kurve mit einer Breite von 3.5 und einer Tiefe von 1.3 Meter.*
 
 Damit die Schaufeln des Wasserrades tatsächlich ins Wasser eintauchen können, ist ein Radius von mehr als 290 mm erforderlich. Idealerweise sollte er sogar deutlich grösser sein. Denn nicht nur die Schaufel muss ins Wasser eintauchen, auch die Welle kann nicht direkt an der Oberkante des Bachbettes montiert werden, wie in folgender Grafik gezeigt wird.
 
-![Bachbettgeometrie](./src/images/Bachbett.drawio.svg)  
+![Bachbettgeometrie](./docs/images/Bachbett.drawio.svg)  
 *Bachbett mit einer Breite von 3.5 und einer Tiefe von 1.3 Meter.*
 
 Auf die Fliessgeschwindigkeit des Wassers, welche in der obigen Grafik eingezeichnet ist, wird im nächsten Kapitel eingegangen.
@@ -63,12 +63,12 @@ Neben den geometrischen Gegebenheiten soll auch die Fliessgeschwindigkeit des Wa
 * 💡 Das Wasser fliesst in der Mitte schneller als aussen und am Flussboden. Dies weil das Bachbett einen Widerstand darstellt. An den Seitenwänden und am Boden entsteht Reibung, dadurch wird das Wasser abgebremst.
 * 💡 In der Aussenkurve ([Prallhang](https://de.wikipedia.org/wiki/Prallhang)) fliesst das Wasser schneller. Da die äussere Seite der Kurve einen grösseren Radius hat als die innere Seite, muss das Wasser an der Aussenseite der Kurve eine grössere Strecke zurücklegen. Um die Kontinuität aufrechtzuerhalten, erhöht das Wasser seine Geschwindigkeit an der äusseren Seite, während es auf der inneren Seite langsamer fliesst.
 
-![Strömung in einer Kurve](./src/images/Bachbett_in_Kurve.drawio.svg)  
+![Strömung in einer Kurve](./docs/images/Bachbett_in_Kurve.drawio.svg)  
 *In der Kurvenaussenseite fliesst das Wasser schneller als innen.*
 
 Auf die Strömung bezogen wäre es am besten, das Rad in der Aussenseite der folgenden Kurve zu montieren. Weil sich die Montage dort jedoch als eher schwierig gestalten würde und weil die Welle extrem lang sein müsste, sodass die Schaufeln das Bachbett nicht touchieren würden, wird davon abgesehen.
 
-![Rechtskurve des Nuolenbach](./src/images/2023-02-11_Nuolenbach_Rechtskurve.jpg)  
+![Rechtskurve des Nuolenbach](./docs/images/2023-02-11_Nuolenbach_Rechtskurve.jpg)  
 *Rechtskurve auf der Höhe Mühlestrasse 27 in Siebnen*
 
 > ✅ Trotz der geringeren Strömung am Rand, wird das Rad an einem **geraden Abschnitt vor der Kurve montiert**.
@@ -79,7 +79,7 @@ Die Geschwindigkeit des Wassers wird empirisch ermittelt.
 
 Empirisch bedeutet in diesem Fall, dass wir ein Experiment durchgeführt haben, denn errechnen wäre zu schwierig gewesen😉 Gemessen wird die Zeit, welche schwimmendes Laub und Moos benötigt, um eine Strecke von 10 Metern zu überwinden.
 
-![Geschwindigkeitsmessung](./src/images/2024-02-02_Nuolenbach_Geschwindigkeit.jpg)  
+![Geschwindigkeitsmessung](./docs/images/2024-02-02_Nuolenbach_Geschwindigkeit.jpg)  
 *Empirische Ermittlung der Geschwindigkeit*
 
 Aus Strecke und Zeit kann anschliessend die Geschwindigkeit errechnet werden. Folgende Messungen wurden am 2. Februar 2024 durchgeführt:
@@ -97,7 +97,7 @@ Die Umlaufgeschwindigkeit des Rades (und somit auch die Drehzahl) wird geringer 
 
 Dennoch wird im folgenden Beispiel mit den Idealbedingungen gerechnet.
 
-![Umlaufgeschwindigkeit](./src/images/Umlaufgeschwindigkeit.drawio.svg)  
+![Umlaufgeschwindigkeit](./docs/images/Umlaufgeschwindigkeit.drawio.svg)  
 *Um die Berechnung zu vereinfachen, wird angenommen, dass die Umlaufgeschwindigkeit des Wasserrades gleich der Fliessgeschwindigkeit des Wassers ist.*
 
 ### 2.1 Drehzahl berechnen
@@ -153,4 +153,35 @@ nMin = n * 60               % 14.747
 
 ToDo
 
-![Rad](./src/images/Rad.drawio.svg)  
+![Rad](./docs/images/Rad.drawio.svg)  
+
+## Webseite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
