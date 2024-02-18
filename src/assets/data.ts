@@ -32,7 +32,7 @@ export const data: QuizQuestion[] = [
     question: "Wann wurde der Mühlebach kanalisiert?",
     image: "ew_wirth.png",
     options: ["1802", "1852", "1902", "1952"],
-    description: "Im Jahr 1852 initiierte Caspar Honegger die Kanalisierung des Mühlebachs. Zusätzlich liess er in jeiner Zeit die Baumwollspinnerei errichten, die heute im Volksmund \"Alte Fabrik\" genannt wird. Übrigens, Honegger prägtre Siebnen und die Region massgeblich. Bereits 1835 hatte er in Siebnen ein Arbeiterinnenheim erbauen lassen und gründete zum Ansporn seiner Arbeiter eine Spar- und Unterstützungskasse, die als erste Fabrikkrankenkasse der Schweiz in die Geschichte einging. In gleicher Weise nahm er sich des Schul- und Bildungswesens in Siebnen an, wo er für die damaligen Verhältnisse sehr grosse Summen zur Errichtung der Sekundarschule spendete und ebensoviel an den Bau der reformierten Kirche, welche 1878 eingeweiht wurde.",
+    description: "Im Jahr 1852 initiierte Caspar Honegger die Kanalisierung des Mühlebachs. Zusätzlich liess er in jeiner Zeit die Baumwollspinnerei errichten, die heute im Volksmund \"Alte Fabrik\" genannt wird. Übrigens, Honegger prägtre Siebnen und die Region massgeblich. Bereits 1835 hatte er in Siebnen ein Arbeiterinnenheim erbauen lassen und gründete zum Ansporn seiner Arbeiter eine Spar- und Unterstützungskasse, die als erste Fabrikkrankenkasse der Schweiz in die Geschichte einging. In gleicher Weise nahm er sich dem Schul- und Bildungswesen in Siebnen an, wo er für die damaligen Verhältnisse sehr grosse Summen zur Errichtung der Sekundarschule spendete und ebensoviel an den Bau der reformierten Kirche, welche 1878 eingeweiht wurde.",
     ans: 1,
   },
   {
