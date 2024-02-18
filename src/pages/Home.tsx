@@ -15,7 +15,7 @@ export default function Home() {
       <ol>
         <li>Das Quiz besteht aus 10 Fragen zum Mühlebach und der Umgebung.</li>
         <li>Erzielen Sie 1 Punkt für jede richtige Antwort und sehen Sie, wie gut Sie die Region kennen.</li>
-        <li>Nehmen Sie sich so viel Zeit, wie Sie möchten. Ihre Antworten werden nicht gespeichert oder getrackt.</li>
+        <li>Nehmen Sie sich so viel Zeit, wie Sie möchten. Ihre Antworten werden nicht gespeichert oder nachverfolgt.</li>
       </ol>
       <p>Viel Spass!</p>
       <p className="py-4 text-center">
