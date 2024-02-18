@@ -59,7 +59,7 @@ function Quiz() {
         </>
        :
         <>
-          {questions.image && <img className="rounded-lg shadow" src={`./questions/${questions.image}`} alt="Description of the image" />}
+          {questions.image && <img className="rounded-lg shadow w-full" src={`./questions/${questions.image}`} alt="Description of the image" />}
           <ul className="list-none !pl-0">
             {questions.options.map((option, index) => (
               <li
@@ -77,9 +77,9 @@ function Quiz() {
             <>
               <div className="border rounded-lg p-4 mb-10">
                 {questionAns ? (
-                  <h4 className="!mt-0 text-green-700">Richtig</h4>
+                  <h4 className="!mt-0 text-green-700">Bravo, das ist richtig!</h4>
                 ) : (
-                  <h4 className="!mt-0 text-red-700">Falsch</h4>
+                  <h4 className="!mt-0 text-red-700">Leider falsch...</h4>
                 )}
                 {questions.description && <p className="!mb-0">{questions.description}</p>}
               </div>

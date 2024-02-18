@@ -3,11 +3,14 @@
 
 <svg
    version="1.0"
-   width="1024mm"
-   height="500mm"
+   width="1200mm"
+   height="600mm"
    id="svg2780"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="quiz_wappen_wangen.svg"
+   inkscape:export-filename="C:\repos\wasserrad\docs\images\quiz\quiz_wappen_wangen.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -39,9 +42,9 @@
      inkscape:window-height="1010"
      id="namedview25"
      showgrid="false"
-     inkscape:zoom="0.25"
-     inkscape:cx="1726"
-     inkscape:cy="1140"
+     inkscape:zoom="0.125"
+     inkscape:cx="812"
+     inkscape:cy="1096"
      inkscape:window-x="3833"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
@@ -73,7 +76,7 @@
   </defs>
   <g
      id="g6826"
-     transform="translate(33.130115,-20.4295)">
+     transform="matrix(1.2499999,0,0,1.2499999,-20.863852,-26.42948)">
     <path
        inkscape:connector-curvature="0"
        style="fill:#1b63c6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7.65885;stroke-linecap:butt;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
@@ -148,7 +151,7 @@
   </g>
   <g
      id="g6840"
-     transform="translate(31.11803,-16)">
+     transform="matrix(1.2499998,0,0,1.2499998,-98.88177,-20.892571)">
     <path
        inkscape:connector-curvature="0"
        style="fill:#1b63c6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7.65885;stroke-linecap:butt;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
@@ -222,7 +225,7 @@
   </g>
   <g
      id="g6854"
-     transform="translate(33.130115)">
+     transform="matrix(1.2499998,0,0,1.2499998,-171.86961,-0.892575)">
     <path
        inkscape:connector-curvature="0"
        style="fill:#1b63c6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7.65885;stroke-linecap:butt;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
@@ -296,39 +299,39 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:186.667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-     x="585.30383"
-     y="1612"
+     style="font-style:normal;font-weight:normal;font-size:240px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+     x="667.07477"
+     y="1974.8427"
      id="text11612"><tspan
        sodipodi:role="line"
        id="tspan11610"
-       x="585.30383"
-       y="1612"
-       style="font-size:186.667px">A</tspan></text>
+       x="667.07477"
+       y="1974.8427"
+       style="font-size:240px">A</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:186.667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-     x="1865.7103"
-     y="1612"
+     style="font-style:normal;font-weight:normal;font-size:240px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+     x="2191.8796"
+     y="1974.8427"
      id="text11612-0"><tspan
        sodipodi:role="line"
        id="tspan11610-7"
-       x="1865.7103"
-       y="1612"
-       style="font-size:186.667px">B</tspan></text>
+       x="2191.8796"
+       y="1974.8427"
+       style="font-size:240px">B</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:186.667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
-     x="3154.3657"
-     y="1612"
+     style="font-style:normal;font-weight:normal;font-size:240px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+     x="3727.2898"
+     y="1974.8427"
      id="text11612-1"><tspan
        sodipodi:role="line"
        id="tspan11610-4"
-       x="3154.3657"
-       y="1612"
-       style="font-size:186.667px">C</tspan></text>
+       x="3727.2898"
+       y="1974.8427"
+       style="font-size:240px">C</tspan></text>
   <text
      xml:space="preserve"
      id="text27900"
-     style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect27902)" />
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect27902);fill:#000000;fill-opacity:1;stroke:none" />
 </svg>

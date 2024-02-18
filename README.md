@@ -1,6 +1,6 @@
-# Wasserrad im Nuolenbach
+# Wasserrad im Mühlebachkanal
 
-Bauplan für ein einfaches Wasserrad im Mülibach, respektive [Nuolenbach](https://search.ortsnamen.ch/de/record/16006626).
+Bauplan für ein einfaches Wasserrad im Mühlebach, respektive [Nuolenbach](https://search.ortsnamen.ch/de/record/16006626).
 
 Inhalt
 
@@ -15,7 +15,7 @@ Inhalt
 
 ## 1. Typ und Grösse des Rades bestimmen
 
-Das Wasserrad soll so gebaut werden, dass es auf einfache Weise im Bachbett des Nuolenbach montiert werden kann. Zudem soll es genügend Drehmoment liefern, um zwei kleine Treicheln zum Läuten zu bringen. Dabei müssen folgende Punkte beachtet werden:
+Das Wasserrad soll so gebaut werden, dass es auf einfache Weise im Bachbett des Mühlebach montiert werden kann. Zudem soll es genügend Drehmoment liefern, um zwei kleine Treicheln zum Läuten zu bringen. Dabei müssen folgende Punkte beachtet werden:
 
 * 💡 Geometrie und Gegebenheiten des Bachbettes.
 * 💡 Je grösser der Durchmesser, je geringer die Drehzahl und je grösser das Drehmoment.
@@ -39,7 +39,7 @@ Das unterschlächtige Wasserrad ist der am weitesten verbreitete Rad-Typ. Im Ver
 
 ### 1.2 Geometrie des Bachbettes
 
-Auf der [Höhe Restaurant Falken](https://maps.app.goo.gl/M48FYfqZdci4fe548) ist das Bachbett des Nuolenbach betoniert. Der Querschnitt entspricht einem [Trapez](https://de.wikipedia.org/wiki/Trapez_(Geometrie)), bei welchem die obere Grundseite etwas breiter ist.
+Auf der [Höhe Restaurant Falken](https://maps.app.goo.gl/M48FYfqZdci4fe548) ist das Bachbett des Mühlebach betoniert. Der Querschnitt entspricht einem [Trapez](https://de.wikipedia.org/wiki/Trapez_(Geometrie)), bei welchem die obere Grundseite etwas breiter ist.
 
 ![Bachbettgeometrie](./docs/images/2024-02-02_Nuolenbach_Bachbett_Geometrie.jpg)  
 *Der maximale Wasserstand variiert je nach Position zwischen 290 und 360 mm.*
@@ -68,7 +68,7 @@ Neben den geometrischen Gegebenheiten soll auch die Fliessgeschwindigkeit des Wa
 
 Auf die Strömung bezogen wäre es am besten, das Rad in der Aussenseite der folgenden Kurve zu montieren. Weil sich die Montage dort jedoch als eher schwierig gestalten würde und weil die Welle extrem lang sein müsste, sodass die Schaufeln das Bachbett nicht touchieren würden, wird davon abgesehen.
 
-![Rechtskurve des Nuolenbach](./docs/images/2023-02-11_Nuolenbach_Rechtskurve.jpg)  
+![Rechtskurve des Mühlebach](./docs/images/2023-02-11_Nuolenbach_Rechtskurve.jpg)  
 *Rechtskurve auf der Höhe Mühlestrasse 27 in Siebnen*
 
 > ✅ Trotz der geringeren Strömung am Rand, wird das Rad an einem **geraden Abschnitt vor der Kurve montiert**.
