@@ -36,7 +36,7 @@ export const data: QuizQuestion[] = [
     ans: 1,
   },
   {
-    question: "Wie viele Kleinwassertraftwerke gibt es am Mühlebach?",
+    question: "Wie viele Kleinwasserkraftwerke gibt es am Mühlebach?",
     image: "ew_wirth_turbine_siebnen.jpg",
     options: ["4 Krafwerke", "2 Kraftwerke", "Es gibt kein Kraftwerk"],
     description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Das Elektrizitätswerk der Gemeinde Wangen betreibt für die Energiegewinnung am Mühlebachkanal zwei Kraftwerke, zum einen das Kraftwerk Seidenweberei in Wangen und zum anderen das Kraftwerk Bruggholz in Nuolen. Zudem betreibt die EW Wirth AG am Mühlebachkanal ebenfalls zwei Kraftwerke. Das Kraftwerk Kopf, welches südlich der SBB-Gleise liegt, sowie das Kraftwerk der ehemaligen Spinnerei in der alten Fabrik in Siebnen. Das obige Bild zeigt jene Turbine, welche sich bei der alten Fabrik befindet. Das Foto wurde in den 1980er Jahren aufgenommen.",
