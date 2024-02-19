@@ -17,16 +17,16 @@ export const data: QuizQuestion[] = [
   {
     question: "Wie gross ist der Höhenunterschied vom Beginn des Baches in Siebnen bis nach Nuolen?",
     image: "ortsnamen_nuolenbach.png",
-    options: ["7 Meter", "39 Meter", "3.5 Meter", "15 Meter"],
+    options: ["3.5 Meter", "7 Meter", "15 Meter", "39 Meter"],
     description: "Beim Wehr in Siebnen befindet sich der Bach auf 444 und in Nuolen auf 405 Meter über Meer. Das macht eine Höhendifferenz von 39 Metern.",
-    ans: 1,
+    ans: 3,
   },
   {
     question: "An wie vielen Stunden im Jahr fliesst Wasser im Mühlebach, welches vom Stauwehr in Siebnen abgezweigt wird?",
     image: "wehr_siebnen.gif",
-    options: ["24 Stunden", "365 Tage", "2'000 Stunden", "5'000 Stunden"],
+    options: ["24 Stunden", "2'000 Stunden", "5'000 Stunden", "365 Tage"],
     description: "Der Mühlebachkanal kann nur mit Wasser beschickt werden, wenn im Kraftwerk Wägital Strom produziert wird und das Stauwehr unterhalb der Kantonsstrassenbrücke in Siebnen angehoben ist. Das ist in der Regel während 2'000 Stunden im Jahr der Fall, wovon 1'500 Stunden auf das Winterhalbjahr fallen. Um die Zahl in Perspektive zu setzen: Das sind 83 Tage oder 23% des Jahres.",
-    ans: 2,
+    ans: 1,
   },
   {
     question: "Wann wurde der Mühlebach kanalisiert?",
@@ -38,9 +38,9 @@ export const data: QuizQuestion[] = [
   {
     question: "Wie viele Kleinwasserkraftwerke gibt es am Mühlebach?",
     image: "ew_wirth_turbine_siebnen.jpg",
-    options: ["4 Krafwerke", "2 Kraftwerke", "Es gibt kein Kraftwerk"],
+    options: ["Es gibt kein Kraftwerk", "2 Kraftwerke", "4 Krafwerke"],
     description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Das Elektrizitätswerk der Gemeinde Wangen betreibt für die Energiegewinnung am Mühlebachkanal zwei Kraftwerke. Zum einen das Kraftwerk Seidenweberei in Wangen und zum anderen das Kraftwerk Bruggholz in Nuolen. Zudem betreibt die EW Wirth AG am Mühlebachkanal ebenfalls zwei Kraftwerke. Das Kraftwerk Kopf, welches südlich der SBB-Gleise liegt, sowie das Kraftwerk der ehemaligen Spinnerei auf dem Gelände der alten Fabrik in Siebnen. Das obige Bild zeigt jene Turbine, welche sich bei der alten Fabrik befindet. Das Foto wurde in den 1980er Jahren aufgenommen.",
-    ans: 0,
+    ans: 2,
   },
   {
     question: "Wie viel Strom generiert die Turbine in Nuolen in einem Jahr?",
@@ -51,9 +51,9 @@ export const data: QuizQuestion[] = [
   },
   {
     question: "Wie hoch ist die Durchflussmenge des Mühlebachs in Kubikmetern pro Sekunde?",
-    options: ["5.5 Kubikmeter Wasser pro Sekunde", "1.25 Kubikmeter Wasser pro Sekunde", "2.14 Kubikmeter Wasser pro Sekunde"],
+    options: ["1.25 Kubikmeter Wasser pro Sekunde", "2.14 Kubikmeter Wasser pro Sekunde", "5.5 Kubikmeter Wasser pro Sekunde"],
     description: "Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der Kanal nach wie vor betrieben. Es fliesst somit 2140 l Wasser pro Sekunde durch den Kanal, was wiederum 14 gefüllten Badewannen entspricht.",
-    ans: 2,
+    ans: 1,
   },
   {
     question: "Welches ist das Wappen der Gemeinde Wangen?",
