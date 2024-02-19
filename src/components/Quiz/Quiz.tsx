@@ -70,13 +70,16 @@ function Quiz() {
             </div>
           )}
           {questions.image && (
-            <img 
-              className="rounded-lg shadow w-full"
-              src={`./questions/${questions.image}`}
-              onLoad={() => setImageLoaded(true)} 
-              style={{display: isImageLoaded ? 'block' : 'none'}}
-              alt="Foto zu Quizfrage" 
-            />
+            <figure>
+              <img 
+                className="rounded-lg shadow w-full"
+                src={`./questions/${questions.image}`}
+                onLoad={() => setImageLoaded(true)} 
+                style={{display: isImageLoaded ? 'block' : 'none'}}
+                alt="Foto zu Quizfrage" 
+              />
+              {questions.imageCaption && <caption className="caption-bottom text-sm text-gray-500 w-max pt-1">{questions.imageCaption}</caption>}
+            </figure>
           )}
           <ul className="list-none !pl-0">
             {questions.options.map((option, index) => (
