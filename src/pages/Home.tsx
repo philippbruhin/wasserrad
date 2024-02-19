@@ -10,11 +10,11 @@ export default function Home() {
       </div>
       <h1 className="text-center">Mühlebach Wasserrad Quiz</h1>
       <hr />
-      <p>Sie haben sich die Zeit genommen, das Wasserrad beim Spazierengehen zu entdecken und den QR-Code zu scannen. Das freut uns sehr. Herzlich willkommen auf unserer Webseite! Nutzen Sie diese Gelegenheit, die Schönheit der Region Siebnen, Wangen und Nuolen durch unser interaktives Quiz zu erkunden.</p>
+      <p>Sie haben sich die Zeit genommen, das Wasserrad während Ihres Spaziergangs zu entdecken und den QR-Code zu scannen – das freut uns sehr! Herzlich willkommen auf unserer Webseite. Wir laden Sie ein, die Schönheit des Mühlebachs, der alten Fabrik mit der ehemaligen Baumwollspinnerei und dem Kraftwerk Wägital durch unser interaktives Quiz zu erkunden.</p>
       <h4>Wie funktioniert es?</h4>
       <ol>
-        <li>Das Quiz besteht aus 10 Fragen zum Mühlebach und der Umgebung.</li>
-        <li>Erzielen Sie 1 Punkt für jede richtige Antwort und sehen Sie, wie gut Sie die Region kennen.</li>
+        <li>Das Quiz besteht aus 10 Fragen, die sich vorwiegend um den Mühlebach, die alte Fabrik und das Kraftwerk Wägital drehen.</li>
+        <li>Jede richtige Antwort bringt Ihnen 1 Punkt ein – testen Sie Ihr Wissen über die Geschichte und Struktur dieser faszinierenden Wasserlandschaft.</li>
         <li>Nehmen Sie sich so viel Zeit, wie Sie möchten. Ihre Antworten werden nicht gespeichert oder nachverfolgt.</li>
       </ol>
       <p>Viel Spass!</p>

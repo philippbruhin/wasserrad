@@ -43,7 +43,7 @@ export const data: QuizQuestion[] = [
   {
     question: "Wie viele Kleinwasserkraftwerke gibt es heute am Mühlebach?",
     image: "ew_wirth_turbine_siebnen.jpg",
-    imageCaption: "Turbine der ehemaligen Spinnerei Honegger in Siebnen. Aufnahme aus den 1980er Jahren. Foto von Heinz Baumann, ETH Bildarchiv.",
+    imageCaption: "Turbine der ehemaligen Spinnerei Honegger in Siebnen. Aufnahme aus den 1970er Jahren. Foto von Heinz Baumann, ETH Bildarchiv.",
     options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Krafwerke"],
     description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Das Elektrizitätswerk der Gemeinde Wangen betreibt für die Energiegewinnung am Mühlebachkanal zwei Kraftwerke. Zum einen das Kraftwerk Seidenweberei in Wangen und zum anderen das Kraftwerk Bruggholz in Nuolen. Zudem betreibt die EW Wirth AG am Mühlebachkanal ebenfalls zwei Kraftwerke. Das Kraftwerk Kopf, welches südlich der SBB-Gleise liegt, sowie das Kraftwerk der ehemaligen Spinnerei auf dem Gelände der alten Fabrik in Siebnen. Das obige Bild zeigt jene Turbine, welche sich bei der alten Fabrik befindet.",
     ans: 2,
@@ -67,7 +67,23 @@ export const data: QuizQuestion[] = [
     image: "Wikipedia_Waegitalerstausee_Roland_Zumbuehl.jpg",
     imageCaption: "Wägitalersee mit Blick nach Innerthal. Foto Wikipedia, Roland Zumbuehl.",
     options: ["5 Meter", "20 Meter", "50 Meter", "100 Meter"],
-    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der See kann also um 20 Meter ansteigen absinken. Der See hat eine Fläche von 4.18 Quadratkilometern und die maximale Tiefe beträgt 65 Meter. Er fasst 150 Mio. m3 Wasser.",
+    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der See kann also um 20 Meter ansteigen absinken. Der See hat eine Fläche von 4.18 Quadratkilometern und die maximale Tiefe beträgt 65 Meter. Er fasst 150 Mio. m3 Wasser. Das Füllen des Wägitalersees dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
+    ans: 1,
+  },
+  {
+    question: "Wie hoch ist der sichtbare Teil der Staumauer des Wägitalersees?",
+    image: "luca-LriqS4xCRi4-unsplash-1024x683.jpg",
+    imageCaption: "Die Bauzeit von ca 2 Jahren (1922 - 1924) für Staumauer Schräh war für damalige Verhältnisse enorm kurz. Bild: unsplash",
+    options: ["44 Meter", "66 Meter", "88 Meter", "111 Meter"],
+    description: "Die Staumauer Schräh ist als Gewichtsstaumauer ausgeführt. Von den 111 m Gesamthöhe sind 66 m sichtbar über der Talsohle. Die Krone ist 156 m lang und oben 4.6 m breit. Unten ist die Mauer 75 m breit.",
+    ans: 1,
+  },
+  {
+    question: "Wann läuft die Konzession für das Kraftwerk Wägital mit der Stadt Zürich und der Axpo aus?",
+    image: "SIK_05-IKS-SZ-1609-045.jpg",
+    imageCaption: "Kraftwerk Wägital Zentrale Siebnen. Bild: Sylvia Bärtschi, ETH Bildarchiv.",
+    options: ["2025", "2040", "2050", "2060"],
+    description: "1921 gründeten die Stadt Zürich und die Nordostschweizerischen Kraftwerke AG (heute Axpo) im Kanton Schwyz gemeinsam die AG Kraftwerk Wägital. 1961 wurde die Konzession des Kraftwerks Wägital vorzeitig erneuert und es erfolgten umfangreiche Umbau- und Modernisierungsarbeiten. Die laufende Konzession für das Kraftwerk, die zwischen dem Bezirk March, der Axpo und der Stadt Zürich besteht, wird im Jahr 2040 auslaufen.",
     ans: 1,
   },
 ];
