@@ -52,7 +52,7 @@ export const data: QuizQuestion[] = [
   {
     question: "Wie hoch ist die Durchflussmenge des Mühlebachs in Kubikmetern pro Sekunde?",
     options: ["5.5 Kubikmeter Wasser pro Sekunde", "1.25 Kubikmeter Wasser pro Sekunde", "2.14 Kubikmeter Wasser pro Sekunde"],
-    description: "Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der Kanal nach wie vor betrieben.",
+    description: "Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der Kanal nach wie vor betrieben. Es fliesst somit 2140 l Wasser pro Sekunde durch den Kanal, was wiederum 14 gefüllten Badewannen entspricht.",
     ans: 2,
   },
   {
