@@ -7,11 +7,13 @@ function Quiz() {
   const [index, setIndex] = useState<number>(0);
   const [questions, setQuestions] = useState<QuizQuestion>(data[index]);
   const [questionAns, setQuestionAns] = useState<boolean>(false);
+  const [isImageLoaded, setImageLoaded] = useState<boolean>(false);
   const [locked, setLocked] = useState<boolean>(false);
   const [score, setScore] = useState<number>(0);
   const [result, setResult] = useState<boolean>(false);
 
   useEffect(() => {
+    setImageLoaded(false);
     setQuestions(data[index]);
   }, [index]);
 
@@ -59,7 +61,23 @@ function Quiz() {
         </>
        :
         <>
-          {questions.image && <img className="rounded-lg shadow w-full" src={`./questions/${questions.image}`} alt="Description of the image" />}
+          {!isImageLoaded && questions.image && (
+            <div className="flex space-x-2 justify-center items-center bg-white">
+              <span className="sr-only">Loading...</span>
+              <div className="h-8 w-8 bg-blue-500 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+              <div className="h-8 w-8 bg-blue-500 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+              <div className="h-8 w-8 bg-blue-500 rounded-full animate-bounce"></div>
+            </div>
+          )}
+          {questions.image && (
+            <img 
+              className="rounded-lg shadow w-full"
+              src={`./questions/${questions.image}`}
+              onLoad={() => setImageLoaded(true)} 
+              style={{display: isImageLoaded ? 'block' : 'none'}}
+              alt="Foto zu Quizfrage" 
+            />
+          )}
           <ul className="list-none !pl-0">
             {questions.options.map((option, index) => (
               <li
