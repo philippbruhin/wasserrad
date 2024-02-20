@@ -78,7 +78,7 @@ function Quiz() {
                 style={{display: isImageLoaded ? 'block' : 'none'}}
                 alt="Foto zu Quizfrage" 
               />
-              {questions.imageCaption && <caption className="caption-bottom mx-auto text-sm text-gray-500 pt-1 break-words">{questions.imageCaption}</caption>}
+              {questions.imageCaption && <figcaption className="caption-bottom text-xs text-gray-400 !mt-0 pt-0.5">{questions.imageCaption}</figcaption>}
             </figure>
           )}
           <ul className="list-none !pl-0">
