@@ -27,7 +27,7 @@ export const data: QuizQuestion[] = [
   {
     question: "An wie vielen Stunden im Jahr fliesst Wasser im Mühlebach, welches von der Wägitaler Aa in Siebnen abgezweigt wird?",
     image: "wehr_siebnen.gif",
-    imageCaption: "Wehr bei Aabrücke in Siebnen im Zeitraffer. Ein Jahr hat 8'766 Stunden.",
+    imageCaption: "Wehr bei Aabrücke in Siebnen im Zeitraffer.",
     options: ["24 Stunden", "2'000 Stunden", "5'000 Stunden", "8'766 Stunden (1 volles Jahr)"],
     description: "Der Mühlebachkanal kann nur mit Wasser beschickt werden, wenn im Kraftwerk Wägital Strom produziert wird und das Stauwehr unterhalb der Kantonsstrassenbrücke in Siebnen angehoben ist. Das ist in der Regel während 2'000 Stunden im Jahr der Fall, wovon 1'500 Stunden auf das Winterhalbjahr fallen. Das sind 83 Tage oder 23% des Jahres.",
     ans: 1,
@@ -37,7 +37,7 @@ export const data: QuizQuestion[] = [
     image: "ew_wirth.png",
     imageCaption: "Die ehemalige Spinnerei Honegger in Siebnen, heute bekannt als Alte Fabrik. Bild von Valentin Kessler aus Zeitschrift \"Mitteilungen des historischen Vereins des Kantons Schwyz\".",
     options: ["1802", "1852", "1902", "1952"],
-    description: "Im Jahr 1852 initiierte der Unternehmer Caspar Honegger die Kanalisierung des Mühlebachs. Zusätzlich liess er in jener Zeit die Baumwollspinnerei errichten, die heute im Volksmund \"Alte Fabrik\" genannt wird. In dieser Fabrik wurde anfangs Garn und später auch Stoffe hergestellt. Nach Anfangsschwierigkeiten machte man das ziemlich erfolgreich. In der Neuzeit jedoch immer weniger (Globalisierung, Billigprodukte aus Asien, etc.) und so wurde die Produktion 1979 eingestellt. Die Fabrik steht unter Denkmalschutz und beherbergt heute Kleingewerbe und Studios.",
+    description: "Im Jahr 1852 initiierte der Unternehmer Caspar Honegger die Kanalisierung des Mühlebachs. Zusätzlich liess er in jener Zeit die Baumwollspinnerei errichten, die heute im Volksmund \"Alte Fabrik\" genannt wird. In dieser Fabrik wurde anfangs Garn und später auch Stoffe hergestellt. Nach Anfangsschwierigkeiten machte man das sehr erfolgreich. In der Neuzeit jedoch immer weniger (Globalisierung, Billigprodukte aus Asien, etc.) und so wurde die Produktion 1979 eingestellt. Die Fabrik steht unter Denkmalschutz und beherbergt heute Kleingewerbe und Studios.",
     ans: 1,
   },
   {
