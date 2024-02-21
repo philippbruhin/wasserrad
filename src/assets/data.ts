@@ -17,7 +17,7 @@ export const data: QuizQuestion[] = [
     ans: 2,
   },
   {
-    question: "Wie gross ist der Höhenunterschied vom Beginn des Baches in Siebnen bis ans Ende in Nuolen?",
+    question: "Wie gross ist der Höhenunterschied vom Beginn des Baches in Siebnen bis ans Ende im Zürichsee?",
     image: "ortsnamen_nuolenbach.png",
     imageCaption: "Verlauf des Mühlebach oder Nuolenbach genannt, von Siebnen bis nach Nuolen. Screenshot von ortsnamen.ch.",
     options: ["3.5 Meter", "7 Meter", "15 Meter", "39 Meter"],
