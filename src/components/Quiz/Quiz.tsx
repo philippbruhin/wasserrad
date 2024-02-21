@@ -4,7 +4,7 @@ import { data } from '../../assets/data';
 import type { QuizQuestion } from '../../assets/data';
 
 function Quiz() {
-  const [index, setIndex] = useState<number>(0);
+  const [index, setIndex] = useState<number>(9);
   const [questions, setQuestions] = useState<QuizQuestion>(data[index]);
   const [questionAns, setQuestionAns] = useState<boolean>(false);
   const [isImageLoaded, setImageLoaded] = useState<boolean>(false);
@@ -15,6 +15,7 @@ function Quiz() {
   useEffect(() => {
     setImageLoaded(false);
     setQuestions(data[index]);
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, [index]);
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -51,14 +52,48 @@ function Quiz() {
     }
   }
 
+  const reset = () => {
+    setIndex(0);
+    setLocked(false);
+    setScore(0);
+    setQuestionAns(false);
+    setResult(false);
+  }
+
   return (
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
-      {result ? <h1>Resultat: {score} von {data.length} Punkten</h1> : <h1 className="text-3xl font-bold">{questions.question}</h1>}
+      {result ? <h1 className="text-center">Resultat: {score} von {data.length} Punkten</h1> : <h1 className="text-3xl font-bold">{questions.question}</h1>}
       <hr />
       {result ?
-        <>
-          <p>Hier kommt zuszätzlicher Text oder ein Bild</p>
-        </>
+        <div className="text-center">
+          <p>Hier kommt ein Trophäenbild zum runterladen</p>
+
+          <a
+            type="button"
+            className="rounded-md bg-blue-600 px-10 py-3 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            href="./favicon/og_image.png"
+            download
+          >
+            Bild herunterladen
+          </a>
+
+          {score < data.length && (
+            <>
+            <div className="line-container my-5">
+              <div className="line"></div>
+                <span className="text-gray-400">oder</span>
+              <div className="line"></div>
+            </div>
+            <button
+              type="button"
+              className="rounded-md bg-blue-600 px-10 py-3 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              onClick={reset}
+            >
+              Nochmals versuchen
+            </button>
+            </>
+          )}
+        </div>
        :
         <>
           {!isImageLoaded && questions.image && (
@@ -78,7 +113,7 @@ function Quiz() {
                 style={{display: isImageLoaded ? 'block' : 'none'}}
                 alt="Foto zu Quizfrage" 
               />
-              {questions.imageCaption && <figcaption className="caption-bottom text-xs text-gray-400 !mt-0 pt-0.5">{questions.imageCaption}</figcaption>}
+              {questions.imageCaption && <figcaption className="text-gray-400">{questions.imageCaption}</figcaption>}
             </figure>
           )}
           <ul className="list-none !pl-0">

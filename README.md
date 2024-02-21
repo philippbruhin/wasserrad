@@ -12,6 +12,7 @@ Inhalt
 2. [Drehzahl des Wasserrades bestimmen](#2-drehzahl-des-wasserrades-bestimmen)
     1. [Drehzahl berechnen](#21-drehzahl-berechnen)
 3. [Konstruktion und Bau](#3-konstruktion-und-bau)
+4. [Webseite und Online-Quiz](#4-webseite-und-online-quiz)
 
 ## 1. Typ und Grösse des Rades bestimmen
 
@@ -155,7 +156,7 @@ ToDo
 
 ![Rad](./docs/images/Rad.drawio.svg)  
 
-## Webseite
+## 4. Webseite und Online-Quiz
 
 [https://philippbruhin.github.io/wasserrad/](https://philippbruhin.github.io/wasserrad/)
 

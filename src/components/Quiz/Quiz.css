@@ -5,3 +5,16 @@
 .wrong, .wrong:hover, .wrong:focus, .wrong:active {
   background: #FECACA !important;
 }
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
