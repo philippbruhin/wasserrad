@@ -12,7 +12,7 @@ export const data: QuizQuestion[] = [
     question: "Wie lange ist der Mühlebachkanal?",
     options: ["800 m", "2.7 km", "4.4 km", "13 km"],
     image: "muehlebach_unterhalb_fabrik.jpg",
-    imageCaption: "Mühlebach auf Höhe Restaraunt Falken in Siebnen mit Blick Richtung Alte Fabrik in Siebnen.",
+    imageCaption: "Mühlebach auf Höhe Restaraunt Falken mit Blick Richtung Alte Fabrik in Siebnen.",
     description: "Der Mühlebachkanal wird in Siebnen beim Wehr (gegenüber reformierter Kirche) abgezweigt und fliesst auf rund 4.4 km Länge via Wangen nach Nuolen in den Zürichsee.",
     ans: 2,
   },
