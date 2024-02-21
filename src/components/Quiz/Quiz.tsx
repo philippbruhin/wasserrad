@@ -4,7 +4,7 @@ import { data } from '../../assets/data';
 import type { QuizQuestion } from '../../assets/data';
 
 function Quiz() {
-  const [index, setIndex] = useState<number>(9);
+  const [index, setIndex] = useState<number>(0);
   const [questions, setQuestions] = useState<QuizQuestion>(data[index]);
   const [questionAns, setQuestionAns] = useState<boolean>(false);
   const [isImageLoaded, setImageLoaded] = useState<boolean>(false);
@@ -66,12 +66,16 @@ function Quiz() {
       <hr />
       {result ?
         <div className="text-center">
-          <p>Hier kommt ein Trophäenbild zum runterladen</p>
-
+          <p>Hier noch etwas text und folgend das Trophäenbild.</p>
+          <img
+            className="rounded-lg shadow w-full"
+            src="./result/hero_10.png"
+            alt="Trophäenbild"
+          />
           <a
             type="button"
             className="rounded-md bg-blue-600 px-10 py-3 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-            href="./favicon/og_image.png"
+            href="./result/hero_10.png"
             download
           >
             Bild herunterladen
