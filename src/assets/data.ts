@@ -45,7 +45,7 @@ export const data: QuizQuestion[] = [
     image: "alte_turbine_nuolen.jpg",
     imageCaption: "Alte Turbine in Nuolen. Foto von der Webseite des EW Wangen.",
     options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Krafwerke"],
-    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb in Siebnen. Jene Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
+    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Jene Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
     ans: 2,
   },
   {
@@ -73,7 +73,7 @@ export const data: QuizQuestion[] = [
   {
     question: "Wie hoch ist der sichtbare Teil der Staumauer des Wägitalersees?",
     image: "luca-LriqS4xCRi4-unsplash-1024x683.jpg",
-    imageCaption: "Die Bauzeit von ca 2 Jahren (1922 - 1924) für Staumauer Schräh war für damalige Verhältnisse enorm kurz. Bild: unsplash",
+    imageCaption: "Die Bauzeit von ca 2 Jahren (1922 - 1924) für die Staumauer Schräh war für damalige Verhältnisse enorm kurz. Bild: unsplash",
     options: ["44 Meter", "66 Meter", "88 Meter", "111 Meter"],
     description: "Die Staumauer ist als Gewichtsstaumauer ausgeführt. Von den 111 m Gesamthöhe sind 66 m sichtbar über der Talsohle. Die Krone ist 156 m lang und oben 4.6 m breit. Unten ist die Mauer 75 m dick.",
     ans: 1,
