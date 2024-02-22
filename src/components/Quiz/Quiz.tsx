@@ -1,6 +1,7 @@
 import { MouseEvent, useEffect, useRef, useState } from 'react';
 import './Quiz.css';
 import { data } from '../../assets/data';
+import ImagePreloader from '../ImagePreloader/ImagePreloader';
 import type { QuizQuestion } from '../../assets/data';
 
 function Quiz() {
@@ -13,7 +14,6 @@ function Quiz() {
   const [result, setResult] = useState<boolean>(false);
 
   useEffect(() => {
-    setImageLoaded(false);
     setQuestions(data[index]);
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, [index]);
@@ -38,6 +38,7 @@ function Quiz() {
 
   const next = () => {
     if (locked) {
+      setImageLoaded(false);
       if (index < data.length - 1) {
         setIndex(index + 1);
         questionRefs.forEach((option) => {
@@ -67,19 +68,26 @@ function Quiz() {
       {result ?
         <div className="text-center">
           <p>Hier noch etwas text und folgend das Trophäenbild.</p>
+          {!isImageLoaded && (
+            <ImagePreloader />
+          )}
           <img
             className="rounded-lg shadow w-full"
             src="./result/hero_10.png"
+            onLoad={() => setImageLoaded(true)} 
+            style={{display: isImageLoaded ? 'block' : 'none'}}
             alt="Trophäenbild"
           />
-          <a
-            type="button"
-            className="rounded-md bg-blue-600 px-10 py-3 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-            href="./result/hero_10.png"
-            download
-          >
-            Bild herunterladen
-          </a>
+          <p>
+            <a
+              type="button"
+              className="rounded-md bg-blue-600 px-10 py-3 mt-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              href="./result/hero_10.png"
+              download
+            >
+              Bild herunterladen
+            </a>
+          </p>
 
           {score < data.length && (
             <>
@@ -101,12 +109,7 @@ function Quiz() {
        :
         <>
           {!isImageLoaded && questions.image && (
-            <div className="flex space-x-2 justify-center items-center bg-white">
-              <span className="sr-only">Loading...</span>
-              <div className="h-8 w-8 bg-blue-500 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
-              <div className="h-8 w-8 bg-blue-500 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-              <div className="h-8 w-8 bg-blue-500 rounded-full animate-bounce"></div>
-            </div>
+            <ImagePreloader />
           )}
           {questions.image && (
             <figure>
