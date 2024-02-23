@@ -81,7 +81,7 @@ export const data: QuizQuestion[] = [
   {
     question: "Wann läuft die Konzession (Vertrag) für das Kraftwerk Wägital mit der Stadt Zürich und der Axpo aus?",
     image: "SIK_05-IKS-SZ-1609-045.jpg",
-    imageCaption: "Kraftwerk Wägital Zentrale Siebnen. Eine Konzession ist in diesem Fall eine Genehmigung für die Nutzung des Wassers vom Wägitalersee, welche der Bezirk March (und somit wir alle) an ein Unternehmen vergeben. Bild: Sylvia Bärtschi, ETH Bildarchiv.",
+    imageCaption: "Kraftwerk Wägital Zentrale Siebnen. Eine Konzession ist in diesem Fall eine Genehmigung für die Nutzung des Wassers vom Wägitalersee, welche der Bezirk March (und somit wir alle) an ein Unternehmen vergibt. Bild: Sylvia Bärtschi, ETH Bildarchiv.",
     options: ["2025", "2040", "2050", "2060"],
     description: "1921 gründeten die Stadt Zürich und die Nordostschweizerischen Kraftwerke AG (heute Axpo) gemeinsam die AG Kraftwerk Wägital. Die laufende Konzession für das Kraftwerk, die zwischen dem Bezirk March und der AG Kraftwerk Wägital besteht, wird im Jahre 2040 auslaufen.",
     ans: 1,
