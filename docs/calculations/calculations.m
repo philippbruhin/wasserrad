@@ -24,12 +24,12 @@ vKmH = v * 3.6                % 2.5017
 
 disp('')
 disp('Geschwindigkeit v [m/s] (errechnet aus Unterlagen)')
-b = 3.4                        % Bachbett Breite [m]
-h = 1.01                       % Bachbett Höhe Wasserstand [m]
+b = 3.4                       % Bachbett Breite [m]
+h = 1.01                      % Bachbett Höhe Wasserstand [m]
 V = 2.14                      % Dotierwassermenge Mühlebach [m3/s]
-A = b * h                     % Fläche Mühlebach im Querschnitt [m2]
-vErrechnet = V / A            %
-vKmHErrechnet = (V / A) * 3.6 %
+A = b * h                     % 3.4340
+vErrechnet = V / A            % 0.6232
+vKmHErrechnet = (V / A) * 3.6 % 2.2434
 
 %-------------------------------------------------------------------------------
 % Drehzahl des idealen Wasserrades
@@ -49,7 +49,7 @@ disp('Drehzahl n [1/s]')
 d = 0.9                       % Durchmesser Wasserrad bei Radschaufelmitte [m]
 n = v / (d * pi)              % 0.2458
 
-% Umdrehungen pro Minute. Tendenziell wird s
+% Umdrehungen pro Minute
 
 disp('')
 disp('Umdrehungen pro Minute nMin [1/min]')

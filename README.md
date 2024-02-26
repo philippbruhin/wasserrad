@@ -90,7 +90,7 @@ Aus Strecke und Zeit kann anschliessend die Geschwindigkeit errechnet werden. Fo
 
 Nachträglich wurde in Erfahrung gebracht, dass pro Sekunde 2.14 m3 Wasser im Mühlebach fliessen. Die Fläche des Bachs im Querschnitt beträgt (Breite x Höhe) 3.4 m x 1.01 m = 3.434 m2. Rechnet man nun die 2.14 Kubikmeter durch die Fläche, erhält man die Distanz, welche das Wasser in einer Sekunde zurücklegt: 2.14 / 3.434 = 0.623 m/s.
 
-> ✅ Die errechnete Geschwindigkeit ist mit 0.623 m/s somit noch etwas geringer als die gemessene Geschwindigkeit (0.6477 m/s und 0.6949 m/s).
+> ✅ Die errechnete Geschwindigkeit ist mit 0.623 m/s etwas geringer als die gemessene Geschwindigkeit (0.6477 m/s und 0.6949 m/s).
 
 ## 2. Drehzahl des Wasserrades bestimmen
 
@@ -136,12 +136,12 @@ vKmH = v * 3.6                % 2.5017
 
 disp('')
 disp('Geschwindigkeit v [m/s] (errechnet aus Unterlagen)')
-b = 3.4                        % Bachbett Breite [m]
-h = 1.01                       % Bachbett Höhe Wasserstand [m]
+b = 3.4                       % Bachbett Breite [m]
+h = 1.01                      % Bachbett Höhe Wasserstand [m]
 V = 2.14                      % Dotierwassermenge Mühlebach [m3/s]
-A = b * h                     % Fläche Mühlebach im Querschnitt [m2]
-vErrechnet = V / A            %
-vKmHErrechnet = (V / A) * 3.6 %
+A = b * h                     % 3.4340
+vErrechnet = V / A            % 0.6232
+vKmHErrechnet = (V / A) * 3.6 % 2.2434
 
 %-------------------------------------------------------------------------------
 % Drehzahl des idealen Wasserrades
@@ -161,14 +161,16 @@ disp('Drehzahl n [1/s]')
 d = 0.9                       % Durchmesser Wasserrad bei Radschaufelmitte [m]
 n = v / (d * pi)              % 0.2458
 
-% Umdrehungen pro Minute. Tendenziell wird s
+% Umdrehungen pro Minute
 
 disp('')
 disp('Umdrehungen pro Minute nMin [1/min]')
 nMin = n * 60                 % 14.747
 ```
 
-> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl **14.7 Umdrehungen pro Minute**.
+> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl. 
+
+**14.7 Umdrehungen pro Minute**.
 
 ## 3. Konstruktion und Bau
 
@@ -180,33 +182,16 @@ ToDo: Beschreibung
 
 ## 4. Webseite und Online-Quiz
 
+Am dem Wasserrad gibt es ein QR-Code, welche auf folgende Quiz-Webseite verweist:
+
 [https://philippbruhin.github.io/wasserrad/](https://philippbruhin.github.io/wasserrad/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ohne Programmierkentnisse ist es allenfalls etwas schwierig, die Webseite nachzubauen oder zu erweitern. Das verwendete Template basiert auf [React](https://react.dev/) und [Vite](https://vitejs.dev/). Zudem wurde es mit [Tailwind CSS](https://tailwindcss.com/) erweitert.
 
-Currently, two official plugins are available:
+Um die Seite lokal laufen zu lassen, muss [Node.js](https://nodejs.org/en) in der Version `v20.11.0` installiert sein. Danach kann man folgendermassen vorgehen:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Packages installieren mittels Befehl `npm install`
+2. Projekt im Entwicklungsmodus starten via `npm run dev`
+3. Produktions-Build erstellen mittels `npm run build`
 
-### Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Unter [.github/workflows/gh-pages.yml](./.github/workflows/gh-pages.yml) sind die GitHub Actions definiert, um das Projekt automatisch auf GitHub Pages zu deployen.
