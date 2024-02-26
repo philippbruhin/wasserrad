@@ -88,6 +88,8 @@ Aus Strecke und Zeit kann anschliessend die Geschwindigkeit errechnet werden. Fo
 * 14.39 sec für 10 m im ersten Versuch ➡️ **Geschwindigkeit 0.6949 m/s** oder 2.5017 km/h
 * 15.44 sec für 10 m im zweiten Versuch ➡️ **Geschwindigkeit 0.6477 m/s** oder 2.3316 km/h
 
+> Nachträglich wurde in Erfahrung gebracht, dass pro Sekunde 2.14 m3 Wasser im Mühlebach fliessen. Die Fläche des Bachs im Querschnitt beträgt (Breite x Höhe) 3.4 m x 1.01 m = 3.434 m2. Rechnet man nun die 2.14 Kubikmeter durch die Fläche, erhält man die Distanz, welche das Wasser in einer Sekunde zurücklegt: 2.14 / 3.434 = 0.623 m/s. Die errechnete Geschwindigkeit ist mit 0.623 m/s somit noch etwas geringer als die gemessene Geschwindigkeit (0.6477 m/s und 0.6949 m/s).
+
 ## 2. Drehzahl des Wasserrades bestimmen
 
 Beim idealen Wasserrad ist die Umlaufgeschwindigkeit des Rades gleich der Fliessgeschwindigkeit des Wassers.
