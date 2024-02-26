@@ -182,16 +182,16 @@ ToDo: Beschreibung
 
 ## 4. Webseite und Online-Quiz
 
-Am dem Wasserrad gibt es ein QR-Code, welche auf folgende Quiz-Webseite verweist:
+Am dem Wasserrad gibt es ein QR-Code, welcher auf folgende Quiz-Webseite verweist:
 
 [https://philippbruhin.github.io/wasserrad/](https://philippbruhin.github.io/wasserrad/)
 
 Ohne Programmierkentnisse ist es allenfalls etwas schwierig, die Webseite nachzubauen oder zu erweitern. Das verwendete Template basiert auf [React](https://react.dev/) und [Vite](https://vitejs.dev/). Zudem wurde es mit [Tailwind CSS](https://tailwindcss.com/) erweitert.
 
-Um die Seite lokal laufen zu lassen, muss [Node.js](https://nodejs.org/en) in der Version `v20.11.0` installiert sein. Danach kann man folgendermassen vorgehen:
+Um die Seite lokal auf dem Rechner laufen zu lassen, muss [Node.js](https://nodejs.org/en) in der Version `v20.11.0` installiert sein. Danach kann man folgende Befehle eingeben in der Kommandozeile:
 
 1. Packages installieren mittels Befehl `npm install`
 2. Projekt im Entwicklungsmodus starten via `npm run dev`
 3. Produktions-Build erstellen mittels `npm run build`
 
-Unter [.github/workflows/gh-pages.yml](./.github/workflows/gh-pages.yml) sind die GitHub Actions definiert, um das Projekt automatisch auf GitHub Pages zu deployen.
+Unter [.github/workflows/gh-pages.yml](./.github/workflows/gh-pages.yml) sind die GitHub Actions definiert, um das Projekt automatisch auf den GitHub Pages Server zu deployen.
