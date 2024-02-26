@@ -78,7 +78,7 @@ Auf die Strömung bezogen wäre es am besten, das Rad in der Aussenseite der fol
 
 Die Geschwindigkeit des Wassers wird empirisch ermittelt.
 
-Empirisch bedeutet in diesem Fall, dass wir ein Experiment durchgeführt haben, denn errechnen wäre zu schwierig gewesen😉 Gemessen wird die Zeit, welche schwimmendes Laub und Moos benötigt, um eine Strecke von 10 Metern zu überwinden.
+Empirisch bedeutet in diesem Fall, dass wir ein Experiment durchgeführt haben, um die Geschwindigkeit zu ermitteln. Gemessen wird die Zeit, welche schwimmendes Laub und Moos benötigt, um eine Strecke von 10 Metern zu überwinden.
 
 ![Geschwindigkeitsmessung](./docs/images/2024-02-02_Nuolenbach_Geschwindigkeit.jpg)  
 *Empirische Ermittlung der Geschwindigkeit*
@@ -88,7 +88,9 @@ Aus Strecke und Zeit kann anschliessend die Geschwindigkeit errechnet werden. Fo
 * 14.39 sec für 10 m im ersten Versuch ➡️ **Geschwindigkeit 0.6949 m/s** oder 2.5017 km/h
 * 15.44 sec für 10 m im zweiten Versuch ➡️ **Geschwindigkeit 0.6477 m/s** oder 2.3316 km/h
 
-> Nachträglich wurde in Erfahrung gebracht, dass pro Sekunde 2.14 m3 Wasser im Mühlebach fliessen. Die Fläche des Bachs im Querschnitt beträgt (Breite x Höhe) 3.4 m x 1.01 m = 3.434 m2. Rechnet man nun die 2.14 Kubikmeter durch die Fläche, erhält man die Distanz, welche das Wasser in einer Sekunde zurücklegt: 2.14 / 3.434 = 0.623 m/s. Die errechnete Geschwindigkeit ist mit 0.623 m/s somit noch etwas geringer als die gemessene Geschwindigkeit (0.6477 m/s und 0.6949 m/s).
+Nachträglich wurde in Erfahrung gebracht, dass pro Sekunde 2.14 m3 Wasser im Mühlebach fliessen. Die Fläche des Bachs im Querschnitt beträgt (Breite x Höhe) 3.4 m x 1.01 m = 3.434 m2. Rechnet man nun die 2.14 Kubikmeter durch die Fläche, erhält man die Distanz, welche das Wasser in einer Sekunde zurücklegt: 2.14 / 3.434 = 0.623 m/s.
+
+> ✅ Die errechnete Geschwindigkeit ist mit 0.623 m/s somit noch etwas geringer als die gemessene Geschwindigkeit (0.6477 m/s und 0.6949 m/s).
 
 ## 2. Drehzahl des Wasserrades bestimmen
 
@@ -114,16 +116,32 @@ clear
 close
 
 %-------------------------------------------------------------------------------
-% Flussgeschwindigkeit des Baches
+% Flussgeschwindigkeit des Baches (empirisch aus Messungen)
 %-------------------------------------------------------------------------------
 % Am 02.02.2024 wurden 2 Messungen vor Ort gemacht. Es wurde die Zeit gemessen,
 % welche schwimmendes Moos für eine Distanz von 10 Metern benötigt.
 
-disp('Geschwindigkeit v [m/s]')
-s = 10                      % Strecke [m]
-t = 14.39                   % Zeit [s]
-v = s/t                     % 0.6949
-vKmH = v * 3.6              % 2.5017
+disp('Geschwindigkeit v [m/s] (empirisch aus Messungen)')
+s = 10                        % Strecke [m]
+t = 14.39                     % Zeit [s]
+v = s/t                       % 0.6949
+vKmH = v * 3.6                % 2.5017
+
+%-------------------------------------------------------------------------------
+% Flussgeschwindigkeit des Baches (errechnet aus Unterlagen)
+%-------------------------------------------------------------------------------
+% Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen
+% Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der
+% Kanal nach wie vor betrieben.
+
+disp('')
+disp('Geschwindigkeit v [m/s] (errechnet aus Unterlagen)')
+b = 3.4                        % Bachbett Breite [m]
+h = 1.01                       % Bachbett Höhe Wasserstand [m]
+V = 2.14                      % Dotierwassermenge Mühlebach [m3/s]
+A = b * h                     % Fläche Mühlebach im Querschnitt [m2]
+vErrechnet = V / A            %
+vKmHErrechnet = (V / A) * 3.6 %
 
 %-------------------------------------------------------------------------------
 % Drehzahl des idealen Wasserrades
@@ -140,14 +158,14 @@ vKmH = v * 3.6              % 2.5017
 
 disp('')
 disp('Drehzahl n [1/s]')
-d = 0.9                     % Durchmesser Wasserrad bei Radschaufelmitte [m]
-n = v / (d * pi)            % 0.2458
+d = 0.9                       % Durchmesser Wasserrad bei Radschaufelmitte [m]
+n = v / (d * pi)              % 0.2458
 
 % Umdrehungen pro Minute. Tendenziell wird s
 
 disp('')
 disp('Umdrehungen pro Minute nMin [1/min]')
-nMin = n * 60               % 14.747
+nMin = n * 60                 % 14.747
 ```
 
 > ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl **14.7 Umdrehungen pro Minute**.
