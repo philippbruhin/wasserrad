@@ -168,9 +168,7 @@ disp('Umdrehungen pro Minute nMin [1/min]')
 nMin = n * 60                 % 14.747
 ```
 
-> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl. 
-
-**14.7 Umdrehungen pro Minute**.
+> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl **14.7 Umdrehungen pro Minute**.
 
 ## 3. Konstruktion und Bau
 
