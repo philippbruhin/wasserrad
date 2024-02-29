@@ -59,7 +59,7 @@ export const data: QuizQuestion[] = [
   {
     question: "Wie hoch ist die Durchflussmenge des Mühlebachs pro Sekunde?",
     options: ["1'250 Liter Wasser pro Sekunde", "2'140 Liter Wasser pro Sekunde", "5'500 Liter Wasser pro Sekunde"],
-    description: "Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der Kanal nach wie vor betrieben. Es fliesst somit 2140 l Wasser pro Sekunde durch den Kanal, was wiederum 14 gefüllten Badewannen entspricht.",
+    description: "Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der Kanal nach wie vor betrieben. Es fliesst somit 2'140 l Wasser pro Sekunde durch den Kanal, was wiederum 14 gefüllten Badewannen entspricht.",
     ans: 1,
   },
   {
@@ -67,7 +67,7 @@ export const data: QuizQuestion[] = [
     image: "Wikipedia_Waegitalerstausee_Roland_Zumbuehl.jpg",
     imageCaption: "Wägitalersee mit Blick nach Innerthal. Im Hintergrund der Gross Aubrig. Foto Wikipedia, Roland Zumbuehl.",
     options: ["5 Meter", "20 Meter", "50 Meter", "100 Meter"],
-    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Der See hat eine Fläche von 4.18 Quadratkilometern, was 585 Fussballfeldern entspricht. Die maximale Tiefe beträgt 65 Meter. Er fasst 150 Mio. m3 Wasser. Das Füllen dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
+    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Der See hat eine Fläche von 4.18 Quadratkilometern, was 585 Fussballfeldern entspricht. Die maximale Tiefe beträgt 65 Meter. Er Er fasst 150 Mio. m3 Wasser, was wiederum 100 Milliarden 1.5l Flaschen entspricht. Das Füllen dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
     ans: 1,
   },
   {
