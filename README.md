@@ -9,10 +9,11 @@ Inhalt
     2. [Geometrie des Bachbettes](#12-geometrie-des-bachbettes)
     3. [Fliessgeschwindigkeit des Wassers](#13-fliessgeschwindigkeit-des-wassers)
         1. [Messung der Geschwindigket](#131-messung-der-geschwindigket)
-2. [Drehzahl des Wasserrades bestimmen](#2-drehzahl-des-wasserrades-bestimmen)
-    1. [Drehzahl berechnen](#21-drehzahl-berechnen)
+    4. [Drehzahl des Wasserrades bestimmen](#14-drehzahl-des-wasserrades-bestimmen)
+        1. [Drehzahl berechnen](#141-drehzahl-berechnen)
 3. [Konstruktion und Bau](#3-konstruktion-und-bau)
-4. [Webseite und Online-Quiz](#4-webseite-und-online-quiz)
+4. [Rundenzähler-Sensor](#4-rundenzähler-sensor)
+5. [Webseite und Online-Quiz](#5-webseite-und-online-quiz)
 
 ## 1. Typ und Grösse des Rades bestimmen
 
@@ -92,7 +93,7 @@ Nachträglich wurde in Erfahrung gebracht, dass pro Sekunde 2.14 m3 Wasser im M�
 
 > ✅ Die errechnete Geschwindigkeit ist mit 0.623 m/s etwas geringer als die gemessene Geschwindigkeit (0.6477 m/s und 0.6949 m/s).
 
-## 2. Drehzahl des Wasserrades bestimmen
+### 1.4. Drehzahl des Wasserrades bestimmen
 
 Beim idealen Wasserrad ist die Umlaufgeschwindigkeit des Rades gleich der Fliessgeschwindigkeit des Wassers.
 
@@ -105,7 +106,7 @@ Dennoch wird im folgenden Beispiel mit den Idealbedingungen gerechnet.
 ![Umlaufgeschwindigkeit](./docs/images/Umlaufgeschwindigkeit.drawio.svg)  
 *Um die Berechnung zu vereinfachen, wird angenommen, dass die Umlaufgeschwindigkeit des Wasserrades gleich der Fliessgeschwindigkeit des Wassers ist.*
 
-### 2.1 Drehzahl berechnen
+#### 1.4.1 Drehzahl berechnen
 
 Als Taschenrechner dient die kostenloste Open-Source Software [GNU Octave](https://octave.org/), mit welcher folgendes [MATLAB Skript](https://de.wikipedia.org/wiki/Matlab) ausgeführt werden kann.
 
@@ -178,7 +179,11 @@ ToDo: Beschreibung
 
 ![Ständer](./docs/images/Staender.drawio.svg)
 
-## 4. Webseite und Online-Quiz
+## 4. Rundenzähler-Sensor
+
+ToDo
+
+## 5. Webseite und Online-Quiz
 
 Am dem Wasserrad gibt es ein QR-Code, welcher auf folgende Quiz-Webseite verweist:
 
@@ -189,7 +194,8 @@ Ohne Programmierkentnisse ist es allenfalls etwas schwierig, die Webseite nachzu
 Um die Seite lokal auf dem Rechner laufen zu lassen, muss [Node.js](https://nodejs.org/en) in der Version `v20.11.0` installiert sein. Danach kann man folgende Befehle eingeben in der Kommandozeile:
 
 1. Packages installieren mittels Befehl `npm install`
-2. Projekt im Entwicklungsmodus starten via `npm run dev`
-3. Produktions-Build erstellen mittels `npm run build`
+2. Datei `env.example` kopieren und zu `env.local` umbenennen. Enviroment Variabeln von [The Things STack Cloud Discovery](https://www.thethingsindustries.com/) einfügen.
+3. Projekt im Entwicklungsmodus starten via `npm run dev`
+4. Produktions-Build erstellen mittels `npm run build`. Achtung, zuvor müssen auch hier noch die Enviroment Variablen gesetzt werden unter "Settings".
 
 Unter [.github/workflows/gh-pages.yml](./.github/workflows/gh-pages.yml) sind die GitHub Actions definiert, um das Projekt automatisch auf den GitHub Pages Server zu deployen.

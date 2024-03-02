@@ -26,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
+    <div className="prose max-w-none sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl">
       <div className="max-w-20 lg:max-w-28 xl:max-w-32 pb-2 lg:pb-3 xl:pb-4 mx-auto">
         <Logo />
       </div>
