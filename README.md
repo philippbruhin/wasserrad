@@ -191,8 +191,8 @@ ToDo
 
 [Dragino Wiki Bluetooth Remote Configure](http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/)
 
-1. Um den Sensor via Bloetooth zu konfigurieren, muss man die Android-App [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) herunterladen.
-2. Beim Verbinden muss der PIN eingegeben werden, welchen man auf der Packung findet.
+1. Um den Sensor via Bluetooth zu konfigurieren, muss man die Android-App [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) herunterladen.
+2. Beim Verbinden muss der AT-PIN eingegeben werden, welchen man auf der Packung des Dragino Sensors findet.
 3. Mit dem Befehl `AT+MOD=?` wird der Mode zurückgegeben. Standarmässig ist dieser 1. Mit dem Befehl `AT+MOD=6` kann man den Mode auf "Counting Mode" wechseln. Danach muss man noch `ATZ` senden, damit der Sensor neu bootet und die Änderungen greifen.
 4. Mit dem Befehl `AT+TDC=?` gibt der Sensor seinen aktuellen Übertragungsintervall an. Dieser ist Standardmässig 20 Minuten (1'200'000ms). Mit `AT+TDC=600000` kann man das Intervall auf 10 Minuten runtersetzen.
 
