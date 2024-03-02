@@ -1,7 +1,7 @@
 import { MouseEvent, useEffect, useRef, useState } from 'react';
 import './Quiz.css';
 import { data } from '../../assets/data';
-import ImagePreloader from '../ImagePreloader/ImagePreloader';
+import Preloader from '../Preloader/Preloader';
 import type { QuizQuestion } from '../../assets/data';
 
 function Quiz() {
@@ -69,7 +69,7 @@ function Quiz() {
         <div className="text-center">
           <p>Hier noch etwas text und folgend das Trophäenbild.</p>
           {!isImageLoaded && (
-            <ImagePreloader />
+            <Preloader />
           )}
           <img
             className="rounded-lg shadow w-full"
