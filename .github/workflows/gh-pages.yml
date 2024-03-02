@@ -39,6 +39,11 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env:
+          VITE_TTN_API_KEY: ${{ vars.VITE_TTN_API_KEY }}
+          VITE_TTN_API_URL: ${{ vars.VITE_TTN_API_URL }}
+          VITE_TTN_APP_ID: ${{ vars.VITE_TTN_APP_ID }}
+          VITE_TTN_DEVICE_ID: ${{ vars.VITE_TTN_DEVICE_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
