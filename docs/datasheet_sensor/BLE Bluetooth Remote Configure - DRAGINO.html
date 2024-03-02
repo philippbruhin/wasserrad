@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" data-xwiki-reference="xwiki:Main.BLE Bluetooth Remote Configure.WebHome" data-xwiki-document="Main.BLE Bluetooth Remote Configure.WebHome" data-xwiki-wiki="xwiki" data-xwiki-space="Main.BLE Bluetooth Remote Configure" data-xwiki-page="WebHome" data-xwiki-isnew="false" data-xwiki-version="32.1" data-xwiki-rest-url="/xwiki/rest/wikis/xwiki/spaces/Main/spaces/BLE%20Bluetooth%20Remote%20Configure/pages/WebHome" data-xwiki-locale="" data-xwiki-form-token="rR9TP0fvhvBAIpYQ7PxmRQ" data-xwiki-page-ready="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                    
+                                                    <title>BLE Bluetooth Remote Configure - DRAGINO</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="icon" href="http://wiki.dragino.com/xwiki/bin/skin/XWiki/DefaultSkin/icons.xwiki.favicon16.png" type="image/png">
+        <link rel="icon" href="http://wiki.dragino.com/xwiki/resources/icons/xwiki/favicon.svg?cache-version=1648720710000" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="http://wiki.dragino.com/xwiki/bin/skin/XWiki/DefaultSkin/icons.xwiki.favicon144.png">
+                      <link rel="alternate" type="application/x-wiki" title="Edit" href="http://wiki.dragino.com/xwiki/bin/edit/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome">
+                    <link rel="canonical" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/">
+                    <meta name="revisit-after" content="7 days">
+<meta name="description" content="BLE Bluetooth Remote Configure">
+<meta name="keywords" content="wiki">
+<meta name="rating" content="General">
+<meta name="author" content="Edwin Chen">
+<link rel="alternate" type="application/rss+xml" title="Wiki Feed RSS" href="http://wiki.dragino.com/xwiki/bin/view/Main/WebRss?xpage=rdf">
+<link rel="alternate" type="application/rss+xml" title="Blog RSS Feed" href="http://wiki.dragino.com/xwiki/bin/view/Blog/GlobalBlogRss?xpage=plain">
+                <link href="./BLE Bluetooth Remote Configure - DRAGINO_files/blueimp-gallery.min.css" type="text/css" rel="stylesheet">
+<link href="./BLE Bluetooth Remote Configure - DRAGINO_files/lightbox.less" type="text/css" rel="stylesheet">
+<link href="./BLE Bluetooth Remote Configure - DRAGINO_files/tree.min.css" type="text/css" rel="stylesheet">
+
+    <link href="./BLE Bluetooth Remote Configure - DRAGINO_files/drawer.min.css" rel="stylesheet" type="text/css">
+                
+                                                                                                                    
+
+
+
+<link href="./BLE Bluetooth Remote Configure - DRAGINO_files/style.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./BLE Bluetooth Remote Configure - DRAGINO_files/print.min.css" rel="stylesheet" type="text/css" media="print">
+            
+    <link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/xwiki.bundle.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/searchSuggest.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/table.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/tags.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/comments.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/upload.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/attachments.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/pagination.min.css">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/information.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/WebHome">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/Style">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/Settings">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/RefactoringConfiguration">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/MentionsMacro">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/FontAwesome">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/LikeUIX">
+<link rel="stylesheet" type="text/css" href="./BLE Bluetooth Remote Configure - DRAGINO_files/Applications">
+
+
+    <script src="./BLE Bluetooth Remote Configure - DRAGINO_files/require.min.js.download" data-wysiwyg="true"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/pageReady.min.js.download" data-wysiwyg="true"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/prototype.js.download"></script>
+<script data-wysiwyg="true">
+// <![CDATA[
+        var jQuery = {};
+                                                                                                                                                                                                                                                                                                require.config({"packages":[{"name":"scriptaculous","location":"/xwiki/webjars/wiki%3Axwiki/scriptaculous/1.9.0","main":"scriptaculous"},{"name":"moment","location":"/xwiki/webjars/wiki%3Axwiki/momentjs/2.29.1","main":"min/moment.min"}],"paths":{"jquery":"/xwiki/webjars/wiki%3Axwiki/jquery/3.6.0/jquery.min.js?r=1","jquery-migrate":"/xwiki/webjars/wiki%3Axwiki/jquery-migrate/3.3.2/jquery-migrate.min.js?r=1","prototype":"/xwiki/webjars/wiki%3Axwiki/prototype/1.7.3.0/prototype.js?r=1","bootstrap":"/xwiki/webjars/wiki%3Axwiki/bootstrap/3.4.1/js/bootstrap.min.js?r=1","xwiki-meta":"/xwiki/resources/js/xwiki/meta.min.js?cache-version=1648720710000","xwiki-entityReference":"/xwiki/resources/uicomponents/model/entityReference.min.js?cache-version=1648720710000","xwiki-events-bridge":"/xwiki/resources/js/xwiki/eventsBridge.min.js?cache-version=1648720710000","xwiki-locale-picker":"/xwiki/bin/skin/skins/flamingo/localePicker.min.js?cache-version=1648720710000","xwiki-l10n":"/xwiki/webjars/wiki%3Axwiki/xwiki-platform-localization-webjar/14.2.1/l10n.min.js?r=1","iscroll":"/xwiki/webjars/wiki%3Axwiki/iscroll/5.2.0/build/iscroll-lite.js?r=1","drawer":"/xwiki/webjars/wiki%3Axwiki/drawer/3.2.2/js/drawer.min.js?r=1","deferred":"/xwiki/resources/uicomponents/require/deferred.min.js?cache-version=1648720710000","moment-jdateformatparser":"/xwiki/webjars/wiki%3Axwiki/moment-jdateformatparser/1.2.1/moment-jdateformatparser.min","xwiki-lightbox":"/xwiki/webjars/wiki%3Axwiki/xwiki-platform-image-lightbox-webjar/14.2.1/lightbox.min.js?r=1","jquery-ui-touch-punch":"/xwiki/webjars/wiki%3Axwiki/jquery-ui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js?r=1","jquery-ui":"/xwiki/webjars/wiki%3Axwiki/jquery-ui/1.13.0/jquery-ui.min.js?r=1","blueimp-gallery-bundle":"/xwiki/webjars/wiki%3Axwiki/webjar-blueimp-gallery/3.4.0/js/blueimp-gallery-bundle.min","xwiki-ckeditor":"/xwiki/bin/jsx/CKEditor/EditSheet?v=1.61&xwiki-version=14.2.1&fast-diff-version=&bs3typeahead-version=4.0.2","scriptaculous-accordion":"/xwiki/resources/js/xwiki/accordion/accordion.min.js?cache-version=1648720710000","bootstrap-switch":"/xwiki/webjars/wiki%3Axwiki/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js?r=1","xwiki-bootstrap-switch":"/xwiki/bin/jsx/XWiki/Notifications/Code/BootstrapSwitch?minify=true","xwiki-ckeditor-inline":"/xwiki/bin/jsx/CKEditor/InlineEditor?v=1.61&xwiki-version=14.2.1"},"shim":{"prototype":{"exports":"$"},"scriptaculous/dragdrop":["scriptaculous/effects"],"bootstrap":["jquery"],"xwiki-entityReference":{"exports":"XWiki"},"jquery-ui-touch-punch":{"deps":["jquery-ui"]},"scriptaculous-accordion":{"deps":["scriptaculous/effects"]}},"bundles":{"blueimp-gallery-bundle":["blueimp-gallery","blueimp-helper","blueimp-gallery-fullscreen","blueimp-gallery-indicator","blueimp-gallery-video","blueimp-gallery-vimeo","blueimp-gallery-youtube"]},"config":{},"map":{"*":{"jquery":"jquery-migrate","moment/moment":"moment"},"jQueryNoConflict":{"jquery":"jquery"},"jquery-migrate":{"jquery":"jQueryNoConflict"}}});
+define('jQueryNoConflict', ['jquery'], function($) {
+  return $.noConflict();
+});
+if (window.Prototype && Prototype.BrowserFeatures.ElementExtensions) {
+  require(['jquery', 'bootstrap'], function ($) {
+    // Fix incompatibilities between BootStrap and Prototype
+    var disablePrototypeJS = function (method, pluginsToDisable) {
+      var handler = function (event) {
+        event.target[method] = undefined;
+        setTimeout(function () {
+            delete event.target[method];
+        }, 0);
+      };
+      pluginsToDisable.each(function (plugin) { 
+          $(window).on(method + '.bs.' + plugin, handler); 
+      });
+    },
+    pluginsToDisable = ['collapse', 'dropdown', 'modal', 'tooltip', 'tab', 'popover'];
+    disablePrototypeJS('show', pluginsToDisable);
+    disablePrototypeJS('hide', pluginsToDisable);
+  });
+}
+require(['jquery', 'iscroll', 'drawer'], function($, IScroll) {
+  // Unfortunately drawer doesn't declare the dependency on iscroll and expects it to be defined as a global variable.
+  window.IScroll = IScroll;
+  $(function() {
+    // Note that the 'drawer-open' and 'drawer-close' CSS classes are added before the open and close animations end
+    // which prevents us from using them in automated tests. We need something more reliable so we listen to
+    // 'drawer.opened' and 'drawer.closed' events and add our own markers.
+    $('.drawer-nav').closest('body').drawer().on('drawer.opened', function(event) {
+      $('#tmDrawerActivator').attr('aria-expanded', 'true');
+    }).on('drawer.closed', function(event) {
+      $('#tmDrawerActivator').attr('aria-expanded', 'false');
+    });
+  });
+});
+window.XWiki = window.XWiki || {};
+XWiki.webapppath = "xwiki/";
+XWiki.servletpath = "bin/";
+XWiki.contextPath = "/xwiki";
+XWiki.mainWiki = "xwiki";
+// Deprecated: replaced by meta data in the HTML element
+XWiki.currentWiki = "xwiki";
+XWiki.currentSpace = "Main.BLE Bluetooth Remote Configure";
+XWiki.currentPage = "WebHome";
+XWiki.editor = "";
+XWiki.viewer = "";
+XWiki.contextaction = "view";
+XWiki.skin = 'XWiki.DefaultSkin';
+XWiki.docisnew = false;
+XWiki.docsyntax = "xwiki/2.1";
+XWiki.docvariant = "language=en";
+XWiki.blacklistedSpaces = [ "Import","Panels","Scheduler","Stats","XAppClasses","XAppSheets","XAppTemplates","XWiki","WatchCode","WatchSheets","XApp","WatchAdmin","Watch","ColorThemes","AnnotationCode" ];
+XWiki.hasEdit = false;
+XWiki.hasProgramming = false;
+XWiki.hasBackupPackImportRights = false;
+XWiki.hasRenderer = true;
+window.docviewurl = "/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/";
+window.docediturl = "/xwiki/bin/edit/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome";
+window.docsaveurl = "/xwiki/bin/save/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome";
+window.docgeturl = "/xwiki/bin/get/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome";
+// ]]>
+</script>
+                                                                                                                                            
+    <script src="./BLE Bluetooth Remote Configure - DRAGINO_files/entityReference.min.js.download"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/xwiki.bundle.min.js.download"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/flamingo.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/searchSuggest.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/async.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/hierarchy.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/tree.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/tablefilterNsort.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/exporter.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/tags.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/comments.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/upload.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/attachments.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/history.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/information.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/editableProperty.min.js.download" defer="defer"></script>
+
+    <script src="./BLE Bluetooth Remote Configure - DRAGINO_files/Settings(1)" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/TourJS" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/MentionsMacro(1)" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/Script" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/QuickSearchUIX" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/WebHome(1)" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/LikeUIX(1)" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/Applications(1)" defer="defer"></script>
+
+
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/compatibility.min.js.download" defer="defer"></script>
+<script src="./BLE Bluetooth Remote Configure - DRAGINO_files/markerScript.min.js.download" defer="defer"></script>
+
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-migrate" src="./BLE Bluetooth Remote Configure - DRAGINO_files/jquery-migrate.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="iscroll" src="./BLE Bluetooth Remote Configure - DRAGINO_files/iscroll-lite.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="drawer" src="./BLE Bluetooth Remote Configure - DRAGINO_files/drawer.min.js.download"></script><meta name="document" content="Main.BLE Bluetooth Remote Configure.WebHome"><meta name="wiki" content="xwiki"><meta name="space" content="Main.BLE Bluetooth Remote Configure"><meta name="page" content="WebHome"><meta name="version" content="32.1"><meta name="restURL" content="/xwiki/rest/wikis/xwiki/spaces/Main/spaces/BLE%20Bluetooth%20Remote%20Configure/pages/WebHome"><meta name="form_token" content="rR9TP0fvhvBAIpYQ7PxmRQ"><meta name="language" content="en"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-meta" src="./BLE Bluetooth Remote Configure - DRAGINO_files/meta.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-events-bridge" src="./BLE Bluetooth Remote Configure - DRAGINO_files/eventsBridge.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/xwiki/webjars/wiki%3Axwiki/xwiki-platform-tree-webjar/14.2.1/require-config.min.js?evaluate=true&amp;minify=true" src="./BLE Bluetooth Remote Configure - DRAGINO_files/require-config.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="deferred" src="./BLE Bluetooth Remote Configure - DRAGINO_files/deferred.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-suggestUsers" src="./BLE Bluetooth Remote Configure - DRAGINO_files/suggestUsersAndGroups.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-lightbox" src="./BLE Bluetooth Remote Configure - DRAGINO_files/lightbox.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="scriptaculous/effects" src="./BLE Bluetooth Remote Configure - DRAGINO_files/effects.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/xwiki/webjars/wiki%3Axwiki/Keypress/2.1.5/keypress.min.js?r=1" src="./BLE Bluetooth Remote Configure - DRAGINO_files/keypress.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./BLE Bluetooth Remote Configure - DRAGINO_files/jquery.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-entityReference" src="./BLE Bluetooth Remote Configure - DRAGINO_files/entityReference.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-selectize" src="./BLE Bluetooth Remote Configure - DRAGINO_files/xwiki.selectize.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="xwiki-l10n" src="./BLE Bluetooth Remote Configure - DRAGINO_files/l10n.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment/min/moment.min" src="./BLE Bluetooth Remote Configure - DRAGINO_files/moment.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment-jdateformatparser" src="./BLE Bluetooth Remote Configure - DRAGINO_files/moment-jdateformatparser.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blueimp-gallery" src="./BLE Bluetooth Remote Configure - DRAGINO_files/blueimp-gallery-bundle.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./BLE Bluetooth Remote Configure - DRAGINO_files/bootstrap.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="selectize" src="./BLE Bluetooth Remote Configure - DRAGINO_files/selectize.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tree" src="./BLE Bluetooth Remote Configure - DRAGINO_files/tree.min(1).js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="JobRunner" src="./BLE Bluetooth Remote Configure - DRAGINO_files/jobRunner.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tree-finder" src="./BLE Bluetooth Remote Configure - DRAGINO_files/finder.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jsTree" src="./BLE Bluetooth Remote Configure - DRAGINO_files/jstree.min.js.download"></script></head>
+  <body id="body" class="skin-flamingo wiki-xwiki space-Main.BLE_Bluetooth_Remote_Configure viewbody hideright  panel-left-width-Medium panel-right-width-Medium drawer drawer--right drawer-close">
+<div id="xwikimaincontainer">
+<div id="xwikimaincontainerinner">
+
+  <div id="menuview">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <nav class="navbar navbar-default actionmenu">
+    <div class="container-fluid">
+            <div class="navbar-header">
+                  <div id="companylogo">
+  <a href="http://wiki.dragino.com/xwiki/bin/view/Main/" title="Home" rel="home" class="navbar-brand">
+    <img src="./BLE Bluetooth Remote Configure - DRAGINO_files/DRAGINO-LOGO-反白.png" alt="Wiki Logo">
+  </a>
+</div>
+
+              </div>
+            <div id="xwikimainmenu">
+
+          <ul class="nav navbar-nav navbar-left">
+      <li class="divider" role="separator"></li>
+              </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+        <li>
+    <button type="button" id="tmDrawerActivator" class="btn btn-link icon-navbar drawer-toggle" aria-controls="tmDrawer" aria-expanded="false" title="Drawer"><span class="sr-only">Toggle navigation</span><span class="fa fa-bars"></span></button>
+  </li>
+                  
+                   
+                 <li>
+<form class="navbar-form globalsearch globalsearch-close form-inline" id="globalsearch" action="http://wiki.dragino.com/xwiki/bin/view/Main/Search" role="search">
+<label class="hidden" for="headerglobalsearchinput">Search</label>
+<input type="text" name="text" placeholder="search..." id="headerglobalsearchinput" autocomplete="off">
+<button type="submit" class="btn" title="Search"><span class="fa fa-search"></span></button>
+</form>
+</li>
+            </ul>
+
+          </div>    </div>   </nav>
+
+  
+
+
+
+
+
+<nav class="drawer-nav" id="tmDrawer">
+  <ul class="drawer-menu" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                <li class="drawer-brand clearfix">
+      <a href="http://wiki.dragino.com/xwiki/bin/view/XWiki/XWikiGuest">
+                                        <img class="avatar avatar_120" src="./BLE Bluetooth Remote Configure - DRAGINO_files/noavatar.png" alt="XWikiGuest" title="XWikiGuest">      </a>
+      <div class="brand-links">
+                  <a href="http://wiki.dragino.com/xwiki/bin/login/XWiki/XWikiLogin?xredirect=%2Fxwiki%2Fbin%2Fview%2FMain%2FBLE%2520Bluetooth%2520Remote%2520Configure%2F&amp;loginLink=1" id="tmLogin" rel="nofollow"><span class="fa fa-sign-in"></span> Log-in</a>
+                                                                </div>
+    </li>
+                                  <li class="drawer-category-header"><hr class="hidden">Home</li>
+                                                                      
+                                
+
+
+
+
+
+  <li>
+    <a class="drawer-menu-item" href="http://wiki.dragino.com/xwiki/bin/view/Main/AllDocs" id="tmWikiDocumentIndex">
+      <span class="drawer-menu-item-icon">
+        <span class="fa fa-book"></span>
+      </span>
+      <span class="drawer-menu-item-text">Page Index</span>
+    </a>
+  </li>
+                                      
+
+
+
+
+
+  <li>
+    <a class="drawer-menu-item" href="http://wiki.dragino.com/xwiki/bin/view/Main/UserDirectory" id="tmMainUserIndex">
+      <span class="drawer-menu-item-icon">
+        <span class="fa fa-user"></span>
+      </span>
+      <span class="drawer-menu-item-text">User Index</span>
+    </a>
+  </li>
+                                
+
+
+
+
+
+  <li>
+    <a class="drawer-menu-item" href="http://wiki.dragino.com/xwiki/bin/view/Applications/" id="tmMainApplicationIndex">
+      <span class="drawer-menu-item-icon">
+        <span class="fa fa-th"></span>
+      </span>
+      <span class="drawer-menu-item-text">Application Index</span>
+    </a>
+  </li>
+                                        <li class="drawer-category-header"><hr class="hidden">Global</li>
+                                              <li class="drawer-dropdown">
+    <a class="drawer-menu-item" id="tmLanguages" role="button" data-toggle="collapse" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#tmLanguages_menu" aria-expanded="false" aria-controls="tmLanguages_menu">
+      <span class="drawer-menu-item-icon">
+        <span class="fa fa-flag"></span>
+      </span>
+      <span class="drawer-menu-item-text">Languages</span>
+    </a>
+    <ul class="drawer-dropdown-menu collapse" id="tmLanguages_menu">
+    <li>
+    <a class="drawer-menu-item" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?language=en">
+      <span class="drawer-menu-item-icon">
+        <span class="fa fa-flag"></span>
+      </span>
+      <span class="drawer-menu-item-text">English
+ <span class="fa fa-check"></span></span>
+    </a>
+  </li>
+        </ul>
+  </li>
+
+                                                
+
+
+
+
+
+  <li>
+    <a class="drawer-menu-item" href="http://wiki.dragino.com/xwiki/bin/view/WikiManager/">
+      <span class="drawer-menu-item-icon">
+        <span class="fa fa-list-alt"></span>
+      </span>
+      <span class="drawer-menu-item-text">Wiki Index</span>
+    </a>
+  </li>
+                                                              
+      </ul>
+</nav>
+
+
+
+
+
+  </div>
+ <div id="headerglobal">
+  <div id="globallinks">
+  </div>   <div class="clearfloats"></div>
+      
+      <script id="lightbox-config" type="application/json">{"HTMLTemplate":"<!-- The Gallery lightbox dialog. -->\n<div\nid=\"blueimp-gallery\"\nclass=\"blueimp-gallery blueimp-gallery-controls\"\naria-label=\"Image gallery\"\naria-modal=\"true\"\nrole=\"dialog\"\n>\n<div class=\"slides\" aria-live=\"polite\"></div>\n<a\nclass=\"prev\" aria-controls=\"blueimp-gallery\"\naria-label=\"Previous image\"\ntitle=\"Previous image\"\naria-keyshortcuts=\"ArrowLeft\"\n></a>\n<a\nclass=\"next\" aria-controls=\"blueimp-gallery\"\naria-label=\"Next image\"\ntitle=\"Next image\"\naria-keyshortcuts=\"ArrowRight\"\n></a>\n<div class=\"controls btn-group\">\n<a\nclass=\"btn fullscreen\" id=\"lightboxFullscreen\" aria-controls=\"blueimp-gallery\"\naria-label=\"Fullscreen\"\ntitle=\"Fullscreen\"\naria-keyshortcuts=\"F11\"\n><span class=\"fa fa-arrows-alt\"></span></a>\n<a\nclass=\"btn download\" id=\"lightboxDownload\" aria-controls=\"blueimp-gallery\" target=\"_blank\"\naria-label=\"Download\"\ntitle=\"Download\"\n><span class=\"fa fa-download\"></span></a>\n<a\nclass=\"btn autoPlay\" aria-controls=\"blueimp-gallery\"\naria-label=\"Slideshow\"\ntitle=\"Slideshow\"\naria-keyshortcuts=\"Space\" aria-pressed=\"false\"\n><span class=\"fa fa-play\"></span></a>\n<a\nclass=\"btn escape\" aria-controls=\"blueimp-gallery\"\naria-label=\"Escape\"\ntitle=\"Escape\"\naria-keyshortcuts=\"Escape\"\n><span class=\"fa fa-times\"></span></a>\n</div>\n<div class=\"lightboxDescription\">\n<div class=\"caption\"\naria-label=\"Caption\"></div>\n<div class=\"descriptionMetadata\">\n<span class=\"title\"\naria-label=\"File name\"></span>\n<div class=\"descriptionRow\">\n<span class=\"publisher\"\naria-label=\"Image publisher\"></span>\n<span class=\"date\" data-dateFormat=\"yyyy/MM/dd HH:mm\"\naria-label=\"Date\"></span>\n</div>\n</div>\n</div>\n<ol class=\"indicator\"></ol>\n</div>\n<!-- The image toolbar popover template. -->\n<div id=\"imageToolbarTemplate\">\n<div class=\"btn-group imageToolbar\" hidden>\n<a class=\"openLightbox\"\ntitle=\"Image gallery\">\n<span class=\"fa fa-arrows-alt\"></span>\n</a>\n<a class=\"imageDownload\" target=\"_blank\"\ntitle=\"Download\">\n<span class=\"fa fa-download\"></span>\n</a>\n</div>\n</div>\n"}
+</script>
+      <script id="attachment-move-config" type="application/json">{"treeWebjar":"/xwiki/webjars/wiki%3Axwiki/xwiki-platform-tree-webjar/14.2.1/require-config.min.js?evaluate=true"}</script>
+      
+      
+  </div> 
+
+
+<div class="contenthideright" id="contentcontainer">
+<div id="contentcontainerinner">
+<div class="leftsidecolumns">
+  <div id="contentcolumn"> 
+
+        
+  <div class="main">
+  <div id="mainContentArea">
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                <ol id="hierarchy" class="breadcrumb breadcrumb-expandable" data-entity="Main.BLE Bluetooth Remote Configure.WebHome" data-id="hierarchy" data-limit="5" data-treenavigation="true" data-entities="{Space xwiki:Main.BLE Bluetooth Remote Configure=Main.BLE Bluetooth Remote Configure.WebHome}"><li class="wiki dropdown"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/"><span class="fa fa-home"></span></a><span class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-caret-down"></span></span><div class="dropdown-menu">                                                                                                                                                                              <div class="breadcrumb-tree" data-responsive="true" data-url="/xwiki/bin/get/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome?outputSyntax=plain&amp;sheet=XWiki.DocumentTree&amp;limit=10" data-root="{}" data-draganddrop="false" data-contextmenu="false" data-icons="true" data-edges="true" data-checkboxes="false" data-opento="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome" data-finder="false"></div>
+</div></li><li class="space dropdown"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/">Home</a><span class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-caret-down"></span></span><div class="dropdown-menu">                                                                                                                                                                                            <div class="breadcrumb-tree" data-responsive="true" data-url="/xwiki/bin/get/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome?outputSyntax=plain&amp;sheet=XWiki.DocumentTree&amp;limit=10&amp;root=wiki%3Axwiki" data-root="{&quot;type&quot;:&quot;wiki&quot;,&quot;id&quot;:&quot;xwiki&quot;}" data-draganddrop="false" data-contextmenu="false" data-icons="true" data-edges="true" data-checkboxes="false" data-opento="document:xwiki:Main.WebHome" data-finder="false"></div>
+</div></li><li class="active space dropdown"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/">BLE Bluetooth Remote Configure</a><span class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-caret-down"></span></span><div class="dropdown-menu">                                                                                                                                                                                            <div class="breadcrumb-tree" data-responsive="true" data-url="/xwiki/bin/get/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome?outputSyntax=plain&amp;sheet=XWiki.DocumentTree&amp;limit=10&amp;root=document%3Axwiki%3AMain.WebHome" data-root="{&quot;type&quot;:&quot;document&quot;,&quot;id&quot;:&quot;xwiki:Main.WebHome&quot;}" data-draganddrop="false" data-contextmenu="false" data-icons="true" data-edges="true" data-checkboxes="false" data-opento="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome" data-finder="false"></div>
+</div>      </li></ol>
+    
+      
+
+
+    
+
+
+
+
+
+
+
+<div class="xcontent">
+  <div class="row document-header">
+  <div class="document-info col-xs-12 col-md-7">
+                    <div id="document-title"><h1>BLE Bluetooth Remote Configure</h1></div>
+                            <div class="xdocLastModification">
+                  Last modified by <span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/XWiki/Edwin">Edwin Chen</a></span> on 2024/02/04 11:18
+              </div>
+      </div>
+      <div class="document-menu col-xs-12 col-md-5">
+      
+
+
+    
+                                                  <div id="contentmenu" class="pull-right actionmenu">
+                                                            
+                        
+                                                            
+                                                  <div class="btn-group" id="tmMoreActions">
+    <a class="btn btn-default dropdown-toggle" title="More Actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+      <span class="fa fa-ellipsis-v"></span>
+          </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="dropdown-header">Manage</li>
+                                                                             
+                            <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?xpage=copy" id="tmActionCopy" title="Copy" rel="nofollow"><span class="fa fa-copy"></span> Copy</a>
+  </li>
+    
+            
+                                                    <li class="divider" role="separator"></li>
+                  <li class="dropdown-header">Actions</li>
+                                                                                                                                      <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/" id="tmExport" title="Export" data-toggle="modal" data-target="#exportModal"><span class="fa fa-download"></span> Export</a>
+  </li>
+      
+                         
+    <li class="tme">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#Comments" id="tmAnnotationsTrigger" title="Annotate" rel="nofollow"><span class="fa fa-edit"></span> Annotate</a>
+  </li>
+                                <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?xpage=print" id="tmPrintPreview" title="Print Preview" rel="nofollow"><span class="fa fa-print"></span> Print Preview</a>
+  </li>
+    
+            
+                                                                  <li class="divider" role="separator"></li>
+                  <li class="dropdown-header">Viewers</li>
+                                            <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?viewer=code" id="tmViewSource" title="Source" rel="nofollow"><span class="fa fa-search"></span> Source</a>
+  </li>
+        
+                  
+      <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?viewer=children" id="tmChildren" title="Children" rel="nofollow"><span class="fa fa-folder"></span> Children</a>
+  </li>
+                  
+      <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?viewer=comments" id="tmComment" title="Comments" rel="nofollow"><span class="fa fa-comment"></span> Comments</a>
+  </li>
+                    
+      <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?viewer=attachments" id="tmAttachments" title="Attachments (17)" rel="nofollow"><span class="fa fa-paperclip"></span> Attachments (17)</a>
+  </li>
+                  
+      <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?viewer=history" id="tmHistory" title="History" rel="nofollow"><span class="fa fa-clock-o"></span> History</a>
+  </li>
+                  
+      <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?viewer=information" id="tmInformation" title="Information" rel="nofollow"><span class="fa fa-info-circle"></span> Information</a>
+  </li>
+
+<script>
+  </script>
+
+
+                                                        
+    <li class="">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?viewer=likers" id="likers" title="Likes" rel="nofollow"><span class="fa fa-heart"></span> Likes</a>
+  </li>
+                        
+      </ul>
+      </div>
+              
+
+
+
+
+
+
+
+
+
+
+
+          <div class="modal fade text-left" id="exportModal" tabindex="-1" role="dialog" aria-labelledby="exportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <div class="modal-title" id="exportModalLabel">Export</div>
+        </div>
+        <div class="modal-body">
+          <div class="panel-group" id="exportModalAccordion" role="tablist" aria-multiselectable="true">
+                          <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="exportModalHeadingOffice">
+      <div class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#exportModalAccordion" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#exportModelOfficeCollapse" aria-expanded="true" aria-controls="exportModelOfficeCollapse">
+          Office Formats
+        </a>
+      </div>
+    </div>
+    <div id="exportModelOfficeCollapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="exportModalHeadingOffice">
+      <div class="panel-body">
+        <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/?xpage=pdfoptions&amp;qs=" class="btn btn-primary" rel="nofollow">Export as PDF</a>
+                      </div>
+    </div>
+  </div>
+              <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="exportModalHeadingOther">
+      <div class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#exportModalAccordion" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#exportModalOtherCollapse" aria-expanded="false" aria-controls="exportModalOtherCollapse">
+          Other Formats
+        </a>
+      </div>
+    </div>
+    <div id="exportModalOtherCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="exportModalHeadingOther">
+      <div class="panel-body xform">
+                          <p>Select the pages to export:</p>
+            <div class="export-tree-container">
+    <div class="clearfix">
+                    <div class="btn-group export-tree-filter pull-left">
+    <input type="hidden" name="filter" value="">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Select from:
+      <span class="active-filter-title">All pages</span>
+      <span class="caret"></span>
+    </button>
+      <ul class="dropdown-menu">
+          <li>
+        <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" data-filter="installedExtensionDocument">
+          <span class="text-success"><span class="fa fa-file-text-o"></span></span>
+                              <span class="export-tree-filter-title">Created pages</span>
+          <span class="xHint">The pages created by the user or by XWiki extensions on behalf of the user.</span>
+        </a>
+      </li>
+          <li>
+        <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" data-filter="pristineInstalledExtensionDocument">
+          <span class="text-warning"><span class="fa fa-file-code-o"></span></span>
+                              <span class="export-tree-filter-title">Created and modified pages</span>
+          <span class="xHint">Includes modified extension pages (usually configuration pages).</span>
+        </a>
+      </li>
+          <li class="active">
+        <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" data-filter="">
+          <span class="text-danger"><span class="fa fa-file-o"></span></span>
+                                        <span class="export-tree-filter-title">All pages</span>
+          <span class="xHint">Includes unmodified extension pages.</span>
+        </a>
+      </li>
+      </ul>
+
+  </div>
+        <div class="export-tree-actions pull-right">
+    <a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" class="export-tree-action selectAll btn btn-link">select all</a>/<a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" class="export-tree-action selectNone btn btn-link">
+      none</a>
+  </div>
+    </div>
+                                                                                                                                                                                                        <div class="export-tree jstree-no-links jstree jstree-1 jstree-xwiki jstree-xwiki-responsive jstree-checkbox-selection" data-responsive="true" data-url="/xwiki/bin/get/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome?outputSyntax=plain&amp;sheet=XWiki.ExportDocumentTree&amp;filterHiddenDocuments=false&amp;showAttachments=false&amp;showTranslations=false&amp;root=document%3Axwiki%3AMain.BLE%20Bluetooth%20Remote%20Configure.WebHome&amp;showRoot=true" data-draganddrop="false" data-contextmenu="false" data-icons="true" data-edges="true" data-checkboxes="false" data-opento="" data-finder="false" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome" aria-busy="false"><ul class="jstree-container-ul jstree-children jstree-contextmenu" role="group"><li role="none" id="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome" class="jstree-node  jstree-leaf jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor  jstree-clicked" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/" tabindex="-1" role="treeitem" aria-selected="true" aria-level="1" id="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome_anchor"><i class="jstree-icon jstree-checkbox" role="presentation"></i><i class="jstree-icon jstree-themeicon fa fa-file-text-o text-success jstree-themeicon-custom" role="presentation"></i>BLE Bluetooth Remote Configure</a></li></ul></div><div class="hidden"></div>
+      <dl class="export-tree-legend xHint">
+    <dt>Legend:</dt>
+    <dd></dd>
+    <dt class="text-success"><span class="fa fa-file-text-o"></span></dt>
+    <dd>Created Page</dd>
+    <dt class="text-warning"><span class="fa fa-file-code-o"></span></dt>
+    <dd>Modified Extension Page</dd>
+    <dt class="text-danger"><span class="fa fa-file-o"></span></dt>
+    <dd>Clean Extension Page</dd>
+  </dl>
+  </div>
+                <div class="export-buttons">
+          <a href="http://wiki.dragino.com/xwiki/bin/export/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome?format=html" class="btn btn-primary" rel="nofollow">Export as HTML</a>
+                            </div>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+            
+              
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+<hr>
+
+            
+        <div class="row">
+    <div id="xwikicontent" class="col-xs-12">
+              <p class="wikigeneratedid"><strong>Table of Contents：</strong></p><ul><li><span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#H1.Overview">1. Overview</a></span></li><li><span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#H2.SupportModels">2. Support Models</a></span></li><li><span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#H3.Howtoconnect">3. How to connect</a></span><ul><li><span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#H3.1UseGeneralSerialBluetoothTerminalinmobilephone">3.1 Use General Serial Bluetooth Terminal in mobile phone</a></span></li><li><span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#H3.2HowtousePCtoconnect3F">3.2 How to use PC to connect?</a></span></li></ul></li><li><span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#H4.AccessPasswordandCommand">4. Access Password and Command</a></span></li></ul><div class="wikimodel-emptyline"></div><div class="wikimodel-emptyline"></div><h1 id="H1.Overview" class="wikigeneratedid"><span>1. Overview</span></h1><div class="wikimodel-emptyline"></div><p>There are some new models of Dragino sensors support BLE remote configure. User can use mobile phone to configure the sensor via BLE.</p><div class="wikimodel-emptyline"></div><h1 id="H2.SupportModels" class="wikigeneratedid"><span>2. Support Models</span></h1><div class="wikimodel-emptyline"></div><p>Here list the models that support BLE and the method to activate BLE function.</p><table border="1" cellspacing="5" class="doOddEven filterable grid sortable" id="tableid" style="background-color:#f2f2f2; width:955px"><tbody><tr><td><input id="flt0_tableid" size="5" type="text" class="flt"></td><td><input id="flt1_tableid" size="5" type="text" class="flt"></td><td><input id="flt2_tableid" size="5" type="text" class="flt_s"><input id="btn2_tableid" type="button" value="Filter" class="btnflt"></td></tr><tr class="sortHeader"><th style="width: 327px; background-color: rgb(217, 226, 243);" scope="col"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" class="sortHeader" onclick="ts_resortTable(this);return false;">Models<span class="sortarrow"><img border="0" src="./BLE Bluetooth Remote Configure - DRAGINO_files/arrow-none.gif" alt="⇵"></span></a></th><th style="width: 501px; background-color: rgb(217, 226, 243);" scope="col"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" class="sortHeader" onclick="ts_resortTable(this);return false;">BLE Activate Method<span class="sortarrow"><img border="0" src="./BLE Bluetooth Remote Configure - DRAGINO_files/arrow-none.gif" alt="⇵"></span></a></th><th style="width: 125px; background-color: rgb(217, 226, 243);" scope="col"><a href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" class="sortHeader" onclick="ts_resortTable(this);return false;">Comments<span class="sortarrow"><img border="0" src="./BLE Bluetooth Remote Configure - DRAGINO_files/arrow-none.gif" alt="⇵"></span></a></th></tr><tr class=" even"><td style="width:327px"><div><p>All models with -LB, -LS , -NB, -NS suffix</p></div></td><td style="width:501px"><div><p>Device is battery power type and BLE will be only activate on below case:</p><ul><li>Press button to send an uplink</li></ul><ul><li>Press button to active device.</li></ul><ul><li>Device Power on or reset.</li></ul><p>If there is no activity connection on BLE in 60 seconds, sensor will shut down BLE module to enter low power mode.</p></div></td><td style="width:125px">&nbsp;</td></tr></tbody></table><h1 id="H3.Howtoconnect" class="wikigeneratedid"><span>3. How to connect</span></h1><h2 id="H3.1UseGeneralSerialBluetoothTerminalinmobilephone" class="wikigeneratedid"><span>3.1 Use General Serial Bluetooth Terminal in mobile phone</span></h2><div class="wikimodel-emptyline"></div><p><strong>Example tool in Andriod.</strong></p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230110142736-1.png" height="307" width="723" id="Iimage-20230110142736-1.png" class="wikigeneratedid" alt="image-20230110142736-1.png" data-original-title="" title=""></p><div class="wikimodel-emptyline"></div><p>Install in mobile and run. Go to <strong><span style="color:blue">Devices --&gt; Bluetooth LE</span></strong> and <strong><span style="color:blue">SCAN</span></strong>. FInd the correct device and connect</p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230601152415-1.png" id="Iimage-20230601152415-1.png" class="wikigeneratedid" alt="image-20230601152415-1.png" data-original-title="" title=""></p><div class="wikimodel-emptyline"></div><p>Each device has unique password named <strong>AT PIN</strong>. Input the password and you will be able to get access to the UART of the device.</p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20240204111620-1.png" id="Iimage-20240204111620-1.png" class="wikigeneratedid" alt="image-20240204111620-1.png" data-original-title="" title=""></p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230601152456-2.png" id="Iimage-20230601152456-2.png" class="wikigeneratedid" alt="image-20230601152456-2.png" data-original-title="" title=""></p><div class="wikimodel-emptyline"></div><h2 id="H3.2HowtousePCtoconnect3F" class="wikigeneratedid"><span>3.2 How to use PC to connect?</span></h2><div class="wikimodel-emptyline"></div><p>Firstly, a USB to Bluetooth host is required</p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230601152915-3.png" id="Iimage-20230601152915-3.png" class="wikigeneratedid" alt="image-20230601152915-3.png" data-original-title="" title=""></p><div class="wikimodel-emptyline"></div><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230601152950-4.png" id="Iimage-20230601152950-4.png" class="wikigeneratedid" alt="image-20230601152950-4.png" data-original-title="" title=""></p><p>Insert the Bluetooth host into the computer</p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230518151327-5.png" id="Iimage-20230518151327-5.png" class="wikigeneratedid" alt="image-20230518151327-5.png" data-original-title="" title=""></p><div class="wikimodel-emptyline"></div><p>Open the serial port assistant on the computer</p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230518145316-3.png" height="560" width="730" id="Iimage-20230518145316-3.png" class="wikigeneratedid" alt="image-20230518145316-3.png" data-original-title="" title=""></p><p>Then connect according to the operating instructions of the purchased Bluetooth host</p><p>(be careful! The AT command in this description may be different from the AT command of the Bluetooth host you purchased. Please follow the instructions for the Bluetooth host you purchased)</p><p>The Bluetooth name to be connected is the DEVEUI of the node</p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230518151444-6.png" id="Iimage-20230518151444-6.png" class="wikigeneratedid" alt="image-20230518151444-6.png" data-original-title="" title=""></p><div class="wikimodel-emptyline"></div><h1 id="H4.AccessPasswordandCommand" class="wikigeneratedid"><span>4. Access Password and Command</span></h1><div class="wikimodel-emptyline"></div><p>Each device is shipped with a label as below include <strong><span style="color:blue">6 chars AT PIN</span></strong>. this is the PIN to access the console of sensor.</p><p>For AT Commands list please refer user manual for each sensor.</p><p><img src="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20240204111711-2.png" id="Iimage-20240204111711-2.png" class="wikigeneratedid" alt="image-20240204111711-2.png" data-original-title="" title=""></p>
+          </div>
+  </div>
+</div>
+
+
+
+
+
+    <div class="clearfloats"></div>
+  </div>            <div id="xdocFooter">
+                  <div class="like-container">
+<input id="is-liked" type="hidden" value="false">
+<div class="like-button btn btn-default disabled badge" title="Number of likes on this page: 0">
+<span class="fa fa-heart"></span> <span class="like-number">0</span>
+</div>
+</div>
+                  
+         <div class="doc-tags" id="xdocTags">
+                        Tags:
+            </div>
+    
+                  <div id="xdocAuthors">
+<div class="xdocCreation"> Created by <span class="wikilink"><a href="http://wiki.dragino.com/xwiki/bin/view/XWiki/Edwin">Edwin Chen</a></span> on 2023/01/10 13:39<br>
+</div>
+</div>
+              </div>
+              <div id="xwikidata">
+      
+    
+              
+    
+    
+    
+                        
+            
+    
+    
+      
+
+  <div id="docextraanchors">
+  <span id="Commentsanchor">&nbsp;</span><span id="Attachmentsanchor">&nbsp;</span><span id="Historyanchor">&nbsp;</span><span id="Informationanchor">&nbsp;</span>  </div>
+  <div id="xwikidatacontents">
+    <div class="floatcontainer" id="docExtraTabs">
+      <ul class="xwikitabbar" id="docExtrasTabsUl">
+                  <li id="Commentstab" data-template="commentsinline.vm" class="active">
+                        <a id="Commentslink" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#Comments" rel="nofollow">
+              Comments  <span class="itemCount">(0)</span>             </a>
+          </li>
+                  <li id="Attachmentstab" data-template="attachmentsinline.vm">
+                        <a id="Attachmentslink" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#Attachments" rel="nofollow">
+              Attachments  <span class="itemCount">(17)</span>             </a>
+          </li>
+                  <li id="Historytab" data-template="historyinline.vm">
+                        <a id="Historylink" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#History" rel="nofollow">
+              History             </a>
+          </li>
+                  <li id="Informationtab" data-template="informationinline.vm">
+                        <a id="Informationlink" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#Information" rel="nofollow">
+              Information             </a>
+          </li>
+              </ul>
+    </div>
+                <div id="docextrapanes" class="">
+              <div id="Commentspane" class=""><div id="commentscontent" class="xwikiintracontent">
+  <div id="_comments">
+  <p class="noitems">No comments for this page</p>
+
+    </div>     <div class="modal fade" id="permalinkModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <div class="modal-title">Permalink</div>
+        </div>
+        <div class="modal-body">
+          <div class="input-group">
+            <div class="input-group-addon"><span class="fa fa-link"></span></div>
+            <input type="text" class="form-control" title="Permalink">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <input type="button" class="btn btn-primary" data-dismiss="modal" value="Go to permalink">
+          <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <div class="modal-title">Delete</div>
+        </div>
+        <div class="modal-body">
+          <div>Are you sure you want to remove this comment?</div>
+        </div>
+        <div class="modal-footer">
+          <input type="button" class="btn btn-danger" value="Delete" data-dismiss="modal">
+          <input type="button" class="btn btn-default" value="Cancel" data-dismiss="modal">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div></div>
+              <div id="Attachmentspane" class="hidden empty"></div>
+              <div id="Historypane" class="hidden empty"></div>
+              <div id="Informationpane" class="hidden empty"></div>
+          </div>
+                <script>
+      var hashviewer = self.document.location.hash.substring(1);
+                                                var extraInit = function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", false) };
+                if (hashviewer == "Comments") {
+          var extraInit = function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", true) };
+        }
+                                if ($("Commentslink") != null) {
+          $("Commentslink").href="#Comments";
+          Event.observe($("Commentslink"), "click", function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", false); }, false);
+        }
+                                if ($("tmShowComments") != null) {
+          $("tmShowComments").href="#Comments";
+          Event.observe($("tmShowComments"), "click", function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", true); }, false);
+        }
+                                if ($("commentsshortcut") != null) {
+          $("commentsshortcut").down('a').href="#comments";
+          Event.observe($("commentsshortcut"), "click", function(){ XWiki.displayDocExtra("Comments", "commentsinline.vm", true); }, false);
+        }
+                                                                              if (hashviewer == "Attachments") {
+          var extraInit = function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", true) };
+        }
+                                if ($("Attachmentslink") != null) {
+          $("Attachmentslink").href="#Attachments";
+          Event.observe($("Attachmentslink"), "click", function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", false); }, false);
+        }
+                                if ($("tmShowAttachments") != null) {
+          $("tmShowAttachments").href="#Attachments";
+          Event.observe($("tmShowAttachments"), "click", function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", true); }, false);
+        }
+                                if ($("attachmentsshortcut") != null) {
+          $("attachmentsshortcut").down('a').href="#attachments";
+          Event.observe($("attachmentsshortcut"), "click", function(){ XWiki.displayDocExtra("Attachments", "attachmentsinline.vm", true); }, false);
+        }
+                                                                              if (hashviewer == "History") {
+          var extraInit = function(){ XWiki.displayDocExtra("History", "historyinline.vm", true) };
+        }
+                                if ($("Historylink") != null) {
+          $("Historylink").href="#History";
+          Event.observe($("Historylink"), "click", function(){ XWiki.displayDocExtra("History", "historyinline.vm", false); }, false);
+        }
+                                if ($("tmShowHistory") != null) {
+          $("tmShowHistory").href="#History";
+          Event.observe($("tmShowHistory"), "click", function(){ XWiki.displayDocExtra("History", "historyinline.vm", true); }, false);
+        }
+                                if ($("historyshortcut") != null) {
+          $("historyshortcut").down('a').href="#history";
+          Event.observe($("historyshortcut"), "click", function(){ XWiki.displayDocExtra("History", "historyinline.vm", true); }, false);
+        }
+                                                                              if (hashviewer == "Information") {
+          var extraInit = function(){ XWiki.displayDocExtra("Information", "informationinline.vm", true) };
+        }
+                                if ($("Informationlink") != null) {
+          $("Informationlink").href="#Information";
+          Event.observe($("Informationlink"), "click", function(){ XWiki.displayDocExtra("Information", "informationinline.vm", false); }, false);
+        }
+                                if ($("tmShowInformation") != null) {
+          $("tmShowInformation").href="#Information";
+          Event.observe($("tmShowInformation"), "click", function(){ XWiki.displayDocExtra("Information", "informationinline.vm", true); }, false);
+        }
+                                if ($("informationshortcut") != null) {
+          $("informationshortcut").down('a').href="#information";
+          Event.observe($("informationshortcut"), "click", function(){ XWiki.displayDocExtra("Information", "informationinline.vm", true); }, false);
+        }
+                                            document.observe("dom:loaded", extraInit, false);
+    </script>
+  </div> </div>  
+        </div>  </div><div id="leftPanels" class="panels left panel-width-Medium">
+      <div class="panel expanded PanelsApplications Applications"><h1 class="xwikipaneltitle">Applications</h1><div class="xwikipanelcontents"><ul class="applicationsPanel nav nav-pills nav-stacked">
+<li>
+<a href="http://wiki.dragino.com/xwiki/bin/view/Help/" title="Help">
+<span class="application-img"><span class="fa fa-question-circle"></span></span>
+<span class="application-label">Help</span>
+</a>
+</li>
+</ul>
+<ul class="applicationsPanel applicationsPanelMoreList nav nav-pills nav-stacked" style="display: none;">
+<li>
+<a class="applicationPanelMoreButton" href="http://wiki.dragino.com/xwiki/bin/admin/XWiki/XWikiPreferences?editor=globaladmin&amp;section=XWiki.AddExtensions" title="More applications">
+<span class="application-img"><span class="fa fa-plus"></span></span>
+<span class="application-label">More applications</span>
+</a>
+<div class="applicationPanelMoreContainer hidden">
+<ul class="nav nav-pills nav-stacked">
+</ul>
+</div>
+</li>
+</ul></div></div>
+        <div class="panel expanded PanelsNavigation Navigation"><h1 class="xwikipaneltitle">Navigation</h1><div class="xwikipanelcontents">
+
+
+
+
+
+
+
+                                                                                                                                                                                                <div class="xtree jstree jstree-2 jstree-xwiki jstree-xwiki-responsive" data-responsive="true" data-url="/xwiki/bin/get/Main/BLE%20Bluetooth%20Remote%20Configure/WebHome?outputSyntax=plain&amp;sheet=XWiki.DocumentTree&amp;showAttachments=false&amp;showTranslations=false&amp;exclusions=document%3Axwiki%3ASandbox.WebHome&amp;exclusions=document%3Axwiki%3AHelp.WebHome&amp;exclusions=document%3Axwiki%3AXWiki.WebHome" data-draganddrop="false" data-contextmenu="false" data-icons="false" data-edges="false" data-checkboxes="false" data-opento="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome" data-finder="false" role="tree" aria-multiselectable="true" tabindex="0" aria-activedescendant="document:xwiki:Azure IoT.WebHome" aria-busy="false"><ul class="jstree-container-ul jstree-children jstree-no-dots jstree-no-icons" role="group"><li role="none" id="document:xwiki:Azure IoT.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Azure%20IoT/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="1" id="document:xwiki:Azure IoT.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Azure IoT</a></li><li role="none" id="document:xwiki:BACnet.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/BACnet/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="1" id="document:xwiki:BACnet.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>BACnet</a></li><li role="none" id="document:xwiki:Main.WebHome" class="jstree-node jstree-open" aria-busy="false"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="1" aria-expanded="true" id="document:xwiki:Main.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Home</a><ul role="group" class="jstree-children"><li role="none" id="document:xwiki:Main. Switch LoRaWAN server by rejoin feature.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/%20Switch%20LoRaWAN%20server%20by%20rejoin%20feature/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main. Switch LoRaWAN server by rejoin feature.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i> Switch LoRaWAN server by rejoin feature</a></li><li role="none" id="document:xwiki:Main.Add GPS Support in LG308.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Add%20GPS%20Support%20in%20LG308/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Add GPS Support in LG308.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Add GPS Support in LG308N / LPS8v2</a></li><li role="none" id="document:xwiki:Main.AllThingsTalk.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/AllThingsTalk/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.AllThingsTalk.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>AllThingsTalk</a></li><li role="none" id="document:xwiki:Main.Application Note \: Communicate with Different Sensors ----- RS485-LN  RS485-BL.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Application%20Note%20%3A%20Communicate%20with%20Different%20Sensors%20-----%20RS485-LN%20%20RS485-BL/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Application Note \: Communicate with Different Sensors ----- RS485-LN  RS485-BL.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Application Note : Communicate with Different Sensors ----- RS485-LN / RS485-BL</a></li><li role="none" id="document:xwiki:Main.Armbian OS instruction.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Armbian%20OS%20instruction/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Armbian OS instruction.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Armbian OS instruction</a></li><li role="none" id="document:xwiki:Main.Auto Provision.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Auto%20Provision/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Auto Provision.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Auto Provision</a></li><li role="none" id="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor jstree-clicked" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/" tabindex="-1" role="treeitem" aria-selected="true" aria-level="2" id="document:xwiki:Main.BLE Bluetooth Remote Configure.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>BLE Bluetooth Remote Configure</a></li><li role="none" id="document:xwiki:Main.BLE_Firmware_Update_NB_Sensors_BC660K-GL.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE_Firmware_Update_NB_Sensors_BC660K-GL/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.BLE_Firmware_Update_NB_Sensors_BC660K-GL.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>BLE_Firmware_Update_NB_Sensors_BC660K-GL</a></li><li role="none" id="document:xwiki:Main.LDS01 Source Code.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/LDS01%20Source%20Code/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.LDS01 Source Code.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Can i get the source code for LDS01/LWL01?</a></li><li role="none" id="document:xwiki:Main.LHT65 Source Code.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/LHT65%20Source%20Code/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.LHT65 Source Code.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Can i get the source code for LHT65?</a></li><li role="none" id="document:xwiki:Main.Can I use an external power adapter or solar panel to power LSN50v2?.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Can%20I%20use%20an%20external%20power%20adapter%20or%20solar%20panel%20to%20power%20LSN50v2%3F/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Can I use an external power adapter or solar panel to power LSN50v2?.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Can I use an external power adapter or solar panel to power motherboard?</a></li><li role="none" id="document:xwiki:Main.Notes for cellular network connection.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Notes%20for%20cellular%20network%20connection/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Notes for cellular network connection.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Cellular network connection details and tips</a></li><li role="none" id="document:xwiki:Main.Challenge to make a LoRaWAN Repeater.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Challenge%20to%20make%20a%20LoRaWAN%20Repeater/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Challenge to make a LoRaWAN Repeater.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Challenge to make a LoRaWAN Repeater</a></li><li role="none" id="document:xwiki:Main.Change Gateway Power.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Change%20Gateway%20Power/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Change Gateway Power.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Change Gateway Power</a></li><li role="none" id="document:xwiki:Main.Check List for UART access issue -- STM32.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/Check%20List%20for%20UART%20access%20issue%20--%20STM32/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="document:xwiki:Main.Check List for UART access issue -- STM32.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Check List for UART access issue -- STM32</a></li><li role="none" id="pagination:document:xwiki:Main.WebHome" class="jstree-node  jstree-leaf jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/#" tabindex="-1" role="treeitem" aria-selected="false" aria-level="2" id="pagination:document:xwiki:Main.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-eye jstree-themeicon-custom" role="presentation"></i>86 more ...</a></li></ul></li><li role="none" id="document:xwiki:OTA Update.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/OTA%20Update/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="1" id="document:xwiki:OTA Update.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>OTA Auto Update For Gateway Firmware</a></li><li role="none" id="document:xwiki:Tanix.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/Tanix/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="1" id="document:xwiki:Tanix.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Tanix</a></li><li role="none" id="document:xwiki:LoRaWAN Gateway version with Wireguard Support.WebHome" class="jstree-node  jstree-leaf"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/LoRaWAN%20Gateway%20version%20with%20Wireguard%20Support/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="1" id="document:xwiki:LoRaWAN Gateway version with Wireguard Support.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>Use Wireguard VPN in Dragino Gateways</a></li><li role="none" id="document:xwiki:What port should i open in router to allow Gateway for IoT Connection?.WebHome" class="jstree-node  jstree-leaf jstree-last"><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="http://wiki.dragino.com/xwiki/bin/view/What%20port%20should%20i%20open%20in%20router%20to%20allow%20Gateway%20for%20IoT%20Connection%3F/" tabindex="-1" role="treeitem" aria-selected="false" aria-level="1" id="document:xwiki:What port should i open in router to allow Gateway for IoT Connection?.WebHome_anchor"><i class="jstree-icon jstree-themeicon fa fa-file-o jstree-themeicon-custom" role="presentation"></i>What port should i open in router to allow Gateway for IoT Connection?</a></li></ul></div></div></div>
+  </div>
+
+  </div>
+<div class="clearfloats"></div>
+  </div></div><div id="footerglobal">
+  <div id="xwikilicence">Copyright ©2010-2022 Dragino Technology Co., LTD. All rights reserved</div>
+              <div id="xwikiplatformversion">Dragino Wiki v2.0</div>
+  </div>
+
+</div></div>
+<!-- The Gallery lightbox dialog. -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" aria-label="Image gallery" aria-modal="true" role="dialog">
+<div class="slides" aria-live="polite"></div>
+<a class="prev" aria-controls="blueimp-gallery" aria-label="Previous image" title="Previous image" aria-keyshortcuts="ArrowLeft"></a>
+<a class="next" aria-controls="blueimp-gallery" aria-label="Next image" title="Next image" aria-keyshortcuts="ArrowRight"></a>
+<div class="controls btn-group">
+<a class="btn fullscreen" id="lightboxFullscreen" aria-controls="blueimp-gallery" aria-label="Fullscreen" title="Fullscreen" aria-keyshortcuts="F11"><span class="fa fa-arrows-alt"></span></a>
+<a class="btn download" id="lightboxDownload" aria-controls="blueimp-gallery" target="_blank" aria-label="Download" title="Download" href="./BLE Bluetooth Remote Configure - DRAGINO_files/image-20230110142736-1.png" download="image-20230110142736-1.png"><span class="fa fa-download"></span></a>
+<a class="btn autoPlay" aria-controls="blueimp-gallery" aria-label="Slideshow" title="Slideshow" aria-keyshortcuts="Space" aria-pressed="false"><span class="fa fa-play"></span></a>
+<a class="btn escape" aria-controls="blueimp-gallery" aria-label="Escape" title="Escape" aria-keyshortcuts="Escape"><span class="fa fa-times"></span></a>
+</div>
+<div class="lightboxDescription">
+<div class="caption" aria-label="Caption"></div>
+<div class="descriptionMetadata">
+<span class="title" aria-label="File name"></span>
+<div class="descriptionRow">
+<span class="publisher" aria-label="Image publisher"></span>
+<span class="date" data-dateformat="yyyy/MM/dd HH:mm" aria-label="Date"></span>
+</div>
+</div>
+</div>
+<ol class="indicator"></ol>
+</div>
+<!-- The image toolbar popover template. -->
+<div id="imageToolbarTemplate">
+<div class="btn-group imageToolbar" hidden="">
+<a class="openLightbox" title="Image gallery">
+<span class="fa fa-arrows-alt"></span>
+</a>
+<a class="imageDownload" target="_blank" title="Download">
+<span class="fa fa-download"></span>
+</a>
+</div>
+</div><div class="drawer-overlay drawer-toggle"></div><form id="export-modal-form" method="post"></form></body></html>

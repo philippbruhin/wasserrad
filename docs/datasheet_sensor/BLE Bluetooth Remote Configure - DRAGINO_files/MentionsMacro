@@ -1,0 +1,1 @@
+.xwiki-mention{background-color:rgba(194,194,194,0.8);border-radius:8px;padding:2px 5px 2px 5px}.xwiki-mention.user.self{background-color:rgba(255,0,1,0.5)}.xwiki-mention.removed{text-decoration:line-through}blockquote.mention-quote{font-size:inherit}

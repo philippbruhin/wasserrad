@@ -11,9 +11,9 @@ Inhalt
         1. [Messung der Geschwindigket](#131-messung-der-geschwindigket)
     4. [Drehzahl des Wasserrades bestimmen](#14-drehzahl-des-wasserrades-bestimmen)
         1. [Drehzahl berechnen](#141-drehzahl-berechnen)
-3. [Konstruktion und Bau](#3-konstruktion-und-bau)
-4. [Rundenzähler-Sensor](#4-rundenzähler-sensor)
-5. [Webseite und Online-Quiz](#5-webseite-und-online-quiz)
+2. [Konstruktion und Bau](#2-konstruktion-und-bau)
+3. [Rundenzähler-Sensor](#3-rundenzähler-sensor)
+4. [Webseite und Online-Quiz](#4-webseite-und-online-quiz)
 
 ## 1. Typ und Grösse des Rades bestimmen
 
@@ -171,7 +171,7 @@ nMin = n * 60                 % 14.747
 
 > ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl **14.7 Umdrehungen pro Minute**.
 
-## 3. Konstruktion und Bau
+## 2. Konstruktion und Bau
 
 ToDo: Beschreibung
 
@@ -179,11 +179,24 @@ ToDo: Beschreibung
 
 ![Ständer](./docs/images/Staender.drawio.svg)
 
-## 4. Rundenzähler-Sensor
+## 3. Rundenzähler-Sensor
 
 ToDo
 
-## 5. Webseite und Online-Quiz
+[bastelgarage.ch](https://www.bastelgarage.ch/)
+
+[SN50V3-LB LoRaWAN Sensor Node 868MHz](https://www.bastelgarage.ch/lora/lora-sensoren/sn50v3-lb-lorawan-sensor-node-868mhz)
+
+[Dragino Wiki SN50v3-LB](http://wiki.dragino.com/xwiki/bin/view/Main/User%20Manual%20for%20LoRaWAN%20End%20Nodes/SN50v3-LB/)
+
+[Dragino Wiki Bluetooth Remote Configure](http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/)
+
+1. Um den Sensor via Bloetooth zu konfigurieren, muss man die Android-App [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) herunterladen.
+2. Beim Verbinden muss der PIN eingegeben werden, welchen man auf der Packung findet.
+3. Mit dem Befehl `AT+MOD=?` wird der Mode zurückgegeben. Standarmässig ist dieser 1. Mit dem Befehl `AT+MOD=6` kann man den Mode auf "Counting Mode" wechseln. Danach muss man noch `ATZ` senden, damit der Sensor neu bootet und die Änderungen greifen.
+4. Mit dem Befehl `AT+TDC=?` gibt der Sensor seinen aktuellen Übertragungsintervall an. Dieser ist Standardmässig 20 Minuten (1'200'000ms). Mit `AT+TDC=600000` kann man das Intervall auf 10 Minuten runtersetzen.
+
+## 4. Webseite und Online-Quiz
 
 Am dem Wasserrad gibt es ein QR-Code, welcher auf folgende Quiz-Webseite verweist:
 
@@ -194,7 +207,7 @@ Ohne Programmierkentnisse ist es allenfalls etwas schwierig, die Webseite nachzu
 Um die Seite lokal auf dem Rechner laufen zu lassen, muss [Node.js](https://nodejs.org/en) in der Version `v20.11.0` installiert sein. Danach kann man folgende Befehle eingeben in der Kommandozeile:
 
 1. Packages installieren mittels Befehl `npm install`
-2. Datei `env.example` kopieren und zu `env.local` umbenennen. Enviroment Variabeln von [The Things STack Cloud Discovery](https://www.thethingsindustries.com/) einfügen.
+2. Datei `env.example` kopieren und zu `env.local` umbenennen. Enviroment Variabeln von [The Things Stack Cloud Discovery](https://www.thethingsindustries.com/) einfügen.
 3. Projekt im Entwicklungsmodus starten via `npm run dev`
 4. Produktions-Build erstellen mittels `npm run build`. Achtung, zuvor müssen auch hier noch die Enviroment Variablen gesetzt werden unter "Settings".
 

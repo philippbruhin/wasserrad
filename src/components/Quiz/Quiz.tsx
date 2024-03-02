@@ -109,7 +109,7 @@ function Quiz() {
        :
         <>
           {!isImageLoaded && questions.image && (
-            <ImagePreloader />
+            <Preloader />
           )}
           {questions.image && (
             <figure>
