@@ -189,7 +189,7 @@ Der Reed-Kontakt schaltet bei jeder Umdrehung des Rades einmal. Der LoRaWAN-Node
 
 Der Reed-Kontakt wird an den Pins `VDD` und `PA8` angeschlossen:
 
-![Dragino Sensor Pins](./docs/images/2024-03-03_Dragino_Sensor.png)
+![Dragino Sensor Pins](./docs/images/2024-03-03_Dragino_Sensor.png)  
 *Foto von Dragino aus der Anleitung des Nodes SN50v3-LB*
 
 Den Sensor wurde auf [bastelgarage.ch](https://www.bastelgarage.ch/) erworben für CHF 64.90. Die Anleitung gibt es in diesem Repo unter [Docs > datasheet_sensor](./docs/datasheet_sensor/) (Stand März 2024) oder auf der [Webseite des Herstellers](http://wiki.dragino.com/xwiki/bin/view/Main/User%20Manual%20for%20LoRaWAN%20End%20Nodes/SN50v3-LB/).
