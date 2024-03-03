@@ -14,6 +14,7 @@ Inhalt
 2. [Konstruktion und Bau](#2-konstruktion-und-bau)
 3. [Rundenzähler-Sensor](#3-rundenzähler-sensor)
     1. [Dragino SN50v3-LB Sensor konfigurieren](#31-dragino-sn50v3-lb-sensor-konfigurieren)
+    2. [The Things Network Cloud](#32-the-things-network-cloud)
 4. [Webseite und Online-Quiz](#4-webseite-und-online-quiz)
 
 ## 1. Typ und Grösse des Rades bestimmen
@@ -182,31 +183,44 @@ ToDo: Beschreibung
 
 ## 3. Rundenzähler-Sensor
 
+Um die Drehzahl des Wasserrades zu messen, respektive um zu eruieren, ob der Mühlebach Wasser führt, wird ein LoRaWAN-Node verwendet, an welchem ein Reed-Kontakt (kontaktloser, magnetischer Schalter) angeschlossen ist.
+
+Der Reed-Kontakt schaltet bei jeder Umdrehung des Rades einmal. Der LoRaWAN-Node ([SN50V3-LB LoRaWAN Sensor Node 868MHz](https://www.bastelgarage.ch/lora/lora-sensoren/sn50v3-lb-lorawan-sensor-node-868mhz)) zählt die Schaltungen und sendet diese alle 10 Minuten an einen Server von [The Things Industries](https://www.thethingsindustries.com/), auf welchem die Zählerdaten der letzten 30 Tage gespeichert werden.
+
+Der Reed-Kontakt wird an den Pins `VDD` und `PA8` angeschlossen:
+
 ![Dragino Sensor Pins](./docs/images/2024-03-03_Dragino_Sensor.png)
+*Foto von Dragino aus der Anleitung des Nodes SN50v3-LB*
 
-[bastelgarage.ch](https://www.bastelgarage.ch/)
-
-[SN50V3-LB LoRaWAN Sensor Node 868MHz](https://www.bastelgarage.ch/lora/lora-sensoren/sn50v3-lb-lorawan-sensor-node-868mhz)
-
-[Dragino Wiki SN50v3-LB](http://wiki.dragino.com/xwiki/bin/view/Main/User%20Manual%20for%20LoRaWAN%20End%20Nodes/SN50v3-LB/)
+Den Sensor wurde auf [bastelgarage.ch](https://www.bastelgarage.ch/) erworben für CHF 64.90. Die Anleitung gibt es in diesem Repo unter [Docs > datasheet_sensor](./docs/datasheet_sensor/) (Stand März 2024) oder auf der [Webseite des Herstellers](http://wiki.dragino.com/xwiki/bin/view/Main/User%20Manual%20for%20LoRaWAN%20End%20Nodes/SN50v3-LB/).
 
 ### 3.1 Dragino SN50v3-LB Sensor konfigurieren
 
-Um den Sensor via Bluetooth zu konfigurieren, muss man die Android-App [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) herunterladen. Mit dieser App kann man in einem Terminal den Status des Sensors abfragen sowie die Konfiguration ändern.
+Um den Sensor via Bluetooth zu konfigurieren, muss man die Android-App [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) herunterladen. Mit dieser App kann man in einem Terminal den Status des Sensors abfragen sowie die Default-Konfiguration überschreiben.
 
 1. Beim Verbinden muss der AT-PIN eingegeben werden, welchen man auf der Packung des Dragino Sensors findet.
-2. Mit dem Befehl `AT+MOD=?` wird der eingestellte Mode zurückgegeben. Standarmässig ist dieser `MOD=1 (Default Mode)`. Mit dem Befehl `AT+MOD=6` kann man den Modus auf "Counting Mode" wechseln. Danach muss man noch `ATZ` senden, damit der Sensor neu bootet und die Änderungen greifen.
-3. Mit dem Befehl `AT+TDC=?` gibt der Sensor seinen aktuellen Übertragungsintervall an. Dieser ist Standardmässig 20 Minuten (1'200'000ms). Mit `AT+TDC=600000` kann man das Intervall auf 10 Minuten runtersetzen.
+2. Mit dem Befehl `AT+MOD=?` wird der eingestellte Mode zurückgegeben. Standarmässig ist dieser `MOD=1 (Default Mode)`. Mit dem Befehl `AT+MOD=6` kann man den Modus auf "Counting Mode" wechseln. Anschliessend muss man `ATZ` senden, damit der Sensor neu bootet und die Änderungen greifen.
+3. Mit dem Befehl `AT+TDC=?` gibt der Sensor seinen Übertragungsintervall an. Dieser ist standardmässig 20 Minuten (1'200'000 ms). Mit `AT+TDC=600000` kann man das Intervall auf 10 Minuten reduzieren.
 
-Mehr Infos zur Konfiguration (Stand März 2024) gibt es in diesem Repo unter [Docs > datasheet_sensor](./docs/datasheet_sensor/). Die aktuelle Config gibt es auf der Webseite des Herstellers: [Dragino Wiki Bluetooth Remote Configure](http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/).
+Mehr Infos zur Konfiguration gibt es in diesem Repo unter [Docs > datasheet_sensor](./docs/datasheet_sensor/) (Stand März 2024). Die aktuelle Konfigurationsanleitung gibt es auf der Webseite des Herstellers: [Dragino Wiki Bluetooth Remote Configure](http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/).
 
 ### 3.2 The Things Network Cloud
 
-Auf [The Things Industries](https://www.thethingsindustries.com/) kann man sich einen Account anlegen und eine Applikation erstellen sowie den Sensore eintragen. Er meldes sich anschliessend selbständig an und sendet Daten, welche in der kostenlosen Version von TTN für 30 Tage gespeichert werden.
+Auf [The Things Industries](https://www.thethingsindustries.com/) kann man sich einen Account anlegen, eine Applikation erstellen und den Sensor eintragen. Er meldes sich anschliessend selbständig an und sendet Daten, welche in der kostenlosen Version von TTN für 30 Tage gespeichert und visualisiert werden.
 
 ![Screenshot TTN](./docs/images/2024-03-03_Screenshot_The_Things_Stack_Cloud_Discovery.png)
 
 Damit die Rückgabewerte des Sensors lesbar dargestellt werden, kann man unter `Payload formatters` > `Uplink` den JavaScript Code von [hier](./docs/markdown/payload_formater.md) hinterlegen.
+
+Möchte man die Daten einer Webseite zur Verfügung stellen, kann man dies unter `Integrations` > `Storage Integration` tun wie im folgenden Screenshot gezeigt.
+
+![Screenshot TTN Storage Integration](./docs/images/2024-03-03_Screenshot_The_Things_Stack_Storage_Integration.png)
+
+Zusätzlich muss man einen API-Key erstellen, damit die Daten vom TTN Portal abgefragt werden können.
+
+![Screenshot TTN API Key](./docs/images/2024-03-03_Screenshot_The_Things_Stack_API_Key.png)
+
+> Achtung, es wird hier keine REST-API zur Verfügung gestellt, sondern nur ein String. Falls man die Daten auf einer Webseite präsentieren möchte, muss man somit aus dem String zuerst JSON-Objekte erstellen.
 
 ## 4. Webseite und Online-Quiz
 
