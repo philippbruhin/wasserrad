@@ -13,6 +13,7 @@ Inhalt
         1. [Drehzahl berechnen](#141-drehzahl-berechnen)
 2. [Konstruktion und Bau](#2-konstruktion-und-bau)
 3. [Rundenzähler-Sensor](#3-rundenzähler-sensor)
+    1. [Dragino SN50v3-LB Sensor konfigurieren](#31-dragino-sn50v3-lb-sensor-konfigurieren)
 4. [Webseite und Online-Quiz](#4-webseite-und-online-quiz)
 
 ## 1. Typ und Grösse des Rades bestimmen
@@ -181,7 +182,7 @@ ToDo: Beschreibung
 
 ## 3. Rundenzähler-Sensor
 
-ToDo
+![Dragino Sensor Pins](./docs/images/2024-03-03_Dragino_Sensor.png)
 
 [bastelgarage.ch](https://www.bastelgarage.ch/)
 
@@ -189,12 +190,23 @@ ToDo
 
 [Dragino Wiki SN50v3-LB](http://wiki.dragino.com/xwiki/bin/view/Main/User%20Manual%20for%20LoRaWAN%20End%20Nodes/SN50v3-LB/)
 
-[Dragino Wiki Bluetooth Remote Configure](http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/)
+### 3.1 Dragino SN50v3-LB Sensor konfigurieren
 
-1. Um den Sensor via Bluetooth zu konfigurieren, muss man die Android-App [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) herunterladen.
-2. Beim Verbinden muss der AT-PIN eingegeben werden, welchen man auf der Packung des Dragino Sensors findet.
-3. Mit dem Befehl `AT+MOD=?` wird der Mode zurückgegeben. Standarmässig ist dieser 1. Mit dem Befehl `AT+MOD=6` kann man den Mode auf "Counting Mode" wechseln. Danach muss man noch `ATZ` senden, damit der Sensor neu bootet und die Änderungen greifen.
-4. Mit dem Befehl `AT+TDC=?` gibt der Sensor seinen aktuellen Übertragungsintervall an. Dieser ist Standardmässig 20 Minuten (1'200'000ms). Mit `AT+TDC=600000` kann man das Intervall auf 10 Minuten runtersetzen.
+Um den Sensor via Bluetooth zu konfigurieren, muss man die Android-App [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) herunterladen. Mit dieser App kann man in einem Terminal den Status des Sensors abfragen sowie die Konfiguration ändern.
+
+1. Beim Verbinden muss der AT-PIN eingegeben werden, welchen man auf der Packung des Dragino Sensors findet.
+2. Mit dem Befehl `AT+MOD=?` wird der eingestellte Mode zurückgegeben. Standarmässig ist dieser `MOD=1 (Default Mode)`. Mit dem Befehl `AT+MOD=6` kann man den Modus auf "Counting Mode" wechseln. Danach muss man noch `ATZ` senden, damit der Sensor neu bootet und die Änderungen greifen.
+3. Mit dem Befehl `AT+TDC=?` gibt der Sensor seinen aktuellen Übertragungsintervall an. Dieser ist Standardmässig 20 Minuten (1'200'000ms). Mit `AT+TDC=600000` kann man das Intervall auf 10 Minuten runtersetzen.
+
+Mehr Infos zur Konfiguration (Stand März 2024) gibt es in diesem Repo unter [Docs > datasheet_sensor](./docs/datasheet_sensor/). Die aktuelle Config gibt es auf der Webseite des Herstellers: [Dragino Wiki Bluetooth Remote Configure](http://wiki.dragino.com/xwiki/bin/view/Main/BLE%20Bluetooth%20Remote%20Configure/).
+
+### 3.2 The Things Network Cloud
+
+Auf [The Things Industries](https://www.thethingsindustries.com/) kann man sich einen Account anlegen und eine Applikation erstellen sowie den Sensore eintragen. Er meldes sich anschliessend selbständig an und sendet Daten, welche in der kostenlosen Version von TTN für 30 Tage gespeichert werden.
+
+![Screenshot TTN](./docs/images/2024-03-03_Screenshot_The_Things_Stack_Cloud_Discovery.png)
+
+Damit die Rückgabewerte des Sensors lesbar dargestellt werden, kann man unter `Payload formatters` > `Uplink` den JavaScript Code von [hier](./docs/markdown/payload_formater.md) hinterlegen.
 
 ## 4. Webseite und Online-Quiz
 
