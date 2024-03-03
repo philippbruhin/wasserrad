@@ -183,7 +183,7 @@ ToDo: Beschreibung
 
 ## 3. Rundenzähler-Sensor
 
-Um die Drehzahl des Wasserrades zu messen, respektive um zu eruieren, ob der Mühlebach Wasser führt, wird ein LoRaWAN-Node verwendet, an welchem ein Reed-Kontakt (kontaktloser, magnetischer Schalter) angeschlossen ist.
+Um die Drehzahl des Wasserrades zu messen, respektive um zu eruieren, ob der Mühlebach Wasser führt, wird ein LoRaWAN Sensor Node verwendet, an welchem ein Reed-Kontakt (kontaktloser, magnetischer Schalter) angeschlossen ist.
 
 Der Reed-Kontakt schaltet bei jeder Umdrehung des Rades einmal. Der LoRaWAN-Node ([SN50V3-LB LoRaWAN Sensor Node 868MHz](https://www.bastelgarage.ch/lora/lora-sensoren/sn50v3-lb-lorawan-sensor-node-868mhz)) zählt die Schaltungen und sendet diese alle 10 Minuten an einen Server von [The Things Industries](https://www.thethingsindustries.com/), auf welchem die Zählerdaten der letzten 30 Tage gespeichert werden.
 
