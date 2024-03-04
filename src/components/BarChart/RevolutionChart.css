@@ -1,0 +1,7 @@
+.recharts-tooltip-wrapper p,
+.recharts-tooltip-wrapper ul,
+.recharts-tooltip-wrapper li {
+      margin:0;
+      padding: 0;
+      text-align: left;
+}

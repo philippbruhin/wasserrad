@@ -45,12 +45,16 @@ export async function ttnDataFetcher() {
         },
         params: {
           'f_port': 2,
+          'order': '-received_at',
           'field_mask': 'up.uplink_message.decoded_payload',
-          'after': '2020-08-20T00:00:00Z'
+          'limit': 1008,
         }
     });
 
-    const jsonStringsArray: string[] = response.data.trim().split('\n\n'); // Assuming each JSON object is on a new line
+    const jsonStringsArray: string[] = response.data
+      .trim()
+      .split('\n\n') // Assuming each JSON object is on a new line
+      .reverse();    // Reverse the since fetch is -received_at
 
     const sensorData: SensorData = {
       entries: []
