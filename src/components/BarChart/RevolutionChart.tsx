@@ -10,19 +10,15 @@ import {
 import type { SensorData } from '../../lib/ttnDataFetcher';
 
 export default function RevolutionChart(data: SensorData) {
-  console.log('data:', data);
-  const chartData = Array.isArray(data)
-  ? data.map((entry) => ({
-      time: new Date(entry.uplink_message.received_at).toLocaleTimeString(),
-      count: entry.uplink_message.decoded_payload.Count || 0,
-    }))
-  : [];
-  console.log('chartData:', chartData);
+  const transformedData = data.result.map(item => ({
+    time: new Date(item.received_at).toLocaleString(),
+    count: item.uplink_message.decoded_payload.Count
+  }));
   return (
     <BarChart
       width={500}
       height={300}
-      data={chartData}
+      data={transformedData}
       margin={{
         top: 5,
         right: 30,
