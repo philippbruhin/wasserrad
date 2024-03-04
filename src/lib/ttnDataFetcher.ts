@@ -1,31 +1,35 @@
 import axios from 'axios';
 
 export type SensorData = {
-  result: Result[];
-};
+  entries:        Entry[];
+}
+
+export type Entry = {
+  result:         Result;
+}
 
 export type Result = {
-  end_device_ids: EndDeviceIds;
-  received_at: string;
+  end_device_ids: EndDeviceIDS;
+  received_at:    Date;
   uplink_message: UplinkMessage;
 }
 
-export type EndDeviceIds = {
+export type EndDeviceIDS = {
   device_id: string;
 }
 
 export type UplinkMessage = {
   decoded_payload: DecodedPayload;
-  received_at: string;
+  received_at:     Date;
 }
 
 export type DecodedPayload = {
-  ADC_CH0V: number;
-  BatV: number;
-  Count: number;
+  ADC_CH0V:        number;
+  BatV:            number;
+  Count:           number;
   Digital_IStatus: string;
-  TempC1: string;
-  Work_mode: string;
+  TempC1:          string;
+  Work_mode:       string;
 }
 
 export async function ttnDataFetcher() {
@@ -49,13 +53,16 @@ export async function ttnDataFetcher() {
     const jsonStringsArray: string[] = response.data.trim().split('\n\n'); // Assuming each JSON object is on a new line
 
     const sensorData: SensorData = {
-      result: [],
+      entries: []
     };
     
     jsonStringsArray.forEach((jsonString: string) => {
       try {
-        const jsonObject: Result = JSON.parse(jsonString);
-        sensorData.result.push(jsonObject);
+        const jsonObject: Result = JSON.parse(jsonString).result;
+        const sensorDataEntry: Entry = {
+          result: jsonObject
+        };
+        sensorData.entries.push(sensorDataEntry);
       } catch (error) {
         throw new Error(`Error parsing JSON: ${error}`);
       }

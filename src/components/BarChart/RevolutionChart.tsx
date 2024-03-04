@@ -5,33 +5,49 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  ResponsiveContainer,
+  Label,
 } from "recharts";
-import type { SensorData } from '../../lib/ttnDataFetcher';
+import type { SensorData } from "../../lib/ttnDataFetcher";
 
 export default function RevolutionChart(data: SensorData) {
-  const transformedData = data.result.map(item => ({
-    time: new Date(item.received_at).toLocaleString(),
-    count: item.uplink_message.decoded_payload.Count
-  }));
+  let previousCount = 0;
+
+  const transformedData = data.entries.map((item) => {
+    const currentCount = item.result.uplink_message.decoded_payload.Count;
+    const countDifference = currentCount - previousCount;
+    previousCount = currentCount;
+
+    return {
+      time: new Date(item.result.uplink_message.received_at).toLocaleDateString(
+        "de-CH"
+      ),
+      count: countDifference,
+    };
+  });
+
   return (
-    <BarChart
-      width={500}
-      height={300}
-      data={transformedData}
-      margin={{
-        top: 5,
-        right: 30,
-        left: 20,
-        bottom: 5
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="time" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="count" fill="#8884d8" />
-    </BarChart>
+    <div className="h-96 mb-20">
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart
+          data={transformedData}
+          margin={{
+            top: 5,
+            left: 15,
+            bottom: 70,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="time" angle={-45} textAnchor="end">
+            <Label value="Datum" offset={-70} position="insideBottom" />
+          </XAxis>
+          <YAxis>
+            <Label value="Rundenzähler" angle={-90} position="left" />
+          </YAxis>
+          <Tooltip />
+          <Bar dataKey="count" fill="#2563eb" name="Umdrehungen"/>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 }

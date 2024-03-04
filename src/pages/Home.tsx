@@ -7,7 +7,7 @@ import Preloader from '../components/Preloader/Preloader';
 import RevolutionChart from '../components/BarChart/RevolutionChart';
 
 export default function Home() {
-  const [data, setData] = useState<SensorData>({result: []});
+  const [data, setData] = useState<SensorData>({entries: []});
   const [isTtnLoaded, setisTtnLoaded] = useState<boolean>(false);
 
   useEffect(() => {
@@ -38,10 +38,6 @@ export default function Home() {
       ) : (
         <>
           <RevolutionChart {...data} />
-          {data.result.length}
-          <pre className="whitespace-pre overflow-x-auto bg-gray-800 text-white p-4 rounded-md">
-            {JSON.stringify(data, null, 2)}
-          </pre>
         </>
       )}
       <p>
