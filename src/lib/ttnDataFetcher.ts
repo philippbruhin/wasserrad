@@ -1,23 +1,31 @@
 import axios from 'axios';
 
-type UplinkMessage = {
-  decoded_payload: {
-    ADC_CH0V: number;
-    BatV: number;
-    Count: number;
-    Digital_IStatus: string;
-    TempC1: string;
-    Work_mode: string;
-  };
+export type SensorData = {
+  result: Result[];
+};
+
+export type Result = {
+  end_device_ids: EndDeviceIds;
+  received_at: string;
+  uplink_message: UplinkMessage;
+}
+
+export type EndDeviceIds = {
+  device_id: string;
+}
+
+export type UplinkMessage = {
+  decoded_payload: DecodedPayload;
   received_at: string;
 }
 
-export type Result = {
-  end_device_ids: {
-    device_id: string;
-  };
-  received_at: string;
-  uplink_message: UplinkMessage;
+export type DecodedPayload = {
+  ADC_CH0V: number;
+  BatV: number;
+  Count: number;
+  Digital_IStatus: string;
+  TempC1: string;
+  Work_mode: string;
 }
 
 export async function ttnDataFetcher() {
@@ -40,22 +48,21 @@ export async function ttnDataFetcher() {
 
     const jsonStringsArray: string[] = response.data.trim().split('\n\n'); // Assuming each JSON object is on a new line
 
-    const results: Result[] = [];
+    const sensorData: SensorData = {
+      result: [],
+    };
     
     jsonStringsArray.forEach((jsonString: string) => {
       try {
         const jsonObject: Result = JSON.parse(jsonString);
-        results.push(jsonObject);
+        sensorData.result.push(jsonObject);
       } catch (error) {
-        console.error('Error parsing JSON:', error);
-        console.log('JSON string causing the issue:', jsonString);
-        return [];
+        throw new Error(`Error parsing JSON: ${error}`);
       }
     });
 
-    return results;
+    return sensorData;
   } catch (error) {
-    console.error(`Error fetching data: ${error}`);
-    return [];
+    throw new Error(`Error fetching data: ${error}`);
   }
 }

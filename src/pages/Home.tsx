@@ -1,21 +1,22 @@
-import { useState, useEffect } from "react";
-import type { Result } from "../lib/ttnDataFetcher";
-import { ttnDataFetcher } from "../lib/ttnDataFetcher";
-import Logo from "../assets/logo";
-import { Link } from "react-router-dom";
-import Preloader from "../components/Preloader/Preloader";
+import { useState, useEffect } from 'react';
+import type { SensorData } from '../lib/ttnDataFetcher';
+import { ttnDataFetcher } from '../lib/ttnDataFetcher';
+import Logo from '../assets/logo';
+import { Link } from 'react-router-dom';
+import Preloader from '../components/Preloader/Preloader';
+import RevolutionChart from '../components/BarChart/RevolutionChart';
 
 export default function Home() {
-  const [data, setData] = useState<Result[]>([]);
+  const [data, setData] = useState<SensorData>({result: []});
   const [isTtnLoaded, setisTtnLoaded] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchTtnData = async () => {
       try {
-        const result = await ttnDataFetcher();
-        setData(result);
+        const sensorData = await ttnDataFetcher();
+        setData(sensorData);
       } catch (error) {
-        console.error('Error fetching TTN data:', error);
+        console.error(error);
       } finally {
         setisTtnLoaded(true);
       }
@@ -36,7 +37,8 @@ export default function Home() {
         <Preloader />
       ) : (
         <>
-          {data.length}
+          <RevolutionChart {...data} />
+          {data.result.length}
           <pre className="whitespace-pre overflow-x-auto bg-gray-800 text-white p-4 rounded-md">
             {JSON.stringify(data, null, 2)}
           </pre>
