@@ -8,8 +8,12 @@ export default function Contact() {
       <p><a href="mailto:info%40philippbruhin.ch">info@philippbruhin.ch</a></p>
       <p>Für technische Details und Baupläne zu diesem Projekt, empfehlen wir, unsere <a href="https://github.com/philippbruhin/wasserrad/" target="_blank">GitHub Seite</a> zu besuchen. GitHub ist eine Plattform für kollaborative Softwareentwicklung, auf welcher wir das Wasserradprojekt dokumentieren und den Entwicklungsprozess teilen.</p>
       <h4>Hinweis zu den Glocken</h4>
-      <p>Das Wasserrad ist mit zwei Glocken ausgestattet, die dem Projekt einen besonderen Charme verleihen sollen.</p>
+      <p>Das Wasserrad ist mit zwei Glocken (Swissmade, gekauft bei <a href="https://www.glocken-emil.ch/" target="_blank">glocken-emil.ch</a>) ausgestattet, die dem Projekt einen besonderen Charme verleihen sollen.</p>
       <p>Wir möchten sicherstellen, dass das Wasserrad die Gemeinschaft nicht stört. Falls die Glocken für Sie oder andere Anwohner als störend empfunden werden, bitten wir Sie herzlich, sich bei uns zu melden. Wir sind offen für den Dialog und bereit, Anpassungen vorzunehmen, um sicherzustellen, dass das Projekt harmonisch in unserer Umgebung integriert ist.</p>
+      <p>Vielen Dank für Ihr Verständnis und Ihre Unterstützung.</p>
+      <h4>Datenschutz</h4>
+      <p>Um besser zu verstehen, wie viele Menschen unsere Webseite besuchen und Freude an unserem Projekt haben, verwenden wir Google Analytics, einen Webanalysedienst von Google. Bitte beachten Sie, dass dies ausschliesslich zu statistischen Zwecken erfolgt, ohne jeglichen kommerziellen Nutzen. Falls Sie weitere Informationen dazu wünschen oder Bedenken haben, zögern Sie nicht, uns zu kontaktieren.</p>
+      <p>Sollten Sie Fragen oder Bedenken bezüglich der Nutzung von Google Analytics haben, stehen wir Ihnen gerne zur Verfügung. Kontaktieren Sie uns einfach über die angegebenen Kontaktdaten.</p>
     </div>
   )
 }

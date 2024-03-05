@@ -46,7 +46,7 @@ export default function Home() {
       <ol>
         <li>Das Quiz besteht aus 10 Fragen, die sich vorwiegend um den Mühlebach, die alte Fabrik und das Kraftwerk Wägital drehen.</li>
         <li>Jede richtige Antwort bringt Ihnen 1 Punkt ein – testen Sie Ihr Wissen über die faszinierende Geschichte und Struktur dieser Wasserlandschaft.</li>
-        <li>Nehmen Sie sich so viel Zeit, wie Sie möchten. Ihre Antworten werden nicht gespeichert oder nachverfolgt.</li>
+        <li>Nehmen Sie sich so viel Zeit, wie Sie möchten.</li>
       </ol>
       <p>Viel Spaß!</p>
       <p className="py-4 text-center">
