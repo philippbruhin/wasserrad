@@ -32,20 +32,18 @@ export default function RevolutionChart(data: SensorData) {
   });
 
   return (
-    <div className="h-[28rem] my-10">
+    <div className="h-[28rem] my-10 bg-red-500">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={transformedData}
           margin={{
             top: 5,
             left: 15,
-            bottom: 120,
+            bottom: 90,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="time" angle={-45} textAnchor="end">
-            <Label value="Datum" offset={-120} position="insideBottom" />
-          </XAxis>
+          <XAxis dataKey="time" angle={-45} textAnchor="end" />
           <YAxis>
             <Label value="Rundenzähler [1/min]" angle={-90} dx={-35} position="center" />
           </YAxis>
