@@ -32,12 +32,8 @@ export default function Home() {
       </div>
       <h1 className="text-center">Mühlebach Wasserrad Quiz</h1>
       <hr />
-      <p>
-        Herzlich willkommen auf unserer Webseite! Wir freuen uns, dass Sie sich die Zeit genommen haben, das Wasserrad während Ihres Spaziergangs zu entdecken und den QR-Code zu scannen.
-      </p>
-      <p>
-        Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads in den letzten 7 Tagen. Diese Daten werden durch einen integrierten Sensor gesammelt.
-      </p>
+      <p>Herzlich willkommen auf unserer Webseite! Wir freuen uns, dass Sie sich die Zeit genommen haben, das Wasserrad während Ihres Spaziergangs zu entdecken und den QR-Code zu scannen.</p>
+      <p>Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads in den letzten 7 Tagen. Diese Daten werden durch einen integrierten Sensor gesammelt.</p>
       {!isTtnLoaded ? (
         <Preloader />
       ) : (
@@ -45,20 +41,12 @@ export default function Home() {
           <RevolutionChart {...data} />
         </>
       )}
-      <p>
-        Nutzen Sie diese Gelegenheit, die Schönheit des Mühlebachs, der alten Fabrik mit der ehemaligen Baumwollspinnerei und dem Kraftwerk Wägital zu erkunden. Vertiefen Sie Ihr Verständnis durch unser interaktives Quiz.
-      </p>
+      <p>Nutzen Sie diese Gelegenheit, die Schönheit des Mühlebachs, der alten Fabrik mit der ehemaligen Baumwollspinnerei und dem Kraftwerk Wägital zu erkunden. Vertiefen Sie Ihr Verständnis durch unser interaktives Quiz.</p>
       <h4>Wie funktioniert es?</h4>
       <ol>
-        <li>
-          Das Quiz besteht aus 10 Fragen, die sich vorwiegend um den Mühlebach, die alte Fabrik und das Kraftwerk Wägital drehen.
-        </li>
-        <li>
-          Jede richtige Antwort bringt Ihnen 1 Punkt ein – testen Sie Ihr Wissen über die faszinierende Geschichte und Struktur dieser Wasserlandschaft.
-        </li>
-        <li>
-          Nehmen Sie sich so viel Zeit, wie Sie möchten. Ihre Antworten werden nicht gespeichert oder nachverfolgt.
-        </li>
+        <li>Das Quiz besteht aus 10 Fragen, die sich vorwiegend um den Mühlebach, die alte Fabrik und das Kraftwerk Wägital drehen.</li>
+        <li>Jede richtige Antwort bringt Ihnen 1 Punkt ein – testen Sie Ihr Wissen über die faszinierende Geschichte und Struktur dieser Wasserlandschaft.</li>
+        <li>Nehmen Sie sich so viel Zeit, wie Sie möchten. Ihre Antworten werden nicht gespeichert oder nachverfolgt.</li>
       </ol>
       <p>Viel Spaß!</p>
       <p className="py-4 text-center">
