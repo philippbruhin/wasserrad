@@ -32,7 +32,7 @@ export default function RevolutionChart(data: SensorData) {
   });
 
   return (
-    <div className="h-[28rem] my-10 bg-red-500">
+    <div className="h-[28rem] my-10">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={transformedData}
