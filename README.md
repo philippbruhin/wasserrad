@@ -220,7 +220,7 @@ Zusätzlich muss man einen API-Key erstellen, damit die Daten vom TTN Portal abg
 
 ![Screenshot TTN API Key](./docs/images/2024-03-03_Screenshot_The_Things_Stack_API_Key.png)
 
-> Achtung, es wird hier keine REST-API zur Verfügung gestellt, sondern nur ein String. Falls man die Daten auf einer Webseite präsentieren möchte, muss man somit aus dem String zuerst JSON-Objekte erstellen.
+> Achtung, es wird hier keine REST-API zur Verfügung gestellt, sondern ein unendlich langer String mit allen Einträgen, welche man auch auf dem TTN-Portal sieht unter dem Menüpunkt `Live data`. Falls man die Daten auf einer Webseite präsentieren möchte, muss man somit aus dem String zuerst ein Array mit JSON-Objekten erstellen, wobei die Objekte die Messresultate repräsentieren.
 
 ## 4. Webseite und Online-Quiz
 
