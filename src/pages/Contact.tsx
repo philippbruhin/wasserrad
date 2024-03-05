@@ -3,7 +3,7 @@ export default function Contact() {
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
       <h1>Kontakt</h1>
       <hr />
-      <p>Vielen Dank für Ihr Interesse am Wasserradprojekt im Mühlebach, einem gemeinsamen Bastelprojekt zwischen Kindern und Erwachsenen. Ziel dieses Projekts ist es, handwerkliche Fähigkeiten zu fördern und gemeinsam verschiedene Bereiche wie Konstruktion, Holz- und Metallbau, Physik, Programmierung und Elektrotechnik zu erkunden und zu lernen. Wenn Sie Fragen oder Anregungen zum Projekt oder zu technischen Details haben, zögern Sie bitte nicht, uns zu kontaktieren</p>
+      <p>Vielen Dank für Ihr Interesse am Wasserradprojekt im Mühlebach, einem gemeinsamen Bastelprojekt zwischen Kindern und Erwachsenen. Ziel dieses Projekts ist es, handwerkliche Fähigkeiten zu fördern und gemeinsam verschiedene Bereiche wie Konstruktion, Holz- und Metallbau, Physik, Programmierung und Elektrotechnik zu erkunden und zu erlernen. Wenn Sie Fragen oder Anregungen zum Projekt haben, zögern Sie bitte nicht, uns zu kontaktieren.</p>
       <p>Philipp Bruhin<br />Falkenstrasse 1<br />8854 Siebnen</p>
       <p><a href="mailto:info%40philippbruhin.ch">info@philippbruhin.ch</a></p>
       <p>Für technische Details und Baupläne zu diesem Projekt, empfehlen wir, unsere <a href="https://github.com/philippbruhin/wasserrad/" target="_blank">GitHub Seite</a> zu besuchen. GitHub ist eine Plattform für kollaborative Softwareentwicklung, auf welcher wir das Wasserradprojekt dokumentieren und den Entwicklungsprozess teilen.</p>
