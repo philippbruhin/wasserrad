@@ -1,7 +1,5 @@
-import QuizComponent from '../components/Quiz/Quiz';
+import QuizComponent from "../components/Quiz/Quiz";
 
 export default function Quiz() {
-  return (
-    <QuizComponent />
-  )
+  return <QuizComponent />;
 }

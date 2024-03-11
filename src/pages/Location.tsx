@@ -1,5 +1,4 @@
 import Maps from "../components/Maps/Maps";
-import { Link } from "react-router-dom";
 
 export default function Location() {
   return (

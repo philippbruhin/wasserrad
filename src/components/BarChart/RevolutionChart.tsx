@@ -8,7 +8,7 @@ import {
   ResponsiveContainer,
   Label,
 } from "recharts";
-import './RevolutionChart.css';
+import "./RevolutionChart.css";
 import type { SensorData } from "../../lib/ttnDataFetcher";
 
 export default function RevolutionChart(data: SensorData) {
@@ -21,13 +21,14 @@ export default function RevolutionChart(data: SensorData) {
 
     return {
       time: new Date(item.result.uplink_message.received_at).toLocaleString(
-        'de-CH', {
-          weekday: 'long',
-          hour: '2-digit',
-          minute: '2-digit'
+        "de-CH",
+        {
+          weekday: "long",
+          hour: "2-digit",
+          minute: "2-digit",
         }
       ),
-      count: countDifference/10,
+      count: countDifference / 10,
     };
   });
 
@@ -45,10 +46,15 @@ export default function RevolutionChart(data: SensorData) {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="time" angle={-45} textAnchor="end" />
           <YAxis>
-            <Label value="Rundenzähler [1/min]" angle={-90} dx={-35} position="center" />
+            <Label
+              value="Rundenzähler [1/min]"
+              angle={-90}
+              dx={-35}
+              position="center"
+            />
           </YAxis>
           <Tooltip />
-          <Bar dataKey="count" fill="#2563eb" name="Umdrehungen"/>
+          <Bar dataKey="count" fill="#2563eb" name="Umdrehungen" />
         </BarChart>
       </ResponsiveContainer>
     </div>
