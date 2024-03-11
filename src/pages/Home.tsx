@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
-import type { SensorData } from '../lib/ttnDataFetcher';
-import { ttnDataFetcher } from '../lib/ttnDataFetcher';
-import Logo from '../assets/logo';
-import { Link } from 'react-router-dom';
-import Preloader from '../components/Preloader/Preloader';
-import RevolutionChart from '../components/BarChart/RevolutionChart';
+import { useState, useEffect } from "react";
+import type { SensorData } from "../lib/ttnDataFetcher";
+import { ttnDataFetcher } from "../lib/ttnDataFetcher";
+import Logo from "../assets/logo";
+import { Link } from "react-router-dom";
+import Preloader from "../components/Preloader/Preloader";
+import RevolutionChart from "../components/BarChart/RevolutionChart";
 
 export default function Home() {
   const [data, setData] = useState<SensorData>({ entries: [] });
@@ -32,9 +32,16 @@ export default function Home() {
       </div>
       <h1 className="text-center">Mühlebach Wasserrad Quiz</h1>
       <hr />
-      <p>Herzlich willkommen auf unserer Webseite! Wir freuen uns, dass Sie sich die Zeit genommen haben, das Wasserrad während Ihres Spaziergangs zu entdecken und den QR-Code zu scannen.</p>
-      <p>Falls Sie das Wasserrad nicht vor Ort erkundet haben, laden wir Sie herzlich ein, dies bei Ihrem nächsten Spaziergang zu tun. Der Standort des Wasserrads finden Sie <Link to="/wasserrad/location">hier</Link>.</p>
-      <p>Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads in den letzten 7 Tagen. Diese Daten werden durch einen integrierten Sensor gesammelt.</p>
+      <p>
+        Herzlich willkommen auf unserer Webseite! Wir freuen uns, dass Sie sich
+        die Zeit genommen haben, das Wasserrad während Ihres Spaziergangs zu
+        entdecken und den QR-Code zu scannen.
+      </p>
+      <p>
+        Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads in den
+        letzten 7 Tagen. Diese Daten werden durch einen integrierten Sensor
+        gesammelt.
+      </p>
       {!isTtnLoaded ? (
         <Preloader />
       ) : (
@@ -42,11 +49,22 @@ export default function Home() {
           <RevolutionChart {...data} />
         </>
       )}
-      <p>Nutzen Sie diese Gelegenheit, die Schönheit des Mühlebachs, der alten Fabrik mit der ehemaligen Baumwollspinnerei und dem Kraftwerk Wägital zu erkunden. Vertiefen Sie Ihr Verständnis durch unser interaktives Quiz.</p>
+      <p>
+        Nutzen Sie diese Gelegenheit, die Schönheit des Mühlebachs, der alten
+        Fabrik mit der ehemaligen Baumwollspinnerei und dem Kraftwerk Wägital zu
+        erkunden. Vertiefen Sie Ihr Verständnis durch unser interaktives Quiz.
+      </p>
       <h4>Wie funktioniert es?</h4>
       <ol>
-        <li>Das Quiz besteht aus 10 Fragen, die sich vorwiegend um den Mühlebach, die alte Fabrik und das Kraftwerk Wägital drehen.</li>
-        <li>Jede richtige Antwort bringt Ihnen 1 Punkt ein – testen Sie Ihr Wissen über die faszinierende Geschichte und Struktur dieser Wasserlandschaft.</li>
+        <li>
+          Das Quiz besteht aus 10 Fragen, die sich vorwiegend um den Mühlebach,
+          die alte Fabrik und das Kraftwerk Wägital drehen.
+        </li>
+        <li>
+          Jede richtige Antwort bringt Ihnen 1 Punkt ein – testen Sie Ihr Wissen
+          über die faszinierende Geschichte und Struktur dieser
+          Wasserlandschaft.
+        </li>
         <li>Nehmen Sie sich so viel Zeit, wie Sie möchten.</li>
       </ol>
       <p>Viel Spaß!</p>

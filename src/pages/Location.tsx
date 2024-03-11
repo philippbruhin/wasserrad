@@ -1,5 +1,5 @@
-import Maps from '../components/Maps/Maps';
-import { Link } from 'react-router-dom';
+import Maps from "../components/Maps/Maps";
+import { Link } from "react-router-dom";
 
 export default function Location() {
   return (
@@ -7,7 +7,9 @@ export default function Location() {
       <h1>Standort des Wasserrades</h1>
       <hr />
       <p>
-        Das Wasserrad findet man an der{" "}
+        Falls Sie das Wasserrad nicht vor Ort erkundet haben, laden wir Sie
+        herzlich ein, dies bei Ihrem nächsten Spaziergang zu tun. Das Wasserrad
+        findet man an der{" "}
         <a href="https://maps.app.goo.gl/KiN5u6c2z8u8aiGi8" target="_blank">
           Mühlestrasse 27 in Siebnen
         </a>

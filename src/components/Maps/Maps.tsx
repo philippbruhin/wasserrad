@@ -20,7 +20,7 @@ const Maps = () => {
   );
 
   const options = {
-    mapTypeId: 'satellite'
+    mapTypeId: "satellite",
   };
 
   if (loadError) {
@@ -45,12 +45,11 @@ const Maps = () => {
               </svg>
             </div>
             <div className="self-center">
-              <span className="text-red-600 font-medium">
-                Fehler
-              </span>
+              <span className="text-red-600 font-medium">Fehler</span>
               <div className="text-red-600">
                 <p className="mt-2 sm:text-sm">
-                  Google Maps konnte nicht geladen werden. Bitte versuchen Sie es erneut indem Sie die Seite neu laden.
+                  Google Maps konnte nicht geladen werden. Bitte versuchen Sie
+                  es erneut indem Sie die Seite neu laden.
                 </p>
               </div>
             </div>
