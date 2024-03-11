@@ -13,7 +13,6 @@ export default function Contact() {
       <p>Vielen Dank für Ihr Verständnis und Ihre Unterstützung.</p>
       <h4>Datenschutz</h4>
       <p>Um besser zu verstehen, wie viele Menschen unsere Webseite besuchen und Freude an unserem Projekt haben, verwenden wir Google Analytics, einen Webanalysedienst von Google. Bitte beachten Sie, dass dies ausschliesslich zu statistischen Zwecken erfolgt, ohne jeglichen kommerziellen Nutzen. Falls Sie weitere Informationen dazu wünschen oder Bedenken haben, zögern Sie nicht, uns zu kontaktieren.</p>
-      <p>Sollten Sie Fragen oder Bedenken bezüglich der Nutzung von Google Analytics haben, stehen wir Ihnen gerne zur Verfügung. Kontaktieren Sie uns einfach über die angegebenen Kontaktdaten.</p>
     </div>
   )
 }
