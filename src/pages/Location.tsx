@@ -18,14 +18,6 @@ export default function Location() {
       <div className="not-prose">
         <Maps />
       </div>
-      <p className="py-4 text-center pt-10">
-        <Link
-          className="rounded-md bg-blue-600 px-10 py-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-          to="/wasserrad/quiz"
-        >
-          Quiz starten
-        </Link>
-      </p>
     </div>
   );
 }
