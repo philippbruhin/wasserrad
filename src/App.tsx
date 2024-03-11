@@ -25,6 +25,13 @@ const App = () => {
           </li>
           <li className="mr-6">
             <Link
+              to="/wasserrad/location"
+            >
+              Standort
+            </Link>
+          </li>
+          <li className="mr-6">
+            <Link
               to="/wasserrad/contact"
             >
               Kontakt

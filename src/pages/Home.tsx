@@ -33,6 +33,7 @@ export default function Home() {
       <h1 className="text-center">Mühlebach Wasserrad Quiz</h1>
       <hr />
       <p>Herzlich willkommen auf unserer Webseite! Wir freuen uns, dass Sie sich die Zeit genommen haben, das Wasserrad während Ihres Spaziergangs zu entdecken und den QR-Code zu scannen.</p>
+      <p>Falls Sie das Wasserrad nicht vor Ort erkundet haben, laden wir Sie herzlich ein, dies bei Ihrem nächsten Spaziergang zu tun. Der Standort des Wasserrads finden Sie <Link to="/wasserrad/location">hier</Link>.</p>
       <p>Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads in den letzten 7 Tagen. Diese Daten werden durch einen integrierten Sensor gesammelt.</p>
       {!isTtnLoaded ? (
         <Preloader />

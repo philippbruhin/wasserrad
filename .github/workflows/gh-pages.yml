@@ -44,6 +44,7 @@ jobs:
           VITE_TTN_API_URL: ${{ vars.VITE_TTN_API_URL }}
           VITE_TTN_APP_ID: ${{ vars.VITE_TTN_APP_ID }}
           VITE_TTN_DEVICE_ID: ${{ vars.VITE_TTN_DEVICE_ID }}
+          VITE_GOOGLE_MAPS_API_KEY: ${{ vars.VITE_GOOGLE_MAPS_API_KEY }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
