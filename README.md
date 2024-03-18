@@ -177,6 +177,8 @@ nMin = n * 60                 % 14.747
 
 ToDo: Beschreibung
 
+[3D-Model Fusion 360](https://a360.co/48MgMsR)
+
 ![Rad](./docs/images/Rad.drawio.svg)
 
 ![Ständer](./docs/images/Staender.drawio.svg)

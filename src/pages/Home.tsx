@@ -50,9 +50,10 @@ export default function Home() {
         </>
       )}
       <p>
-        Nutzen Sie diese Gelegenheit, die Schönheit des Mühlebachs, der alten
-        Fabrik mit der ehemaligen Baumwollspinnerei und dem Kraftwerk Wägital zu
-        erkunden. Vertiefen Sie Ihr Verständnis durch unser interaktives Quiz.
+        Nutzen Sie diese Gelegenheit, die Schönheit des Mühlebachs (auch
+        Nuolenbach genannt), der alten Fabrik mit der ehemaligen
+        Baumwollspinnerei und dem Kraftwerk Wägital zu erkunden. Vertiefen Sie
+        Ihr Verständnis durch unser interaktives Quiz.
       </p>
       <h4>Wie funktioniert es?</h4>
       <ol>
