@@ -175,13 +175,28 @@ nMin = n * 60                 % 14.747
 
 ## 2. Konstruktion und Bau
 
-ToDo: Beschreibung
+Für die Konstruktion des Wasserrades sind wir einen nicht-traditionellen Weg gegangen. Anstatt sofort mit den technischen Zeichnungen zu beginnen, haben wir zuerst im Baumarkt nach passendem Holz und Inspiration gesucht.
 
-[3D-Model Fusion 360](https://a360.co/48MgMsR)
+Nachdem wir eine klare Vorstellung davon hatten, welche Materialien wir verwenden wollten, begannen wir mit 2D-Skizzen, um unsere Ideen festzuhalten. Hierbei haben wir das Tool [Draw.io](https://draw.io/) genutzt, um unsere Konzepte visuell zu erfassen.
 
 ![Rad](./docs/images/Rad.drawio.svg)
+*Das Wasserrad von Vorne. Bei der Beschaffung des Holzes haben wir uns mehrheitlich der Restholz-Kiste vom Zuschnitt im Hornbach Galgenen bedient.*
 
 ![Ständer](./docs/images/Staender.drawio.svg)
+*Das Gehäuse, welches am Bachbett befestigt wird, beherbert zwei Glocken und den Sensor, welcher die Drehzahl misst.*
+
+Während des Bauprozesses wurden uns jedoch einige Herausforderungen bewusst, die wir nicht vorhergesehen hatten. Insbesondere stellte sich heraus, dass wir einige Teile des Wasserrades mithilfe von 3D-Druck herstellen mussten, um bestimmte Funktionalitäten zu realisieren.
+
+Daher sind wir von den ursprünglichen 2D-Skizzen zu der 3D-Modellierungsumgebung [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) übergegangen, welche für den persönlichen Gebrauch kostenlos genutzt werden darf.
+
+Dieses 3D-Programm ermöglichte es uns, die benötigten Teile für den 3D-Druck zu entwerfen und gleichzeitig eine umfassendere Darstellung des gesamten Projekts zu erhalten.
+
+![3D-Model Animation](./docs/images/video_wasserrad_konstruktion.gif)
+*Wasserrad im 3D-Modell, gezeichnet mit Autodesk Fusion 360.*
+
+Das Modell kann [hier](https://a360.co/48MgMsR) online angeschaut werden.
+
+Insgesamt war diese iterative Vorgehensweise für uns äußerst hilfreich, da sie es uns ermöglichte, flexibel auf neue Anforderungen zu reagieren und gleichzeitig sicherzustellen, dass unser Wasserradprojekt sowohl funktional als auch ästhetisch ansprechend ist.
 
 ## 3. Rundenzähler-Sensor
 
