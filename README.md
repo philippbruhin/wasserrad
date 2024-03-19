@@ -189,7 +189,7 @@ Während des Bauprozesses stellte sich heraus, dass einige Teile des Wasserrades
 
 Daher wurde von den ursprünglichen 2D-Skizzen zur 3D-Modellierungsumgebung [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) gewechselt, welche für den persönlichen Gebrauch kostenlos genutzt werden darf.
 
-Diese [3D-CAD](https://de.wikipedia.org/wiki/CAD) ermöglichte es, die benötigten Teile für den 3D-Druck zu entwerfen und gleichzeitig eine umfassendere Darstellung des gesamten Projekts zu erhalten.
+Dieses [3D-CAD](https://de.wikipedia.org/wiki/CAD) ermöglichte es, die benötigten Teile für den 3D-Druck zu entwerfen und gleichzeitig eine umfassendere Darstellung des gesamten Projekts zu erhalten.
 
 ![3D-Model Animation](./docs/images/video_wasserrad_konstruktion.gif)
 *Wasserrad im 3D-Modell, gezeichnet mit Autodesk Fusion 360.*
