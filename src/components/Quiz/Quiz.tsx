@@ -2,6 +2,7 @@ import { MouseEvent, useEffect, useRef, useState } from "react";
 import "./Quiz.css";
 import { data } from "../../assets/data";
 import Preloader from "../Preloader/Preloader";
+import { getResultImageFileName } from "../../lib/getResultImageFileName";
 import type { QuizQuestion } from "../../assets/data";
 
 function Quiz() {
@@ -12,6 +13,7 @@ function Quiz() {
   const [locked, setLocked] = useState<boolean>(false);
   const [score, setScore] = useState<number>(0);
   const [result, setResult] = useState<boolean>(false);
+  const fileName = getResultImageFileName(score);
 
   useEffect(() => {
     setQuestions(data[index]);
@@ -64,7 +66,7 @@ function Quiz() {
   return (
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
       {result ? (
-        <h1 className="text-center">
+        <h1>
           Resultat: {score} von {data.length} Punkten
         </h1>
       ) : (
@@ -72,44 +74,55 @@ function Quiz() {
       )}
       <hr />
       {result ? (
-        <div className="text-center">
-          <p>Hier noch etwas text und folgend das Trophäenbild.</p>
-          {!isImageLoaded && <Preloader />}
-          <img
-            className="rounded-lg shadow w-full"
-            src="./result/hero_10.png"
-            onLoad={() => setImageLoaded(true)}
-            style={{ display: isImageLoaded ? "block" : "none" }}
-            alt="Trophäenbild"
-          />
+        <>
           <p>
-            <a
-              type="button"
-              className="rounded-md bg-blue-600 px-10 py-3 mt-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-              href="./result/hero_10.png"
-              download
-            >
-              Bild herunterladen
-            </a>
+            Vielen Dank, dass Sie sich die Zeit genommen haben, an unserem Quiz
+            teilzunehmen. Ihr Engagement und Ihre Neugierde bedeuten uns viel!
           </p>
-
-          {score < data.length && (
-            <>
-              <div className="line-container my-5">
-                <div className="line"></div>
-                <span className="text-gray-400">oder</span>
-                <div className="line"></div>
-              </div>
-              <button
+          <p>
+            Wir hoffen, dass Sie die Quizfragen genossen und etwas Neues gelernt
+            haben und wir würden uns enorm freuen, wenn Sie dieses Bild mit
+            Ihren Freunden und Kollegen teilen, um diese zu ermutigen, ebenfalls
+            am Quiz teilzunehmen.
+          </p>
+          <div className="text-center">
+            {!isImageLoaded && <Preloader />}
+            <img
+              className="rounded-lg shadow w-full"
+              src={`./result/${fileName}`}
+              onLoad={() => setImageLoaded(true)}
+              style={{ display: isImageLoaded ? "block" : "none" }}
+              alt="Trophäenbild"
+            />
+            <p>
+              <a
                 type="button"
-                className="rounded-md bg-blue-600 px-10 py-3 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                onClick={reset}
+                className="rounded-md bg-blue-600 px-10 py-3 mt-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                href={`./result/${fileName}`}
+                download
               >
-                Nochmals versuchen
-              </button>
-            </>
-          )}
-        </div>
+                Bild herunterladen
+              </a>
+            </p>
+
+            {score < data.length && (
+              <>
+                <div className="line-container my-5">
+                  <div className="line"></div>
+                  <span className="text-gray-400">oder</span>
+                  <div className="line"></div>
+                </div>
+                <button
+                  type="button"
+                  className="rounded-md bg-blue-600 px-10 py-3 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  onClick={reset}
+                >
+                  Nochmals versuchen
+                </button>
+              </>
+            )}
+          </div>
+        </>
       ) : (
         <>
           {!isImageLoaded && questions.image && <Preloader />}

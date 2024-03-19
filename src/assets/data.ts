@@ -52,7 +52,7 @@ export const data: QuizQuestion[] = [
     question: "Wo fliesst das Wasser in einer Kurve am schnellsten?",
     image: "muehlebach_hoehe_falken.jpg",
     imageCaption: "Mühlebach auf Höhe Restaurant Falken in Siebnen.",
-    options: ["Aussenurve", "Innenkurve", "Überall gleich schnell"],
+    options: ["Aussenkurve", "Innenkurve", "Überall gleich schnell"],
     description: "In der Aussenkurve fliesst das Wasser schneller. Da die äussere Seite der Kurve einen grösseren Radius hat als die innere Seite, muss das Wasser an der Aussenseite eine grössere Strecke zurücklegen. Um die Kontinuität aufrechtzuerhalten, erhöht das Wasser seine Geschwindigkeit an der Aussenkurve, während es an der Innekurve  langsamer fliesst. An Flüssen mit einem natürlichen Bachbett kann man diesen Effekt erkennen, an den Sedimenten (Geröll & Sand), welche sich an der Innenkurve ablagern. An der Aussenkurve hingegen wird das Ufer abgetragen.",
     ans: 0,
   },
