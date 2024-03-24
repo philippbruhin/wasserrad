@@ -34,7 +34,7 @@ export default function Home() {
         </li>
         <li>
           Nehmen Sie sich so viel Zeit, wie Sie möchten. Am Ende winkt ein
-          Zertifikat, welches heruntergeladen und geteilt werden kann.
+          Zertifikat, welches heruntergeladen werden kann.
         </li>
       </ol>
       <p>Viel Spass!</p>
