@@ -67,7 +67,7 @@ export const data: QuizQuestion[] = [
     image: "Wikipedia_Waegitalerstausee_Roland_Zumbuehl.jpg",
     imageCaption: "Wägitalersee mit Blick nach Innerthal. Im Hintergrund der Gross Aubrig. Foto Wikipedia, Roland Zumbuehl.",
     options: ["5 Meter", "20 Meter", "50 Meter", "100 Meter"],
-    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Der See hat eine Fläche von 4.18 Quadratkilometern, was 585 Fussballfeldern entspricht. Die maximale Tiefe beträgt 65 Meter. Er Er fasst 150 Mio. m3 Wasser, was wiederum 100 Milliarden 1.5l Flaschen entspricht. Das Füllen dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
+    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Der See hat eine Fläche von 4.18 Quadratkilometern, was 585 Fussballfeldern entspricht. Die maximale Tiefe beträgt 65 Meter. Er fasst 150 Mio. m3 Wasser, was wiederum 100 Milliarden 1.5l Flaschen entspricht. Das Füllen dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
     ans: 1,
   },
   {
