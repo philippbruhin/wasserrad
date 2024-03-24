@@ -68,7 +68,7 @@ export default function Home() {
         </li>
         <li>Nehmen Sie sich so viel Zeit, wie Sie möchten.</li>
       </ol>
-      <p>Viel Spaß!</p>
+      <p>Viel Spass!</p>
       <p className="py-4 text-center">
         <Link
           className="rounded-md bg-blue-600 px-10 py-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
