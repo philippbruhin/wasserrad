@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import Home from './pages/Home.tsx';
 import Quiz from './pages/Quiz.tsx';
-import Location from './pages/Location.tsx';
+import About from './pages/About.tsx';
 import Contact from './pages/Contact.tsx';
 import './index.css';
 
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Quiz />,
       },
       {
-        path: "/wasserrad/location",
-        element: <Location />,
+        path: "/wasserrad/about",
+        element: <About />,
       },
       {
         path: "/wasserrad/contact",

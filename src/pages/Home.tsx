@@ -1,30 +1,7 @@
-import { useState, useEffect } from "react";
-import type { SensorData } from "../lib/ttnDataFetcher";
-import { ttnDataFetcher } from "../lib/ttnDataFetcher";
 import Logo from "../assets/logo";
 import { Link } from "react-router-dom";
-import Preloader from "../components/Preloader/Preloader";
-import RevolutionChart from "../components/BarChart/RevolutionChart";
 
 export default function Home() {
-  const [data, setData] = useState<SensorData>({ entries: [] });
-  const [isTtnLoaded, setisTtnLoaded] = useState<boolean>(false);
-
-  useEffect(() => {
-    const fetchTtnData = async () => {
-      try {
-        const sensorData = await ttnDataFetcher();
-        setData(sensorData);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setisTtnLoaded(true);
-      }
-    };
-
-    fetchTtnData();
-  }, []);
-
   return (
     <div className="prose max-w-none sm:prose-sm md:prose-md lg:prose-lg xl:prose-xl">
       <div className="max-w-20 lg:max-w-28 xl:max-w-32 pb-2 lg:pb-3 xl:pb-4 mx-auto">
@@ -37,23 +14,12 @@ export default function Home() {
         die Zeit genommen haben, das Wasserrad während Ihres Spaziergangs zu
         entdecken und den QR-Code zu scannen.
       </p>
+
       <p>
-        Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads in den
-        letzten 7 Tagen. Diese Daten werden durch einen integrierten Sensor
-        gesammelt.
-      </p>
-      {!isTtnLoaded ? (
-        <Preloader />
-      ) : (
-        <>
-          <RevolutionChart {...data} />
-        </>
-      )}
-      <p>
-        Nutzen Sie diese Gelegenheit, die Schönheit des Mühlebachs (auch
-        Nuolenbach genannt), der alten Fabrik mit der ehemaligen
-        Baumwollspinnerei und dem Kraftwerk Wägital zu erkunden. Vertiefen Sie
-        Ihr Verständnis durch unser interaktives Quiz.
+        Entdecken Sie den Mühlebach (auch Nuolenbach genannt), ein wichtiger
+        Teil unserer regionalen Identität. Erfahren Sie mehr über die alte
+        Fabrik mit der ehemaligen Baumwollspinnerei und dem Kraftwerk Wägital
+        durch unser interaktives Quiz.
       </p>
       <h4>Wie funktioniert es?</h4>
       <ol>
@@ -66,7 +32,10 @@ export default function Home() {
           über die faszinierende Geschichte und Struktur dieser
           Wasserlandschaft.
         </li>
-        <li>Nehmen Sie sich so viel Zeit, wie Sie möchten.</li>
+        <li>
+          Nehmen Sie sich so viel Zeit, wie Sie möchten. Am Ende winkt ein
+          Zertifikat, welches heruntergeladen und geteilt werden kann.
+        </li>
       </ol>
       <p>Viel Spass!</p>
       <p className="py-4 text-center">
