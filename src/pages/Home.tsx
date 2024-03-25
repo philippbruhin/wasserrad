@@ -12,7 +12,7 @@ export default function Home() {
       <p>
         Herzlich willkommen auf unserer Webseite! Wir freuen uns, dass Sie sich
         die Zeit genommen haben, das Wasserrad während Ihres Spaziergangs zu
-        entdecken und den QR-Code zu scannen.
+        betrachten und den QR-Code zu scannen.
       </p>
 
       <p>
