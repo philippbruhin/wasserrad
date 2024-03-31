@@ -1,8 +1,14 @@
 # Wasserrad im Mühlebachkanal
 
-Bauplan für ein einfaches Wasserrad im Mühlebach, respektive [Nuolenbach](https://search.ortsnamen.ch/de/record/16006626).
+Das Projekt beschäftigt sich mit dem Bau eines Wasserrades für den Mühlebachkanal, auch bekannt als [Nuolenbach](https://search.ortsnamen.ch/de/record/16006626), der von Siebnen in den oberen Zürichsee fliesst.
 
-Inhalt
+Es werden verschiedene Aspekte des Wasserradbauens behandelt, darunter die Auswahl des Radtyps, die Bestimmung der Grösse basierend auf der Bachgeometrie und der Wasserflussgeschwindigkeit sowie die Konstruktion und der Bau des Rades.
+
+Zur Messung der Drehzahl des Wasserrades wird ein Rundenzähler-Sensor verwendet, der seine Daten an die The Things Network Cloud sendet.
+
+Zudem gibt es eine Webseite mit einem Online-Quiz zum Bach, erreichbar unter [www.nuolenbach.ch](https://www.nuolenbach.ch).
+
+## Inhalt
 
 1. [Typ und Grösse des Rades bestimmen](#1-typ-und-grösse-des-rades-bestimmen)
     1. [Wasserrad-Typ](#11-wasserrad-typ)
@@ -196,6 +202,8 @@ Das 3D-Modell kann [hier](https://a360.co/48MgMsR) online angesehen werden.
 
 ![Glocken- und Sensor-Aufhängung](./docs/images/2024-03-26_Glocken.gif)
 *Glocken- und Sensor-Aufhängung. Die Kunststoffteile wurden mittels 3D-Druck gefertigt.*
+
+Um das Wasserrad witterungsbeständig zu machen, wurde das Holz mit grüner und blauer Farbe besprüht sowie mit einem Bootslack überzogen.
 
 Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermöglichte, flexibel auf neue Anforderungen zu reagieren und gleichzeitig sicherzustellen, dass das Wasserradprojekt sowohl funktional als auch ästhetisch ansprechend daherkommt.
 
