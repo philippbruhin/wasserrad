@@ -10,11 +10,10 @@ export default function Home() {
       <h1 className="text-center">Mühlebach Wasserrad Quiz</h1>
       <hr />
       <p>
-        Herzlich willkommen auf unserer Webseite! Wir freuen uns, dass Sie sich
-        die Zeit genommen haben, während Ihres Spaziergangs das Wasserrad zu
-        besuchen und den QR-Code zu scannen.
+        Herzlich willkommen! Wir freuen uns, dass Sie sich die Zeit genommen
+        haben, das Wasserrad während Ihres Spaziergangs zu besuchen und den
+        QR-Code zu scannen.
       </p>
-
       <p>
         Entdecken Sie den Mühlebach (auch Nuolenbach genannt), ein wichtiger
         Teil unserer regionalen Identität. Erfahren Sie mehr über die alte

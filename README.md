@@ -1,10 +1,10 @@
 # Wasserrad im Mühlebachkanal
 
-Das Projekt beschäftigt sich mit dem Bau eines Wasserrades für den Mühlebachkanal, auch bekannt als [Nuolenbach](https://search.ortsnamen.ch/de/record/16006626), der von Siebnen in den oberen Zürichsee fliesst.
+Dieses Repository beschäftigt sich mit dem Bau eines Wasserrades für den Mühlebachkanal, auch bekannt als [Nuolenbach](https://search.ortsnamen.ch/de/record/16006626), der von Siebnen in den oberen Zürichsee fliesst.
 
 Es werden verschiedene Aspekte des Wasserradbauens behandelt, darunter die Auswahl des Radtyps, die Bestimmung der Grösse basierend auf der Bachgeometrie und der Wasserflussgeschwindigkeit sowie die Konstruktion und der Bau des Rades.
 
-Zur Messung der Drehzahl des Wasserrades wird ein Rundenzähler-Sensor verwendet, der seine Daten an die The Things Network Cloud sendet.
+Zur Messung der Drehzahl des Wasserrades wird ein Rundenzähler-Sensor verwendet, der seine Daten an die [The Things Network Cloud](https://www.thethingsnetwork.org/) sendet.
 
 Zudem gibt es eine Webseite mit einem Online-Quiz zum Bach, erreichbar unter [www.nuolenbach.ch](https://www.nuolenbach.ch).
 
@@ -247,6 +247,8 @@ Zusätzlich muss man einen API-Key erstellen, damit die Daten vom TTN Portal abg
 ![Screenshot TTN API Key](./docs/images/2024-03-03_Screenshot_The_Things_Stack_API_Key.png)
 
 > Achtung, es wird hier keine REST-API zur Verfügung gestellt, sondern ein unendlich langer String mit allen Einträgen, welche man auch auf dem TTN-Portal sieht unter dem Menüpunkt `Live data`. Falls man die Daten auf einer Webseite präsentieren möchte, muss man somit aus dem String zuerst ein Array mit JSON-Objekten erstellen, wobei die Objekte die Messresultate repräsentieren.
+
+Die Sensoreinstellungen können (durch Administratoren von diesem Projekt) unter [waterwheel.console.cloud.thethings.industries](https://waterwheel.console.cloud.thethings.industries/) aktualisiert werden.
 
 ## 4. Webseite und Online-Quiz
 
