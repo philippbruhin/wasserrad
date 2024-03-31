@@ -187,14 +187,15 @@ Nachdem man eine klare Vorstellung davon hatte, welche Materialien verwendet wer
 
 Während des Bauprozesses stellte sich heraus, dass einige Teile des Wasserrades mithilfe von 3D-Druck hergestellt werden mussten.
 
-Daher wurde von den ursprünglichen 2D-Skizzen zur 3D-Modellierungsumgebung [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) gewechselt, welche für den persönlichen Gebrauch kostenlos genutzt werden darf.
+Daher wurde von den ursprünglichen 2D-Skizzen zur 3D-Modellierungsumgebung [Fusion 360](https://www.autodesk.com/products/fusion-360/personal) gewechselt, welche für den persönlichen Gebrauch kostenlos genutzt werden darf. Dieses [3D-CAD](https://de.wikipedia.org/wiki/CAD) ermöglichte es, die benötigten Teile für den 3D-Druck zu entwerfen und gleichzeitig eine umfassendere Darstellung des gesamten Projekts zu erhalten.
 
-Dieses [3D-CAD](https://de.wikipedia.org/wiki/CAD) ermöglichte es, die benötigten Teile für den 3D-Druck zu entwerfen und gleichzeitig eine umfassendere Darstellung des gesamten Projekts zu erhalten.
+Das 3D-Modell kann [hier](https://a360.co/48MgMsR) online angesehen werden.
 
 ![3D-Model Animation](./docs/images/video_wasserrad_konstruktion.gif)
 *Wasserrad im 3D-Modell, gezeichnet mit Autodesk Fusion 360.*
 
-Das Modell kann [hier](https://a360.co/48MgMsR) online angesehen werden.
+![Glocken- und Sensor-Aufhängung](./docs/images/2024-03-26_Glocken.gif)
+*Glocken- und Sensor-Aufhängung. Die Kunststoffteile wurden mittels 3D-Druck gefertigt.*
 
 Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermöglichte, flexibel auf neue Anforderungen zu reagieren und gleichzeitig sicherzustellen, dass das Wasserradprojekt sowohl funktional als auch ästhetisch ansprechend daherkommt.
 
