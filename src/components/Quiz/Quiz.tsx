@@ -145,7 +145,7 @@ function Quiz() {
           <ul className="list-none !pl-0">
             {questions.options.map((option, index) => (
               <li
-                className="bg-gray-200 !px-4 !py-2 !my-4 cursor-pointer hover:bg-gray-300 rounded-lg shadow-sm"
+                className="bg-gray-200 !px-4 !py-2 !my-4 cursor-pointer hover:bg-gray-300 rounded-lg"
                 key={index}
                 ref={questionRefs[index]}
                 onClick={(e) => {
