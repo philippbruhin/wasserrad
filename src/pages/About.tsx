@@ -50,10 +50,11 @@ export default function About() {
         letzten 7 Tage. Der integrierte Sensor speichert die Daten und sendet
         sie alle 10 Minuten, sodass die Umdrehungen auf dieser Webseite
         angezeigt werden können. Dabei werden die Linien im Balkendiagramm nur
-        blau dargestellt, wenn die Drehzahl zwischen 8 und 20 Umdrehungen liegt.
-        Alle anderen Umdrehungen (mehr oder weniger) werden in rot dargestellt,
-        da sie nicht durch den Bach verursacht wurden, sondern beispielsweise
-        durch manuelles Drehen oder durch Windbewegungen.
+        blau dargestellt, wenn die Drehzahl zwischen 8 und 20 Umdrehungen pro
+        Minute liegt. Alle anderen Umdrehungen (mehr oder weniger) werden in rot
+        dargestellt, da sie nicht durch den Bach verursacht wurden, sondern
+        beispielsweise durch manuelles Drehen eines Besuchers oder durch
+        Windbewegungen.
       </p>
       {!isTtnLoaded ? (
         <Preloader />
