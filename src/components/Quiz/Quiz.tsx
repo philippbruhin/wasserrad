@@ -96,14 +96,20 @@ function Quiz() {
               alt="Trophäenbild"
             />
             <p>
-              <a
+              <button
                 type="button"
-                className="rounded-md bg-blue-600 px-10 py-4 mt-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                href={`./result/${fileName}`}
-                download
+                className="rounded-md bg-blue-600 px-10 py-3 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = `./result/${fileName}`;
+                  link.download = fileName;
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
               >
                 Bild herunterladen
-              </a>
+              </button>
             </p>
 
             {score < data.length && (
