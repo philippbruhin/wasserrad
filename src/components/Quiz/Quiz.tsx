@@ -77,7 +77,8 @@ function Quiz() {
         <>
           <p>
             Vielen Dank, dass Sie sich die Zeit genommen haben, an unserem Quiz
-            teilzunehmen. Ihr Engagement und Ihre Neugierde bedeuten uns viel!
+            teilzunehmen und es bis am Ende durchzuziehen. Ihr Engagement und
+            Ihre Neugierde bedeuten uns viel!
           </p>
           <p>
             Wir hoffen, dass Sie die Quizfragen genossen und etwas Neues gelernt
@@ -97,7 +98,7 @@ function Quiz() {
             <p>
               <a
                 type="button"
-                className="rounded-md bg-blue-600 px-10 py-3 mt-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="rounded-md bg-blue-600 px-10 py-4 mt-4 text-white hover:text-white no-underline shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 href={`./result/${fileName}`}
                 download
               >

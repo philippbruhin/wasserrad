@@ -31,12 +31,11 @@ export default function About() {
       <hr />
       <p>
         Vielen Dank für Ihr Interesse am Wasserradprojekt im Mühlebach, einem
-        besonderen Gemeinschaftsprojekt zwischen einem technisch interessierten
-        Vater und seinem Sohn. Dieses Projekt war nicht nur eine Gelegenheit,
-        technische Fähigkeiten wie Konstruktion, Holzbearbeitung, 3D-Druck,
-        Programmierung und Elektrotechnik zu erlernen, sondern auch eine
-        wertvolle Zeit, in welcher man gemeinsam experimentieren, lernen und
-        lachen konnte.
+        besonderen Gemeinschaftsprojekt zwischen Vater und Sohn. Dieses Projekt
+        war nicht nur eine Gelegenheit, technische Fähigkeiten wie Konstruktion,
+        Holzbearbeitung, 3D-Druck, Programmierung und Elektrotechnik zu
+        erlernen, sondern auch eine wertvolle Zeit, in welcher man gemeinsam
+        experimentieren, lernen und lachen konnte.
       </p>
       <p>
         Wir möchten betonen, dass neben dem technischen Aspekt dieses Projekts
