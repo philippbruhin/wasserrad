@@ -45,7 +45,7 @@ export const data: QuizQuestion[] = [
     image: "alte_turbine_nuolen.jpg",
     imageCaption: "Alte Turbine in Nuolen. Foto von der Webseite des EW Wangen.",
     options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Krafwerke"],
-    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es bei der Sägerei (heute Sagi-Areal) noch ein fünftes Kraftwerk. Jene Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
+    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es beim Sagi-Areal (ehemalige Sägerei) noch ein fünftes Kraftwerk. Die Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
     ans: 2,
   },
   {
@@ -77,7 +77,7 @@ export const data: QuizQuestion[] = [
     image: "luca-LriqS4xCRi4-unsplash-1024x683.jpg",
     imageCaption: "Die Bauzeit von ca 2 Jahren (1922 - 1924) für die Staumauer Schräh war für damalige Verhältnisse enorm kurz. Bild: unsplash",
     options: ["44 Meter", "66 Meter", "88 Meter", "111 Meter"],
-    description: "Die Staumauer ist als Gewichtsstaumauer ausgeführt. Gewichtsstaumauern bestehen aus massivem Beton oder Stein und sie sind so konzipiert, dass ihr eigenes Gewicht ausreicht, um dem Druck des gestauten Wassers standzuhalten. Von den 111 m Gesamthöhe der Wägitaler Staumauer befinden sich 66 m sichtbar über der Talsohle. Die Krone ist 156 m lang und oben 4.6 m breit. Unten ist die Mauer 75 m dick.",
+    description: "Die Staumauer ist als Gewichtsstaumauer ausgeführt. Gewichtsstaumauern bestehen aus massivem Beton oder Stein und sie sind so konzipiert, dass ihr eigenes Gewicht ausreicht, um dem Druck des gestauten Wassers standzuhalten. Von den 111 m Gesamthöhe der Wägitaler Staumauer, befinden sich 66 m sichtbar über der Talsohle. Die Krone ist 156 m lang und oben 4.6 m breit. Unten ist die Mauer 75 m dick.",
     ans: 1,
   },
   {
