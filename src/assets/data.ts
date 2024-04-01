@@ -45,7 +45,7 @@ export const data: QuizQuestion[] = [
     image: "alte_turbine_nuolen.jpg",
     imageCaption: "Alte Turbine in Nuolen. Foto von der Webseite des EW Wangen.",
     options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Krafwerke"],
-    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Jene Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
+    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es bei der Sägerei (heute Sagi-Areal) noch ein fünftes Kraftwerk. Jene Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
     ans: 2,
   },
   {
@@ -69,7 +69,7 @@ export const data: QuizQuestion[] = [
     image: "Wikipedia_Waegitalerstausee_Roland_Zumbuehl.jpg",
     imageCaption: "Wägitalersee mit Gross Aubrig im Hintergrund. Foto Wikipedia, Roland Zumbuehl.",
     options: ["5 Meter", "20 Meter", "50 Meter", "100 Meter"],
-    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Der See hat eine Fläche von 4.18 Quadratkilometern, was 585 Fussballfeldern entspricht. Die maximale Tiefe beträgt 65 Meter. Er fasst 150 Mio. m3 Wasser, was wiederum 100 Milliarden 1.5l Flaschen entspricht. Das Füllen dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
+    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Die maximale Tiefe beträgt 65 Meter. Der See fasst 150 Mio. m3 Wasser, was wiederum 100 Milliarden 1.5l Flaschen entspricht. Das wären für jeden Einwohner in der Schweiz 11'000 Flaschen. Das Füllen dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
     ans: 1,
   },
   {
@@ -77,7 +77,7 @@ export const data: QuizQuestion[] = [
     image: "luca-LriqS4xCRi4-unsplash-1024x683.jpg",
     imageCaption: "Die Bauzeit von ca 2 Jahren (1922 - 1924) für die Staumauer Schräh war für damalige Verhältnisse enorm kurz. Bild: unsplash",
     options: ["44 Meter", "66 Meter", "88 Meter", "111 Meter"],
-    description: "Die Staumauer ist als Gewichtsstaumauer ausgeführt. Von den 111 m Gesamthöhe sind 66 m sichtbar über der Talsohle. Die Krone ist 156 m lang und oben 4.6 m breit. Unten ist die Mauer 75 m dick.",
+    description: "Die Staumauer ist als Gewichtsstaumauer ausgeführt. Gewichtsstaumauern bestehen aus massivem Beton oder Stein und sie sind so konzipiert, dass ihr eigenes Gewicht ausreicht, um dem Druck des gestauten Wassers standzuhalten. Von den 111 m Gesamthöhe der Wägitaler Staumauer befinden sich 66 m sichtbar über der Talsohle. Die Krone ist 156 m lang und oben 4.6 m breit. Unten ist die Mauer 75 m dick.",
     ans: 1,
   },
   {
@@ -85,7 +85,7 @@ export const data: QuizQuestion[] = [
     image: "SIK_05-IKS-SZ-1609-045.jpg",
     imageCaption: "Kraftwerk Wägital Zentrale Siebnen. Eine Konzession ist in diesem Fall eine Genehmigung für die Nutzung des Wassers vom Wägitalersee, welche der Bezirk March (und somit wir alle) an ein Unternehmen vergibt. Bild: Sylvia Bärtschi, ETH Bildarchiv.",
     options: ["2025", "2040", "2050", "2060"],
-    description: "1921 gründeten die Stadt Zürich und die Nordostschweizerischen Kraftwerke AG (heute Axpo) gemeinsam die AG Kraftwerk Wägital. Die laufende Konzession für das Kraftwerk, die zwischen dem Bezirk March und der AG Kraftwerk Wägital besteht, wird im Jahre 2040 auslaufen.",
+    description: "1921 gründeten die Stadt Zürich und die Nordostschweizerischen Kraftwerke AG (heute Axpo) gemeinsam die AG Kraftwerk Wägital. Die laufende Konzession für das Kraftwerk, die zwischen dem Bezirk March und der AG Kraftwerk Wägital besteht, wird im Jahre 2040 auslaufen. Der Bezirksrat der March hat Ende 2023 eine Arbeitsgruppe bestellt, die eine Strategie erarbeiten wird, wie es danach weitergehen soll.",
     ans: 1,
   },
 ];
