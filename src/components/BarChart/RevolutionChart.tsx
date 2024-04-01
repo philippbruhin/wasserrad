@@ -17,7 +17,16 @@ export default function RevolutionChart(data: SensorData) {
   const transformedData = data.entries.map((item) => {
     const currentCount = item.result.uplink_message.decoded_payload.Count;
     const countDifference = currentCount - previousCount;
+    const fill: string =
+    countDifference / 10 > 20
+      ? "#dc2626"
+      : countDifference / 10 < 8
+      ? "#dc2626"
+      : "#2563eb";
+
     previousCount = currentCount;
+
+    console.log('fill', fill);
 
     return {
       time: new Date(item.result.uplink_message.received_at).toLocaleString(
@@ -28,6 +37,7 @@ export default function RevolutionChart(data: SensorData) {
           minute: "2-digit",
         }
       ),
+      fill: fill,
       count: countDifference / 10,
     };
   });
@@ -54,7 +64,7 @@ export default function RevolutionChart(data: SensorData) {
             />
           </YAxis>
           <Tooltip />
-          <Bar dataKey="count" fill="#2563eb" name="Umdrehungen" />
+          <Bar dataKey="count" name="Umdrehungen" />
         </BarChart>
       </ResponsiveContainer>
     </div>

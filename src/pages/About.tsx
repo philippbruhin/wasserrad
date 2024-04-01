@@ -30,12 +30,11 @@ export default function About() {
       <h1>Über dieses Projekt</h1>
       <hr />
       <p>
-        Vielen Dank für Ihr Interesse am Wasserradprojekt im Mühlebach, einem
-        besonderen Gemeinschaftsprojekt zwischen Vater und Sohn. Dieses Projekt
-        war nicht nur eine Gelegenheit, technische Fähigkeiten wie Konstruktion,
-        Holzbearbeitung, 3D-Druck, Programmierung und Elektrotechnik zu
-        erlernen, sondern auch eine wertvolle Zeit, in welcher man gemeinsam
-        experimentieren, lernen und lachen konnte.
+        Vielen Dank für Ihr Interesse am Wasserradprojekt im Mühlebach. Dieses
+        Projekt war nicht nur eine Gelegenheit, technische Fähigkeiten wie
+        Konstruktion, Holzbearbeitung, 3D-Druck, Programmierung und
+        Elektrotechnik zu erlernen, sondern auch eine wertvolle Zeit, in welcher
+        man gemeinsam experimentieren, entdecken und lachen konnte.
       </p>
       <p>
         Wir möchten betonen, dass neben dem technischen Aspekt dieses Projekts
@@ -57,7 +56,11 @@ export default function About() {
         Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads der
         letzten 7 Tage. Der integrierte Sensor speichert die Daten und sendet
         sie alle 10 Minuten, sodass die Umdrehungen auf dieser Webseite
-        angezeigt werden können.
+        angezeigt werden können. Dabei werden die Linien im Balkendiagramm nur
+        blau dargestellt, wenn die Drehzahl zwischen 8 und 20 Umdrehungen liegt.
+        Alle anderen Umdrehungen (mehr oder weniger) werden in rot dargestellt,
+        da sie nicht durch den Bach verursacht wurden, sondern beispielsweise
+        durch manuelles Drehen oder durch Windbewegungen.
       </p>
       {!isTtnLoaded ? (
         <Preloader />
