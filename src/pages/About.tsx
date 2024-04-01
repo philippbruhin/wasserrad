@@ -32,8 +32,8 @@ export default function About() {
       <p>
         Vielen Dank für Ihr Interesse am Wasserradprojekt im Mühlebach. Dieses
         Projekt war nicht nur eine Gelegenheit, technische Fähigkeiten wie
-        Konstruktion, Holzbearbeitung, 3D-Druck, Programmierung und
-        Elektrotechnik zu erlernen, sondern auch eine wertvolle Zeit, in welcher
+        Konstruktion, Holzbearbeitung, 3D-Druck, Elektrotechnik und
+        Programmierung zu erlernen, sondern auch eine wertvolle Zeit, in welcher
         man gemeinsam experimentieren, entdecken und lachen konnte.
       </p>
       <p>
@@ -43,13 +43,6 @@ export default function About() {
         wenig Beachtung auf Handwerk und Technik gelegt wird, war es für uns
         eine Bereicherung, diese Fähigkeiten zu nutzen und ein funktionierendes
         Wasserrad zu bauen.
-      </p>
-      <p>
-        Wir empfehlen allen, die ähnliche Interessen teilen, sich von unserem
-        Projekt inspirieren zu lassen und es uns gleichzutun. Denn das
-        gemeinsame Erleben und Erschaffen von Technik und Handwerk schafft nicht
-        nur funktionale Ergebnisse, sondern auch wertvolle Erinnerungen und
-        Fähigkeiten für die Zukunft.
       </p>
       <h3>Integrierter Sensor zur Drehzahlmessung</h3>
       <p>

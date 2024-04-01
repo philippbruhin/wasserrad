@@ -33,7 +33,7 @@ export const data: QuizQuestion[] = [
     ans: 1,
   },
   {
-    question: "Wann wurde der Mühlebach zum Kanal umgebaut?",
+    question: "Wann wurde der Mühlebach vom Bach zum Kanal umgebaut?",
     image: "ew_wirth.png",
     imageCaption: "Die ehemalige Spinnerei Honegger in Siebnen, heute bekannt als Alte Fabrik. Davor der begradigte Mühlebachkanal. Bild: Valentin Kessler",
     options: ["1802", "1852", "1902", "1952"],
@@ -53,13 +53,15 @@ export const data: QuizQuestion[] = [
     image: "muehlebach_hoehe_falken.jpg",
     imageCaption: "Mühlebach auf Höhe Restaurant Falken in Siebnen.",
     options: ["Aussenkurve", "Innenkurve", "Überall gleich schnell"],
-    description: "In der Aussenkurve fliesst das Wasser schneller. Da die äussere Seite der Kurve einen grösseren Radius hat als die innere Seite, muss das Wasser an der Aussenseite eine grössere Strecke zurücklegen. Um die Kontinuität aufrechtzuerhalten, erhöht das Wasser seine Geschwindigkeit an der Aussenkurve, während es an der Innekurve  langsamer fliesst. An Flüssen mit einem natürlichen Bachbett kann man diesen Effekt erkennen, an den Sedimenten (Geröll & Sand), welche sich an der Innenkurve ablagern. An der Aussenkurve hingegen wird das Ufer abgetragen.",
+    description: "In der Aussenkurve fliesst das Wasser schneller. Da die äussere Seite der Kurve einen grösseren Radius hat als die innere Seite, muss das Wasser an der Aussenseite eine grössere Strecke zurücklegen. Um die Kontinuität aufrechtzuerhalten, erhöht das Wasser seine Geschwindigkeit an der Aussenkurve, während es an der Innekurve  langsamer fliesst. An Flüssen mit einem natürlichen Bachbett kann man diesen Effekt an den Sedimenten (Geröll & Sand) erkennen, welche sich an der Innenkurve ablagern. An der Aussenkurve hingegen wird das Ufer abgetragen.",
     ans: 0,
   },
   {
     question: "Wie hoch ist die Durchflussmenge des Mühlebachs pro Sekunde?",
+    image: "durchfluss_badewannen.png",
+    imageCaption: "Eine normale Badewanne mit 180 x 80 cm fasst etwa 180 Liter Wasser.",
     options: ["1'250 Liter Wasser pro Sekunde", "2'140 Liter Wasser pro Sekunde", "5'500 Liter Wasser pro Sekunde"],
-    description: "Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der Kanal nach wie vor betrieben. Es fliesst somit 2'140 l Wasser pro Sekunde durch den Kanal, was wiederum 14 gefüllten Badewannen entspricht.",
+    description: "Gemäss Vertrag mit dem Kraftwerk Wägital von 1925 hatte das EW Wirth einen Anspruch auf eine Dotierwassermenge von 2.14 m3/s. Mit dieser Menge wird der Kanal nach wie vor betrieben. Es fliesst somit 2'140 l Wasser pro Sekunde durch den Kanal, was wiederum 12 gefüllten Badewannen entspricht.",
     ans: 1,
   },
   {

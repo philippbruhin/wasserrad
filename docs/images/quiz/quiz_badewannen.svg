@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1100"
+   height="500"
+   viewBox="0 0 291.04166 132.29167"
+   version="1.1"
+   id="svg872"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="quiz_badewannen.svg"
+   inkscape:export-filename="C:\repos\wasserrad\public\questions\durchfluss_badewannen.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview874"
+     pagecolor="#f1f1f1"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="391.08648"
+     inkscape:cy="455.09664"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="7672"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g51334" />
+  <defs
+     id="defs869">
+    <rect
+       x="23.418352"
+       y="416.84668"
+       width="466.80582"
+       height="128.02032"
+       id="rect5495" />
+    <color-profile
+       name=""
+       xlink:href="../../../../../WINDOWS/system32/spool/drivers/color/SHP1515_sRGB_4000.icm"
+       id="color-profile73308" />
+  </defs>
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#e3e3e3;stroke-width:0.37831"
+       id="rect1185"
+       width="291.04166"
+       height="132.29167"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Content"
+     style="display:inline">
+    <g
+       id="g888"
+       transform="matrix(0.26458333,0,0,0.26458333,107.98686,59.841916)">
+      <g
+         stroke="none"
+         stroke-width="1"
+         fill="none"
+         fill-rule="evenodd"
+         id="g858"
+         transform="matrix(5.5588662,0,0,5.5588662,-9.1038945,454.54743)">
+        <g
+           id="g856">
+          <path
+             d="m 2.212,37 1.894,9.8 c 0.4197768,3.526993 3.4041375,6.187005 6.956,6.2 h 33.875 c 3.528897,-0.0044 6.504569,-2.630945 6.947,-6.132 L 53.788,37 Z"
+             fill="#000000"
+             fill-rule="nonzero"
+             id="path828" />
+          <path
+             d="M 1.5,32 C 0.67157287,32 0,32.671573 0,33.5 0,34.328427 0.67157287,35 1.5,35 h 53 C 55.328427,35 56,34.328427 56,33.5 56,32.671573 55.328427,32 54.5,32 Z"
+             fill="#000000"
+             fill-rule="nonzero"
+             id="path830" />
+          <path
+             d="m 13,55 v 2 c 0,0.552285 0.447715,1 1,1 h 2 c 0.552285,0 1,-0.447715 1,-1 v -2 z"
+             fill="#000000"
+             fill-rule="nonzero"
+             id="path832" />
+          <path
+             d="m 39,55 v 2 c 0,0.552285 0.447715,1 1,1 h 2 c 0.552285,0 1,-0.447715 1,-1 v -2 z"
+             fill="#000000"
+             fill-rule="nonzero"
+             id="path834" />
+          <path
+             d="M 4,31 V 7.03 C 4.0113876,5.1644973 4.8820627,3.4083898 6.36,2.27 8.0164383,1.1439387 10.055457,0.72965047 12.02,1.12 c 1.081154,0.1663171 2.118144,0.5471136 3.05,1.12 0.958298,0.7316512 1.84555,1.5519407 2.65,2.45 0.02745,0.029406 0.05758,0.056189 0.09,0.08 L 14.93,7.53 13.08,5.81 C 12.201765,4.985714 10.917303,4.7629936 9.8128252,5.2434851 8.708347,5.7239766 7.9956504,6.8155394 8,8.02 V 31 Z"
+             fill="#000000"
+             fill-rule="nonzero"
+             id="path836" />
+          <path
+             d="m 16.822,15.178 c -0.205798,0.209517 -0.493291,0.317978 -0.786196,0.296602 C 15.7429,15.453226 15.474199,15.304176 15.301,15.067 13.307407,12.282439 13.621197,8.4643003 16.042662,6.0425864 18.464128,3.6208726 22.282235,3.3066917 25.067,5.3 25.304175,5.4731986 25.453226,5.7418997 25.474602,6.0348042 25.495978,6.3277087 25.387517,6.6152025 25.178,6.821 Z"
+             fill="#000000"
+             fill-rule="nonzero"
+             id="path838" />
+          <path
+             d="m 18.879,18.778 1.414,1.414"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path840" />
+          <path
+             d="m 28.778,8.879 1.414,1.414"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path842" />
+          <path
+             d="m 23.828,13.828 1.415,1.415"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path844" />
+          <path
+             d="m 28.778,13.121 1.414,1.415"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path846" />
+          <path
+             d="m 23.121,18.778 1.415,1.414"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path848" />
+          <path
+             d="m 28.071,18.071 1.414,1.414"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path850" />
+          <path
+             d="m 23.121,23.021 1.415,1.414"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path852" />
+          <path
+             d="m 33.021,13.121 1.414,1.415"
+             stroke="#000000"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round"
+             id="path854" />
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         transform="translate(-408.13932,-226.17417)"
+         id="text5493"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect5495);fill:#000000;fill-opacity:1;stroke:none" />
+      <g
+         id="g51334"
+         transform="translate(3.6559426)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+           x="-231.19647"
+           y="177.92746"
+           id="text7877"><tspan
+             sodipodi:role="line"
+             id="tspan7875"
+             x="-231.19647"
+             y="177.92746"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Black';-inkscape-font-specification:'Roboto Black, ';text-align:center;text-anchor:middle">1'250 Liter</tspan><tspan
+             sodipodi:role="line"
+             x="-231.19647"
+             y="227.92746"
+             id="tspan18081"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:Roboto;-inkscape-font-specification:Roboto"><tspan
+   style="font-size:34.6667px;text-align:center;text-anchor:middle"
+   id="tspan32885">7 Badewanne</tspan>n</tspan><tspan
+             sodipodi:role="line"
+             x="-231.19647"
+             y="277.92746"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Roboto;-inkscape-font-specification:Roboto"
+             id="tspan43771" /><tspan
+             sodipodi:role="line"
+             x="-231.19647"
+             y="328.42065"
+             id="tspan12999"
+             style="font-size:37.3333px" /><tspan
+             sodipodi:role="line"
+             x="-231.19647"
+             y="378.42065"
+             id="tspan7879" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+           x="132.5993"
+           y="177.92746"
+           id="text7877-8"><tspan
+             sodipodi:role="line"
+             id="tspan7875-4"
+             x="132.5993"
+             y="177.92746"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Black';-inkscape-font-specification:'Roboto Black, ';text-align:center;text-anchor:middle">2'140 Liter</tspan><tspan
+             sodipodi:role="line"
+             x="132.5993"
+             y="227.92746"
+             id="tspan18081-2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:Roboto;-inkscape-font-specification:Roboto"><tspan
+   style="font-size:34.6667px;text-align:center;text-anchor:middle"
+   id="tspan32885-3">12 Badewanne</tspan>n</tspan><tspan
+             sodipodi:role="line"
+             x="132.5993"
+             y="277.92746"
+             id="tspan12999-0"
+             style="font-size:37.3333px" /><tspan
+             sodipodi:role="line"
+             x="132.5993"
+             y="327.92746"
+             id="tspan7879-9" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+           x="497.61639"
+           y="177.92746"
+           id="text7877-8-5"><tspan
+             sodipodi:role="line"
+             id="tspan7875-4-7"
+             x="497.61639"
+             y="177.92746"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Black';-inkscape-font-specification:'Roboto Black, ';text-align:center;text-anchor:middle">5'500 Liter</tspan><tspan
+             sodipodi:role="line"
+             x="497.61639"
+             y="227.92746"
+             id="tspan18081-2-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.6667px;font-family:Roboto;-inkscape-font-specification:Roboto"><tspan
+   style="font-size:34.6667px;text-align:center;text-anchor:middle"
+   id="tspan32885-3-4">31 Badewanne</tspan>n</tspan><tspan
+             sodipodi:role="line"
+             x="497.61639"
+             y="277.92746"
+             id="tspan12999-0-7"
+             style="font-size:37.3333px" /><tspan
+             sodipodi:role="line"
+             x="497.61639"
+             y="327.92746"
+             id="tspan7879-9-7" /></text>
+      </g>
+      <g
+         id="g50924"
+         transform="matrix(5.1733986,0,0,5.1733986,-13.34127,-199.96166)">
+        <g
+           stroke="none"
+           stroke-width="1"
+           fill="none"
+           fill-rule="evenodd"
+           id="g50893">
+          <g
+             transform="translate(1,1)"
+             stroke="#000000"
+             stroke-width="2"
+             id="g50891">
+            <path
+               d="M 45.93774,54 H 12.06226 C 8.0276605,54.000019 4.6244315,50.995724 4.124,46.99228 L 2,36 H 56 L 53.876,46.99228 C 53.375568,50.995724 49.972339,54.000019 45.93774,54 Z"
+               id="path50861" />
+            <rect
+               x="0"
+               y="31"
+               width="58"
+               height="5"
+               rx="2.5"
+               id="rect50863" />
+            <path
+               d="m 13,54 h 6 v 3 c 0,1.104569 -0.895431,2 -2,2 h -2 c -1.104569,0 -2,-0.895431 -2,-2 z"
+               id="path50865" />
+            <path
+               d="m 39,54 h 6 v 3 c 0,1.104569 -0.895431,2 -2,2 h -2 c -1.104569,0 -2,-0.895431 -2,-2 z"
+               id="path50867" />
+            <path
+               d="M 9,31 V 8.02 C 9.0005042,6.817849 9.713659,5.7303781 10.816012,5.250811 11.918366,4.7712439 13.200146,4.9908396 14.08,5.81 l 1.85,1.72"
+               id="path50869" />
+            <path
+               d="M 5,31 V 7.03 C 5.0114206,5.1645051 5.882089,3.4084114 7.36,2.27 9.0164196,1.1438944 11.055457,0.7296024 13.02,1.12 c 1.081156,0.1663085 2.118148,0.5471055 3.05,1.12 0.958306,0.7316417 1.845559,1.551932 2.65,2.45 0.02745,0.029406 0.05758,0.056189 0.09,0.08"
+               id="path50871" />
+            <path
+               d="m 17.82178,15.17822 c -0.206476,0.207882 -0.493441,0.315226 -0.78566,0.29389 C 16.743901,15.45077 16.475572,15.302888 16.30148,15.06722 14.314531,12.282302 14.631144,8.469289 17.050205,6.050223 19.469266,3.6311571 23.282278,3.3145365 26.0672,5.30148 26.302868,5.4755718 26.450755,5.7439013 26.47209,6.0361203 26.49343,6.3283394 26.38608,6.6153038 26.1782,6.82178 Z"
+               id="path50873" />
+            <path
+               d="m 19.87868,18.77817 1.41421,1.41422"
+               id="path50875" />
+            <path
+               d="m 29.77817,8.87868 1.41422,1.41421"
+               id="path50877" />
+            <path
+               d="m 24.82843,13.82843 1.41421,1.41421"
+               id="path50879" />
+            <path
+               d="m 29.77817,13.12132 1.41422,1.41421"
+               id="path50881" />
+            <path
+               d="m 24.12132,18.77817 1.41421,1.41422"
+               id="path50883" />
+            <path
+               d="m 29.07107,18.07107 1.41421,1.41421"
+               id="path50885" />
+            <path
+               d="m 24.12132,23.02082 1.41421,1.41421"
+               id="path50887" />
+            <path
+               d="m 34.02082,13.12132 1.41421,1.41421"
+               id="path50889" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
