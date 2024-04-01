@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Contact() {
   const [isClocksOpen, setIsClocksOpen] = useState(false);
+  const [isCreditsOpen, setIsCreditsOpen] = useState(false);
   const [isMunicipalInfoOpen, setIsMunicipalInfoOpen] = useState(false);
   const [isEthPicsOpen, setIsEthPicsOpen] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
@@ -35,7 +36,11 @@ export default function Contact() {
           <div className="border px-4 rounded-b-lg">
             <p>
               Das Wasserrad ist mit zwei Glocken (Swissmade, gekauft bei{" "}
-              <a href="https://www.glocken-emil.ch/" target="_blank">
+              <a
+                href="https://www.glocken-emil.ch/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 glocken-emil.ch
               </a>
               ) ausgestattet, die dem Projekt einen besonderen Charme verleihen
@@ -50,6 +55,54 @@ export default function Contact() {
               empfunden wird.
             </p>
             <p>Vielen Dank für Ihr Verständnis und Ihre Unterstützung.</p>
+          </div>
+        )}
+
+        <button
+          className="w-full py-2 px-4 mt-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
+          onClick={() => setIsCreditsOpen(!isCreditsOpen)}
+        >
+          Danksagung
+          <span>{isCreditsOpen ? "-" : "+"}</span>
+        </button>
+        {isCreditsOpen && (
+          <div className="border px-4 rounded-b-lg">
+            <p>
+              Wir möchten uns herzlich bei folgenden Unternehmen und Personen
+              bedanken, die zum Bau unseres Wasserrads beigetragen haben:
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://schaettin-garten.ch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Schättin Gartenbau GmbH
+                </a>{" "}
+                aus Wangen, vertreten durch Herrn Patrick Schättin, für das
+                grosszügige Zurverfügungstellen der Werkstatt und von
+                Materialien.
+              </li>
+              <li>
+                Roman Egli aus Wangen, für die hervorragende Arbeit bei der
+                Erstellung der 3D-Druckteile, die essentiell für die
+                Funktionalität unseres Wasserrads sind.
+              </li>
+              <li>
+                <a
+                  href="https://elektro-spaeni.ch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Späni Elektro-Mechanik AG
+                </a>{" "}
+                aus Altendorf, vertreten durch Herrn Ralph Kessler, für den
+                professionellen Druck der Sticker mit QR-Code, der wesentlich
+                zur Identifikation und Vermarktung unseres Projekts beigetragen
+                hat.
+              </li>
+            </ul>
           </div>
         )}
 
@@ -101,8 +154,8 @@ export default function Contact() {
             <p>
               Nostalgiker können im Bildarchiv E-Pics der ETH Zürich historische
               Aufnahmen von Siebnen, einschliesslich des Kraftwerks und der
-              Baumwollspinnerei Honegger (Alte Fabrik), entdecken. Besuchen Sie den folgenden
-              Link, um mehr zu erfahren:
+              Baumwollspinnerei Honegger (Alte Fabrik), entdecken. Besuchen Sie
+              den folgenden Link, um mehr zu erfahren:
             </p>
             <p>
               <a
