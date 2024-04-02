@@ -97,10 +97,9 @@ export default function Contact() {
                 >
                   Späni Elektro-Mechanik AG
                 </a>{" "}
-                aus Altendorf, vertreten durch Herrn Ralph Kessler, für den
-                professionellen Druck der Sticker mit QR-Code, der wesentlich
-                zur Identifikation und Vermarktung unseres Projekts beigetragen
-                hat.
+                aus Altendorf, vertreten durch Herrn Ralph Kessler, hat den
+                professionellen Druck des Stickers mit QR-Code übernommen, der
+                zur Identifikation und Funktion unseres Projekts beiträgt.
               </li>
             </ul>
           </div>
