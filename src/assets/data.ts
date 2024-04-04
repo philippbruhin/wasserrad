@@ -35,7 +35,7 @@ export const data: QuizQuestion[] = [
   {
     question: "Wann wurde der Mühlebach vom Bach zum Kanal umgebaut?",
     image: "2024-03_begradigter_muehlebach.jpg",
-    imageCaption: "Begradigter Mühlebachkanal in Siebnen. Im Hintergrund die ehemalige Spinnerei Honegger, heute bekannt als Alte Fabrik. Vor 150 Jahren arbeiteten in dieser Fabrik ca. 150 Personen. Der Lohn betrug zwischen 12 bis 72 Franken pro Monat. Damals wurde noch 6 Tage gearbeitet pro Woche. Zur Einordnung: 1 kg Brot kostete damals 40 Rappen.",
+    imageCaption: "Begradigter Mühlebachkanal in Siebnen. Im Hintergrund die ehemalige Spinnerei Honegger, heute bekannt als Alte Fabrik. In guten Zeiten arbeiteten in dieser Fabrik ca. 150 Personen. Der Lohn betrug zwischen 12 bis 72 Franken pro Monat. Damals wurde noch 6 Tage gearbeitet pro Woche. Zur Einordnung: 1 kg Brot kostete zu jener Zeit 40 Rappen.",
     options: ["1802", "1852", "1902", "1952"],
     description: "Im Jahr 1852 initiierte der Unternehmer Caspar Honegger die Kanalisierung des Mühlebachs. Zusätzlich liess er in jener Zeit die Baumwollspinnerei errichten, die heute im Volksmund \"Alte Fabrik\" genannt wird. In dieser Fabrik wurde anfangs Garn und später auch Stoffe  für Kleider, Vorhänge, Tischtücher etc. hergestellt. Nach Anfangsschwierigkeiten machte man das sehr erfolgreich. In der Neuzeit jedoch immer weniger (Globalisierung, Billigprodukte aus Asien) und so wurde die Produktion 1979 eingestellt. Die Fabrik steht unter Denkmalschutz und beherbergt heute Kleingewerbe und Studios.",
     ans: 1,
