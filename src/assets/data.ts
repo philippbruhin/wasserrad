@@ -34,8 +34,8 @@ export const data: QuizQuestion[] = [
   },
   {
     question: "Wann wurde der Mühlebach vom Bach zum Kanal umgebaut?",
-    image: "ew_wirth.png",
-    imageCaption: "Die ehemalige Spinnerei Honegger in Siebnen, heute bekannt als Alte Fabrik. Davor der begradigte Mühlebachkanal. Bild: Valentin Kessler",
+    image: "2024-03_begradigter_muehlebach.jpg",
+    imageCaption: "Begradigter Mühlebachkanal in Siebnen. Im Hintergrund die ehemalige Spinnerei Honegger, heute bekannt als Alte Fabrik. Vor 150 Jahren arbeiteten in dieser Fabrik ca. 150 Personen. Der Lohn betrug zwischen 12 bis 72 Franken pro Monat. Damals wurde noch 6 Tage gearbeitet pro Woche. Zur Einordnung: 1 kg Brot kostete damals 40 Rappen.",
     options: ["1802", "1852", "1902", "1952"],
     description: "Im Jahr 1852 initiierte der Unternehmer Caspar Honegger die Kanalisierung des Mühlebachs. Zusätzlich liess er in jener Zeit die Baumwollspinnerei errichten, die heute im Volksmund \"Alte Fabrik\" genannt wird. In dieser Fabrik wurde anfangs Garn und später auch Stoffe  für Kleider, Vorhänge, Tischtücher etc. hergestellt. Nach Anfangsschwierigkeiten machte man das sehr erfolgreich. In der Neuzeit jedoch immer weniger (Globalisierung, Billigprodukte aus Asien) und so wurde die Produktion 1979 eingestellt. Die Fabrik steht unter Denkmalschutz und beherbergt heute Kleingewerbe und Studios.",
     ans: 1,
@@ -45,7 +45,7 @@ export const data: QuizQuestion[] = [
     image: "alte_turbine_nuolen.jpg",
     imageCaption: "Alte Turbine in Nuolen. Foto von der Webseite des EW Wangen.",
     options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Krafwerke"],
-    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es beim Sagi-Areal (ehemals Sägerei wo Holz für Bau von Häusern und Ställen hergestellt wurde) noch ein fünftes Kraftwerk. Die Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
+    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es beim Sagi-Areal (ehemalige Sägerei) noch ein fünftes Kraftwerk. Die Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von 50 Schweizer Haushalten.",
     ans: 2,
   },
   {
