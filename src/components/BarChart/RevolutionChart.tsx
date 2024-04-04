@@ -32,7 +32,7 @@ export default function RevolutionChart(data: SensorData) {
       time: new Date(item.result.uplink_message.received_at).toLocaleString(
         "de-CH",
         {
-          weekday: "long",
+          weekday: "short",
           hour: "2-digit",
           minute: "2-digit",
         }
@@ -50,7 +50,7 @@ export default function RevolutionChart(data: SensorData) {
           margin={{
             top: 5,
             left: 15,
-            bottom: 90,
+            bottom: 60,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
