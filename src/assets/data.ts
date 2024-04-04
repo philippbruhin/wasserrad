@@ -26,8 +26,8 @@ export const data: QuizQuestion[] = [
   },
   {
     question: "An wie vielen Stunden im Jahr fliesst Wasser im Mühlebach, welches von der Wägitaler Aa in Siebnen abgezweigt wird?",
-    image: "wehr_siebnen.gif",
-    imageCaption: "Wehr bei Aabrücke in Siebnen im Zeitraffer. Hier wird das Wasser für den Mühlebach abgezweigt.",
+    image: "wehr_siebnen_start_muehlebach.gif",
+    imageCaption: "Wehr bei Aabrücke in Siebnen. Hier wird das Wasser für den Mühlebach abgezweigt.",
     options: ["24 Stunden", "2'000 Stunden", "5'000 Stunden", "8'766 Stunden (das ganze Jahr)"],
     description: "Der Mühlebachkanal kann nur mit Wasser beschickt werden, wenn im Kraftwerk Wägital Strom produziert wird und das Stauwehr unterhalb der Kantonsstrassenbrücke in Siebnen angehoben ist. Das ist in der Regel während 2'000 Stunden im Jahr der Fall, wovon 1'500 Stunden auf das Winterhalbjahr fallen. Das sind 83 Tage oder 23% des Jahres.",
     ans: 1,
@@ -45,7 +45,7 @@ export const data: QuizQuestion[] = [
     image: "alte_turbine_nuolen.jpg",
     imageCaption: "Alte Turbine in Nuolen. Foto von der Webseite des EW Wangen.",
     options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Krafwerke"],
-    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es beim Sagi-Areal (ehemalige Sägerei) noch ein fünftes Kraftwerk. Die Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
+    description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es beim Sagi-Areal (ehemals Sägerei wo Holz für Bau von Häusern und Ställen hergestellt wurde) noch ein fünftes Kraftwerk. Die Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von ca. 50 Schweizer Haushalten.",
     ans: 2,
   },
   {
