@@ -252,7 +252,7 @@ Die Sensoreinstellungen können (durch Administratoren von diesem Projekt) unter
 
 ## 4. Webseite und Online-Quiz
 
-Am dem Wasserrad gibt es ein QR-Code, welcher auf folgende Quiz-Webseite verweist:
+Am Wasserrad gibt es ein QR-Code, welcher auf folgende Quiz-Webseite verweist:
 
 [https://philippbruhin.github.io/wasserrad/](https://philippbruhin.github.io/wasserrad/)
 
