@@ -47,7 +47,7 @@ export default function About() {
       <h3>Integrierter Sensor zur Drehzahlmessung</h3>
       <p>
         Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads der
-        letzten 7 Tage. Der integrierte Sensor speichert die Daten und sendet
+        letzten Tage. Der integrierte Sensor speichert die Daten und sendet
         sie alle 10 Minuten, sodass die Umdrehungen auf dieser Webseite
         angezeigt werden können. Dabei werden die Linien im Balkendiagramm nur{" "}
         <span className="bg-blue-600 text-white px-1">blau dargestellt</span>,
