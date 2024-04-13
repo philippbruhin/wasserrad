@@ -49,12 +49,13 @@ export default function About() {
         Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads der
         letzten 7 Tage. Der integrierte Sensor speichert die Daten und sendet
         sie alle 10 Minuten, sodass die Umdrehungen auf dieser Webseite
-        angezeigt werden können. Dabei werden die Linien im Balkendiagramm nur
-        blau dargestellt, wenn die Drehzahl zwischen 8 und 20 Umdrehungen pro
-        Minute liegt. Alle anderen Umdrehungen (mehr oder weniger) werden in rot
-        dargestellt, da sie nicht durch den Bach verursacht wurden, sondern
-        beispielsweise durch manuelles Drehen eines Besuchers oder durch
-        Windbewegungen.
+        angezeigt werden können. Dabei werden die Linien im Balkendiagramm nur{" "}
+        <span className="bg-blue-600 text-white px-1">blau dargestellt</span>,
+        wenn die Drehzahl zwischen 8 und 20 Umdrehungen pro Minute liegt. Alle
+        anderen Umdrehungen (mehr oder weniger) werden in{" "}
+        <span className="bg-red-600 text-white px-1">rot dargestellt</span>, da
+        sie nicht durch den Bach verursacht wurden, sondern beispielsweise durch
+        manuelles Drehen eines Besuchers oder durch Windbewegungen.
       </p>
       {!isTtnLoaded ? (
         <Preloader />

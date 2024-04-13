@@ -10,23 +10,27 @@ import {
 } from "recharts";
 import "./RevolutionChart.css";
 import type { SensorData } from "../../lib/ttnDataFetcher";
+import { useState } from "react";
 
-export default function RevolutionChart(data: SensorData) {
+export default function RevolutionChart(sensorData: SensorData) {
+  const [numEntries, setNumEntries] = useState(1008);
+  const displayedData = sensorData.entries.slice(-numEntries);
+
   let previousCount = 0;
 
-  const transformedData = data.entries.map((item) => {
+  const transformedData = displayedData.map((item) => {
     const currentCount = item.result.uplink_message.decoded_payload.Count;
     const countDifference = currentCount - previousCount;
     const fill: string =
-    countDifference / 10 > 20
-      ? "#dc2626"
-      : countDifference / 10 < 8
-      ? "#dc2626"
-      : "#2563eb";
+      countDifference / 10 > 20
+        ? "#dc2626"
+        : countDifference / 10 < 8
+        ? "#dc2626"
+        : "#2563eb";
 
     previousCount = currentCount;
 
-    console.log('fill', fill);
+    console.log("fill", fill);
 
     return {
       time: new Date(item.result.uplink_message.received_at).toLocaleString(
@@ -43,30 +47,56 @@ export default function RevolutionChart(data: SensorData) {
   });
 
   return (
-    <div className="h-[28rem] my-10">
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart
-          data={transformedData}
-          margin={{
-            top: 5,
-            left: 15,
-            bottom: 60,
-          }}
+    <>
+      <div className="relative max-w-md">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute top-0 bottom-0 w-5 h-5 my-auto text-gray-400 right-3"
+          viewBox="0 0 20 20"
+          fill="currentColor"
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="time" angle={-45} textAnchor="end" />
-          <YAxis>
-            <Label
-              value="Rundenzähler [1/min]"
-              angle={-90}
-              dx={-35}
-              position="center"
-            />
-          </YAxis>
-          <Tooltip />
-          <Bar dataKey="count" name="Umdrehungen" />
-        </BarChart>
-      </ResponsiveContainer>
-    </div>
+          <path
+            fillRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+        <select
+          className="w-full px-3 py-2 text-sm text-gray-600 bg-white border rounded-lg shadow-sm outline-none appearance-none focus:ring-offset-2 focus:ring-blue-600 focus:ring-2"
+          value={numEntries}
+          onChange={(e) => setNumEntries(Number(e.target.value))}
+        >
+          <option value={1008}>Letzte 7 Tage</option>
+          <option value={432}>Letzte 3 Tage</option>
+          <option value={144}>Lezte 24 Stunden</option>
+          <option value={72}>Lezte 12 Stunden</option>
+        </select>
+      </div>
+      <div className="h-[28rem] my-10">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart
+            data={transformedData}
+            margin={{
+              top: 5,
+              left: 15,
+              bottom: 60,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="time" angle={-45} textAnchor="end" />
+            <YAxis>
+              <Label
+                value="Rundenzähler [1/min]"
+                angle={-90}
+                dx={-35}
+                position="center"
+              />
+            </YAxis>
+            <Tooltip />
+            <Bar dataKey="count" name="Umdrehungen" />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </>
   );
 }
