@@ -40,16 +40,16 @@ export default function About() {
         Wir möchten betonen, dass neben dem technischen Aspekt dieses Projekts
         auch die Freude und der Stolz, etwas mit unseren eigenen Händen zu
         erschaffen, von unschätzbarem Wert waren. In einer Zeit, in der oft
-        wenig Beachtung auf das Handwerk gelegt wird, war es für uns
-        eine Bereicherung, diese Fähigkeiten zu nutzen und ein funktionierendes
+        wenig Beachtung auf das Handwerk gelegt wird, war es für uns eine
+        Bereicherung, diese Fähigkeiten zu nutzen und ein funktionierendes
         Wasserrad zu bauen.
       </p>
       <h3>Integrierter Sensor zur Drehzahlmessung</h3>
       <p>
         Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads der
-        letzten Tage. Der integrierte Sensor speichert die Daten und sendet
-        sie alle 10 Minuten, sodass die Umdrehungen auf dieser Webseite
-        angezeigt werden können. Dabei werden die Linien im Balkendiagramm nur{" "}
+        letzten Tage. Der integrierte Sensor speichert die Daten und sendet sie
+        alle 10 Minuten, sodass die Umdrehungen auf dieser Webseite angezeigt
+        werden können. Dabei werden die Linien im Balkendiagramm nur{" "}
         <span className="bg-blue-600 text-white px-1">blau dargestellt</span>,
         wenn die Drehzahl zwischen 8 und 20 Umdrehungen pro Minute liegt. Alle
         anderen Umdrehungen (mehr oder weniger) werden in{" "}

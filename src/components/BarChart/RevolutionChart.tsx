@@ -14,11 +14,10 @@ import { useState } from "react";
 
 export default function RevolutionChart(sensorData: SensorData) {
   const [numEntries, setNumEntries] = useState(1008);
-  const displayedData = sensorData.entries.slice(-numEntries);
 
   let previousCount = 0;
 
-  const transformedData = displayedData.map((item) => {
+  const transformedData = sensorData.entries.map((item) => {
     const currentCount = item.result.uplink_message.decoded_payload.Count;
     const countDifference = currentCount - previousCount;
     const fill: string =
@@ -29,8 +28,6 @@ export default function RevolutionChart(sensorData: SensorData) {
         : "#2563eb";
 
     previousCount = currentCount;
-
-    console.log("fill", fill);
 
     return {
       time: new Date(item.result.uplink_message.received_at).toLocaleString(
@@ -45,6 +42,8 @@ export default function RevolutionChart(sensorData: SensorData) {
       count: countDifference / 10,
     };
   });
+
+  const displayedData = transformedData.slice(-numEntries);
 
   return (
     <>
@@ -75,7 +74,7 @@ export default function RevolutionChart(sensorData: SensorData) {
       <div className="h-[28rem] my-10">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
-            data={transformedData}
+            data={displayedData}
             margin={{
               top: 5,
               left: 15,
