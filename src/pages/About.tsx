@@ -40,7 +40,7 @@ export default function About() {
         Wir möchten betonen, dass neben dem technischen Aspekt dieses Projekts
         auch die Freude und der Stolz, etwas mit unseren eigenen Händen zu
         erschaffen, von unschätzbarem Wert waren. In einer Zeit, in der oft
-        wenig Beachtung auf Handwerk und Technik gelegt wird, war es für uns
+        wenig Beachtung auf das Handwerk gelegt wird, war es für uns
         eine Bereicherung, diese Fähigkeiten zu nutzen und ein funktionierendes
         Wasserrad zu bauen.
       </p>
