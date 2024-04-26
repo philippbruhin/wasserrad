@@ -11,6 +11,8 @@ Zudem gibt es eine Webseite mit einem Online-Quiz zum Bach, erreichbar unter [ww
 ![Wasserrad am ersten Betriebstag](./docs/images/2024-04-26_Wasserad_am_ersten_Betriebstag.jpg)
 *Das fertig gebaute und im Mühlebach montierte Wasserrad.*
 
+Ein Video auf YouTube zum Wasserrad gibt es [hier](https://youtu.be/QoVuPHz8Htk).
+
 ## Inhalt
 
 1. [Typ und Grösse des Rades bestimmen](#1-typ-und-grösse-des-rades-bestimmen)

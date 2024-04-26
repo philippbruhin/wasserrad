@@ -36,6 +36,18 @@ export default function About() {
         Programmierung zu erlernen, sondern auch eine wertvolle Zeit, in welcher
         man gemeinsam experimentieren, entdecken und lachen konnte.
       </p>
+      <div className="aspect-w-16 aspect-h-9">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QoVuPHz8Htk?si=XQSZwJuiz6IdkMNc"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+      </div>
       <p>
         Wir möchten betonen, dass neben dem technischen Aspekt dieses Projekts
         auch die Freude und der Stolz, etwas mit unseren eigenen Händen zu
