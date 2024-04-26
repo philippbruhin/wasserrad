@@ -47,7 +47,7 @@ export async function ttnDataFetcher() {
           'f_port': 2,
           'order': '-received_at',
           'field_mask': 'up.uplink_message.decoded_payload',
-          'limit': 1008,
+          'after': "2024-04-26T15:30:00Z",
         }
     });
 
