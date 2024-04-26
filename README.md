@@ -208,13 +208,13 @@ Um das Wasserrad witterungsbeständig zu machen, wurde das Holz mit grüner und 
 Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermöglichte, flexibel auf neue Anforderungen zu reagieren und gleichzeitig sicherzustellen, dass das Wasserradprojekt sowohl funktional als auch ästhetisch ansprechend daherkommt.
 
 ![Oberfläche behandeln](./docs/images/2024-04-26_Oberflaech_spritzen.jpg)
-*Die Oberfläche wurde in einem ersten Schritt gespritz und danach noch mit einem Bootslack überzogen.*
+*Die Oberfläche wurde in einem ersten Schritt gespritz und danach mit einem Bootslack überzogen.*
 
 ![Probemontage im Mühlebach](./docs/images/2024-04-26_Testmontage.jpg)
-*Probemontage im Mühlebach*
+*Probemontage im Mühlebach. Die Höhe passt.*
 
 ![Montage des Gehäuses](./docs/images/2024-04-26_Gehaeuse_ohne_Dach.jpg)
-*Montage des Gehäuses mit Glocken und Reed-Kontakt zur Drehzahlmessung.*
+*Montage des Gehäuses mit LoRaWAN-Node und Magnetschalter zur Drehzahlmessung sowie zwei Glocken.*
 
 ![Montage des Rades](./docs/images/2024-04-26_Montage_Wasserrad.jpg)
 *Montage des Rades mittels M8 Gewindestange.*
