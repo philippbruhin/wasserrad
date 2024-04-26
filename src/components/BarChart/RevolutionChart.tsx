@@ -21,9 +21,9 @@ export default function RevolutionChart(sensorData: SensorData) {
     const currentCount = item.result.uplink_message.decoded_payload.Count;
     const countDifference = currentCount - previousCount;
     const fill: string =
-      countDifference / 10 > 20
+      countDifference / 10 > 11
         ? "#dc2626"
-        : countDifference / 10 < 8
+        : countDifference / 10 < 6
         ? "#dc2626"
         : "#2563eb";
 

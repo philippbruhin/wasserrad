@@ -46,11 +46,11 @@ vKmHErrechnet = (V / A) * 3.6 % 2.2434
 
 disp('')
 disp('Drehzahl n [1/s]')
-d = 0.9                       % Durchmesser Wasserrad bei Radschaufelmitte [m]
-n = v / (d * pi)              % 0.2458
+d = 1.05                      % Durchmesser Wasserrad bei Radschaufelmitte [m]
+n = vErrechnet / (d * pi)     % 0.1889
 
 % Umdrehungen pro Minute
 
 disp('')
 disp('Umdrehungen pro Minute nMin [1/min]')
-nMin = n * 60                 % 14.747
+nMin = n * 60                 % 11.335

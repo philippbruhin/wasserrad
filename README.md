@@ -8,6 +8,9 @@ Zur Messung der Drehzahl des Wasserrades wird ein Rundenzähler-Sensor verwendet
 
 Zudem gibt es eine Webseite mit einem Online-Quiz zum Bach, erreichbar unter [www.nuolenbach.ch](https://www.nuolenbach.ch).
 
+![Wasserrad am ersten Betriebstag](./docs/images/2024-04-26_Wasserad_am_ersten_Betriebstag)
+*Das fertig gebaute und im Mühlebach montierte Wasserrad.*
+
 ## Inhalt
 
 1. [Typ und Grösse des Rades bestimmen](#1-typ-und-grösse-des-rades-bestimmen)
@@ -167,17 +170,17 @@ vKmHErrechnet = (V / A) * 3.6 % 2.2434
 
 disp('')
 disp('Drehzahl n [1/s]')
-d = 0.9                       % Durchmesser Wasserrad bei Radschaufelmitte [m]
-n = v / (d * pi)              % 0.2458
+d = 1.05                      % Durchmesser Wasserrad bei Radschaufelmitte [m]
+n = vErrechnet / (d * pi)     % 0.1889
 
 % Umdrehungen pro Minute
 
 disp('')
 disp('Umdrehungen pro Minute nMin [1/min]')
-nMin = n * 60                 % 14.747
+nMin = n * 60                 % 11.335
 ```
 
-> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 900 mm beträgt die errechnete Drehzahl **14.7 Umdrehungen pro Minute**.
+> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 1'050 mm beträgt die errechnete Drehzahl **11.3 Umdrehungen pro Minute**. Nach Inbetriebnahme des Wasserrades zeigte sich, dass die reelle Drehzahl bei nur **8.5 Umdrehungen pro Minute** liegt.
 
 ## 2. Konstruktion und Bau
 
@@ -221,6 +224,9 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 
 ![Schweissen der Bodenhalterung](./docs/images/2024-04-26_Bodenhalterung_schweissen.jpg)
 *Schweissen der Halterung für das Wasserrad. Sie wird im Erdboden eingesteckt, sodass das Bachbett nicht beschädigt wird.*
+
+![Inbetriebnahme](./docs/images/2024-04-26_Inbetriebnahme.jpg)
+*Inbetriebnahme des Wasserrades am 26. April 2024.*
 
 ## 3. Rundenzähler-Sensor
 
