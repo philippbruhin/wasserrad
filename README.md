@@ -8,7 +8,7 @@ Zur Messung der Drehzahl des Wasserrades wird ein Rundenzähler-Sensor verwendet
 
 Zudem gibt es eine Webseite mit einem Online-Quiz zum Bach, erreichbar unter [www.nuolenbach.ch](https://www.nuolenbach.ch).
 
-![Wasserrad am ersten Betriebstag](./docs/images/2024-04-26_Wasserad_am_ersten_Betriebstag)
+![Wasserrad am ersten Betriebstag](./docs/images/2024-04-26_Wasserad_am_ersten_Betriebstag.jpg)
 *Das fertig gebaute und im Mühlebach montierte Wasserrad.*
 
 ## Inhalt
