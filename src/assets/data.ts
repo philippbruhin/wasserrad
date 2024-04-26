@@ -57,7 +57,7 @@ export const data: QuizQuestion[] = [
     ans: 0,
   },
   {
-    question: "Wie hoch ist die Durchflussmenge des Mühlebachs pro Sekunde?",
+    question: "Wie viel Wasser fliesst pro Sekunde den Mühlebach hinunter?",
     image: "durchfluss_badewannen.png",
     imageCaption: "Eine normale Badewanne mit 180 x 80 cm fasst etwa 180 Liter Wasser.",
     options: ["1'250 Liter Wasser pro Sekunde", "2'140 Liter Wasser pro Sekunde", "5'500 Liter Wasser pro Sekunde"],
@@ -69,7 +69,7 @@ export const data: QuizQuestion[] = [
     image: "Wikipedia_Waegitalerstausee_Roland_Zumbuehl.jpg",
     imageCaption: "Wägitalersee mit Gross Aubrig im Hintergrund. Foto Wikipedia, Roland Zumbuehl.",
     options: ["5 Meter", "20 Meter", "50 Meter", "100 Meter"],
-    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Die maximale Tiefe beträgt 65 Meter. Der See fasst 150 Mio. m3 Wasser, was wiederum 100 Milliarden 1.5l Flaschen entspricht. Das wären für jeden Einwohner in der Schweiz 11'000 Flaschen. Das Füllen dauerte zwei Jahre. Aus diesem Grund wurde schon während des Baus der Staumauer mit dem Aufstauen begonnen.",
+    description: "Um Hangrutsche zu vermeiden, wird nur die Wassermenge zwischen den Staukoten 880 und 900 m ü. Meer bewirtschaftet. Der Wägitalersee kann also um 20 Meter ansteigen oder absinken. Die maximale Tiefe beträgt 65 Meter. Der See fasst 150 Mio. m3 Wasser, was wiederum 100 Milliarden 1.5l Flaschen entspricht. Das wären für jeden Einwohner in der Schweiz 11'000 Flaschen.",
     ans: 1,
   },
   {
