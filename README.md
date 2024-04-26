@@ -207,6 +207,21 @@ Um das Wasserrad witterungsbeständig zu machen, wurde das Holz mit grüner und 
 
 Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermöglichte, flexibel auf neue Anforderungen zu reagieren und gleichzeitig sicherzustellen, dass das Wasserradprojekt sowohl funktional als auch ästhetisch ansprechend daherkommt.
 
+![Oberfläche behandeln](./docs/images/2024-04-26_Oberflaech_spritzen.jpg)
+*Die Oberfläche wurde in einem ersten Schritt gespritz und danach noch mit einem Bootslack überzogen.*
+
+![Probemontage im Mühlebach](./docs/images/2024-04-26_Testmontage.jpg)
+*Probemontage im Mühlebach*
+
+![Montage des Gehäuses](./docs/images/2024-04-26_Gehaeuse_ohne_Dach.jpg)
+*Montage des Gehäuses mit Glocken und Reed-Kontakt zur Drehzahlmessung.*
+
+![Montage des Rades](./docs/images/2024-04-26_Montage_Wasserrad.jpg)
+*Montage des Rades mittels M8 Gewindestange.*
+
+![Schweissen der Bodenhalterung](./docs/images/2024-04-26_Bodenhalterung_schweissen.jpg)
+*Schweissen der Halterung für das Wasserrad. Sie wird im Erdboden eingesteckt, sodass das Bachbett nicht beschädigt wird.*
+
 ## 3. Rundenzähler-Sensor
 
 Um die Drehzahl des Wasserrades zu messen, respektive um zu eruieren, ob der Mühlebach Wasser führt, wird ein LoRaWAN Sensor Node verwendet, an welchem ein Reed-Kontakt (kontaktloser, magnetischer Schalter) angeschlossen ist.
