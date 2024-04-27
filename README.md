@@ -212,6 +212,12 @@ Um das Wasserrad witterungsbeständig zu machen, wurde das Holz mit grüner und 
 
 Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermöglichte, flexibel auf neue Anforderungen zu reagieren und gleichzeitig sicherzustellen, dass das Wasserradprojekt sowohl funktional als auch ästhetisch ansprechend daherkommt.
 
+![Holzbearbeitung](./docs/images/2024-04-27_Holzbeareitung.jpg)
+*Die Sperrholzplatten werden mittels Stichsäge bearbeitet.*
+
+![Provisorische Montage](./docs/images/2024-04-27_Provisorische_Montage.jpg)
+*Alle Teile werden provisorisch zusammengebaut. Dabei wird geprüft, ob alles funktioniert und passt.*
+
 ![Oberfläche behandeln](./docs/images/2024-04-26_Oberflaech_spritzen.jpg)
 *Die Oberfläche wurde in einem ersten Schritt gespritz und danach mit einem Bootslack überzogen.*
 
