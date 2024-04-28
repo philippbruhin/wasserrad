@@ -19,7 +19,7 @@ Ein Video auf YouTube zum Wasserrad gibt es [hier](https://youtu.be/QoVuPHz8Htk)
     1. [Wasserrad-Typ](#11-wasserrad-typ)
     2. [Geometrie des Bachbettes](#12-geometrie-des-bachbettes)
     3. [Fliessgeschwindigkeit des Wassers](#13-fliessgeschwindigkeit-des-wassers)
-        1. [Messung der Geschwindigket](#131-messung-der-geschwindigket)
+        1. [Messung der Geschwindigkeit](#131-messung-der-geschwindigkeit)
     4. [Drehzahl des Wasserrades bestimmen](#14-drehzahl-des-wasserrades-bestimmen)
         1. [Drehzahl berechnen](#141-drehzahl-berechnen)
 2. [Konstruktion und Bau](#2-konstruktion-und-bau)
@@ -88,7 +88,7 @@ Auf die Strömung bezogen wäre es am besten, das Rad in der Aussenseite der fol
 
 > ✅ Trotz der geringeren Strömung am Rand, wird das Rad an einem **geraden Abschnitt vor der Kurve montiert**.
 
-#### 1.3.1 Messung der Geschwindigket
+#### 1.3.1 Messung der Geschwindigkeit
 
 Die Geschwindigkeit des Wassers wird empirisch ermittelt.
 
@@ -121,7 +121,7 @@ Dennoch wird im folgenden Beispiel mit den Idealbedingungen gerechnet.
 
 #### 1.4.1 Drehzahl berechnen
 
-Als Taschenrechner dient die kostenloste Open-Source Software [GNU Octave](https://octave.org/), mit welcher folgendes [MATLAB Skript](https://de.wikipedia.org/wiki/Matlab) ausgeführt werden kann.
+Als Taschenrechner dient die kostenlose Open-Source Software [GNU Octave](https://octave.org/), mit welcher folgendes [MATLAB Skript](https://de.wikipedia.org/wiki/Matlab) ausgeführt werden kann.
 
 ```matlab
 % Clear and close all
@@ -289,7 +289,7 @@ Ohne Programmierkentnisse ist es allenfalls etwas schwierig, die Webseite nachzu
 
 Um die Seite lokal auf dem Rechner laufen zu lassen, muss [Node.js](https://nodejs.org/en) in der Version `v20.11.0` installiert sein. Danach kann man folgende Befehle eingeben in der Kommandozeile:
 
-1. Packages installieren mittels Befehl `npm install`
+1. Pakete installieren mittels Befehl `npm install`
 2. Datei `env.example` kopieren und zu `env.local` umbenennen. Enviroment Variabeln von [The Things Stack Cloud Discovery](https://www.thethingsindustries.com/) einfügen.
 3. Projekt im Entwicklungsmodus starten via `npm run dev`
 4. Produktions-Build erstellen mittels `npm run build`. Achtung, zuvor müssen auch hier noch die Enviroment Variablen gesetzt werden unter "Settings".
