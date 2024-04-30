@@ -44,7 +44,7 @@ export const data: QuizQuestion[] = [
     question: "Wie viele Kleinwasserkraftwerke gibt es heute am Mühlebach?",
     image: "alte_turbine_nuolen.jpg",
     imageCaption: "Alte Turbine in Nuolen. Foto von der Webseite des EW Wangen.",
-    options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Krafwerke"],
+    options: ["Es gibt heute kein Kraftwerk mehr", "2 Kraftwerke", "4 Kraftwerke"],
     description: "Das Wasser wird auf dem Weg von Siebnen bis Nuolen an vier Standorten in Kleinwasserkraftwerken turbiniert. Zwei befinden sich unterhalb der Bahnline, zwei oberhalb. Früher gab es beim Sagi-Areal (ehemalige Sägerei) noch ein fünftes Kraftwerk. Die Turbine in Nuolen hat eine elektrische Leistung von 82 kW. Die Jahresproduktion von nur dieser einzelnen Turbine beträgt rund 200'000 kWh. Das entspricht dem Jahresverbrauch von 50 Schweizer Haushalten.",
     ans: 2,
   },
