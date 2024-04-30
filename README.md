@@ -309,3 +309,4 @@ TODO:
 * Schaufeln tropfen über Dach
 * Wegweiser für Nutzer
 * Quiz wird nicht wirklich gelesen
+* Lautstärke der Glocken
