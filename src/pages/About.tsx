@@ -77,7 +77,7 @@ export default function About() {
         </>
       )}
       <p>
-        Die Daten des Sensors ermöglichen es, zu überprüfen, zu welchen Zeiten
+        Die Daten des Sensors ermöglichen es, zu ermitteln, zu welchen Zeiten
         und an welchen Tagen der Mühlebach mit Wasser beschickt wird. Denn das
         Wasserrad dreht sich nur, wenn der Bach Wasser führt und der Wasserstand
         bis ganz nach oben reicht.
