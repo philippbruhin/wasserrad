@@ -183,7 +183,7 @@ disp('Umdrehungen pro Minute nMin [1/min]')
 nMin = n * 60                 % 11.335
 ```
 
-> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 1'050 mm beträgt die errechnete Drehzahl **11.3 Umdrehungen pro Minute**. Nach Inbetriebnahme des Wasserrades zeigte sich, dass die reelle Drehzahl bei nur **8.5 Umdrehungen pro Minute** liegt.
+> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 1'050 mm beträgt die errechnete Drehzahl **11.3 Umdrehungen pro Minute**. Nach Inbetriebnahme des Wasserrades zeigte sich, dass die reelle Drehzahl bei nur **8.3 Umdrehungen pro Minute** liegt.
 
 ## 2. Konstruktion und Bau
 
@@ -302,11 +302,19 @@ Unter [.github/workflows/gh-pages.yml](./.github/workflows/gh-pages.yml) sind di
 
 ## 5. Fazit und Ausblick
 
-TODO:
+In diesem Abschnitt wird das Fazit aus den bisherigen Erkenntnissen gezogen und ein Ausblick auf zukünftige Entwicklungen und Verbesserungen des Wasserradprojekts gegeben. Dabei werden wichtige Aspekte wie die Benutzererfahrung, Kosten und weitere potenzielle Optimierungen betrachtet.
 
-* M12 Gewindestange axiale Belastung
-* Kosten für Farbe und Gleitlager
-* Schaufeln tropfen über Dach
-* Wegweiser für Nutzer
-* Quiz wird nicht wirklich gelesen
-* Lautstärke der Glocken
+* **Umdrehungen errechnet gegenüber reellen Umdrehungen**
+    Die errechneten Umdrehungen des Wasserrads differieren signifikant von den tatsächlichen Umdrehungen im Betrieb. Bei der Berechnung und Planung der Wasserradumdrehungen ging man vom idealen Wasserrad aus und kam dabei auf 11.3 Umdrehungen pro Minute. Es wurde mit einem Verlust von 10% gerechnet, was aber nicht ausreichte. Es zeigte sich im Betrieb, dass es effektiv nur 8.3 Umdrehungen pro Minute sind.
+* **Axiale Belastung Hauptwelle**  
+    Die Welle, auf welcher das Wasserrad läuft, basiert auf einer verzinkten M12 Stahl-Gewindestange. Diese ist für die gegebene Länge und die axial auftretende Kraft etwas unterdmiensioniert. Allenfalls müsste ein grösserer Durchmesser oder ein Rohr gewählt werden beim nächsten Mal.
+* **Kosten für Material**
+    Es wurden insgesamt 4 Farbspraydosen für je CHF 10.00 gekauft. Dazu kommt eine Dose Bootslack für CHF 14.00, zwei Gleitlager von Contrad Electronic für je CHF 10.00 und der Dragino IoT Sensor für CHF 60.00 sowie der dazugehörige Reed-Kontakt für CHF 10.00. Zusätzlich wurde Holz und Schrauben für ~CHF 50.00 beschafft sowie noch etwas Werkzeug. Die Materialkosten liegen somit bei etwas über CHF 200.00, was für ein Bastelprojekt dieser Grössenordnung eine ganze Menge ist.
+* **Glocken und Lautstärke**
+    Die Glocken machen Fussgänger auf das Wasserrad aufmerksam und verleihen dem Projekt zudem einen besoneren Charme. Dennoch ist die grössere Glocke etwas zu laut. Eine Reduktion der Anzahl oder Größe der Glocken wird empfohlen.
+* **Restwasser von Schaufeln tropft auf Dach**
+    Ein Problem mit Tropfwasser auf dem Dach entsteht durch die Positionierung der Schaufeln. Weil die Schaufeln sich auf der einen Seite über dem Dach befinden, tropft konstant Wasser auf das Dach, wenn das Rad läuft. Mögliche Lösungen könnten eine Anpassung der Welle oder des Designs sein, um dieses Problem zu beheben..
+* **Quiz ist zu umfangreich**
+    Nur wenige Besucher nehmen sich die Zeit, um die 10 Fragen zu beantworten. Allenfalls hätte man diese auf ca. 6 Fragen reduzieren müssen. Für jede Frage wird zudem eine Antwort bereitgestellt, egal ob man die Frage falsch oder richtige beantwortet hat. Diese Antworten werden ebenfalls nicht gelesen, obwohl es sich in den meisten Fällen um einen Einzeiler handelt.
+* **Wegweiser für Besucher**
+    Das Wasserrad befindet sich fünf Meter abseits der Strasse. Nicht alle Spaziergänger sind zum Wasserrad hingegangen und haben deshalb den QR-Code am Rad-Gehäuse nicht bemerkt. Ein nachträglich intallierter Wegweiser schaffte hierbei Abhilfe. Dank des Wegweisers sind viel mehr Besucher zum Wasserrad hingegnagen, anstatt einfach daran vorbeizulaufen.
