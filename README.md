@@ -237,6 +237,9 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 ![Inbetriebnahme](./docs/images/2024-04-26_Inbetriebnahme.jpg)
 *Inbetriebnahme des Wasserrades am 26. April 2024.*
 
+![Nachträglich montierter Wegweiser](./docs/images/2024-04-29_Nachtraeglich_montierter_Wegweiser.jpg)
+*Nachträglich montierter Wegweiser, sodass Spatziergänger und Besucher den QR-Code auf den ersten Blick wahrnehmen. Zuvor wurde dieser oft übersehen, da nur ein Code auf der Grundplatte des Wasserrades angebracht gewesen war.*
+
 ## 3. Rundenzähler-Sensor
 
 Um die Drehzahl des Wasserrades zu messen, respektive um zu eruieren, ob der Mühlebach Wasser führt, wird ein LoRaWAN Sensor Node verwendet, an welchem ein Reed-Kontakt (kontaktloser, magnetischer Schalter) angeschlossen ist.
