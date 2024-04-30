@@ -27,6 +27,7 @@ Ein Video auf YouTube zum Wasserrad gibt es [hier](https://youtu.be/QoVuPHz8Htk)
     1. [Dragino SN50v3-LB Sensor konfigurieren](#31-dragino-sn50v3-lb-sensor-konfigurieren)
     2. [The Things Network Cloud](#32-the-things-network-cloud)
 4. [Webseite und Online-Quiz](#4-webseite-und-online-quiz)
+5. [Fazit und Ausblick](#5-fazit-und-ausblick)
 
 ## 1. Typ und Grösse des Rades bestimmen
 
@@ -228,7 +229,7 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 *Montage des Gehäuses mit LoRaWAN-Node und Magnetschalter zur Drehzahlmessung sowie zwei Glocken.*
 
 ![Montage des Rades](./docs/images/2024-04-26_Montage_Wasserrad.jpg)
-*Montage des Rades mittels M8 Gewindestange.*
+*Montage des Rades mittels M12 Gewindestange.*
 
 ![Schweissen der Bodenhalterung](./docs/images/2024-04-26_Bodenhalterung_schweissen.jpg)
 *Schweissen der Halterung für das Wasserrad. Sie wird im Erdboden eingesteckt, sodass das Bachbett nicht beschädigt wird.*
@@ -295,3 +296,13 @@ Um die Seite lokal auf dem Rechner laufen zu lassen, muss [Node.js](https://node
 4. Produktions-Build erstellen mittels `npm run build`. Achtung, zuvor müssen auch hier noch die Enviroment Variablen gesetzt werden unter "Settings".
 
 Unter [.github/workflows/gh-pages.yml](./.github/workflows/gh-pages.yml) sind die GitHub Actions definiert, um das Projekt automatisch auf den GitHub Pages Server zu deployen.
+
+## 5. Fazit und Ausblick
+
+TODO:
+
+* M12 Gewindestange axiale Belastung
+* Kosten für Farbe und Gleitlager
+* Schaufeln tropfen über Dach
+* Wegweiser für Nutzer
+* Quiz wird nicht wirklich gelesen
