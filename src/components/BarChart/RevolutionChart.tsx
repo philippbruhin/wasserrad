@@ -15,11 +15,25 @@ import { useState } from "react";
 export default function RevolutionChart(sensorData: SensorData) {
   const [numEntries, setNumEntries] = useState(1008);
 
-  let previousCount = 0;
+  let previousCount = sensorData.entries[0].result.uplink_message.decoded_payload.Count;
+
+  let previousTime = new Date(sensorData.entries[0].result.uplink_message.received_at);
+  previousTime.setSeconds(0, 0);
 
   const transformedData = sensorData.entries.map((item) => {
     const currentCount = item.result.uplink_message.decoded_payload.Count;
-    const countDifference = currentCount - previousCount;
+
+    const currentTime = new Date(item.result.uplink_message.received_at);
+    currentTime.setSeconds(0, 0);
+
+    const timeDifference = (currentTime.getTime() - previousTime.getTime()) / 60000; // in minutes
+    let countDifference = currentCount - previousCount;
+
+    // If the time difference is 20 minutes (and not 10), we assume that the sensor was offline.
+    if (timeDifference === 20) {
+      countDifference /= 2;
+    }
+
     const fill: string =
       countDifference / 10 > 11
         ? "#dc2626"
@@ -28,6 +42,7 @@ export default function RevolutionChart(sensorData: SensorData) {
         : "#2563eb";
 
     previousCount = currentCount;
+    previousTime = currentTime;
 
     return {
       time: new Date(item.result.uplink_message.received_at).toLocaleString(
