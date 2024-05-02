@@ -300,6 +300,11 @@ Um die Seite lokal auf dem Rechner laufen zu lassen, muss [Node.js](https://node
 
 Unter [.github/workflows/gh-pages.yml](./.github/workflows/gh-pages.yml) sind die GitHub Actions definiert, um das Projekt automatisch auf den GitHub Pages Server zu deployen.
 
+Neben dem Mühlebach Quiz mit 10 Fragen und Multiple Choice Antworten, gibt es auch Balkendiagramm des Rundenzähler-Sensors.
+
+![Rundenzähler Balkendiagramm](./docs/images/2024-05-02_RPM_Chart.gif)
+*Angezeigt werden die Umdrehungen der letzten 12 Stunden bis zu den letzten 7 Tagen.*
+
 ## 5. Fazit und Ausblick
 
 In diesem Abschnitt wird das Fazit aus den bisherigen Erkenntnissen gezogen und ein Ausblick auf zukünftige Entwicklungen und Verbesserungen des Wasserradprojekts gegeben. Dabei werden wichtige Aspekte wie die Benutzererfahrung, Kosten und weitere potenzielle Optimierungen betrachtet.
