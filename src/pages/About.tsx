@@ -37,16 +37,16 @@ export default function About() {
         man gemeinsam experimentieren, entdecken und lachen konnte.
       </p>
       <div className="aspect-w-16 aspect-h-9">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/QoVuPHz8Htk?si=XQSZwJuiz6IdkMNc"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/QoVuPHz8Htk?si=XQSZwJuiz6IdkMNc"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
       <p>
         Wir möchten betonen, dass neben dem technischen Aspekt dieses Projekts
@@ -67,7 +67,8 @@ export default function About() {
         anderen Umdrehungen (mehr oder weniger) werden in{" "}
         <span className="bg-red-600 text-white px-1">rot dargestellt</span>, da
         sie nicht durch den Bach verursacht wurden, sondern beispielsweise durch
-        manuelles Drehen eines Besuchers oder durch Windbewegungen.
+        manuelles Drehen eines Besuchers oder durch Windbewegungen (An- und
+        Ausfahren ausgenommen).
       </p>
       {!isTtnLoaded ? (
         <Preloader />
