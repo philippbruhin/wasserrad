@@ -29,15 +29,13 @@ export default function RevolutionChart(sensorData: SensorData) {
     const timeDifference = (currentTime.getTime() - previousTime.getTime()) / 60000; // in minutes
     let countDifference = currentCount - previousCount;
 
-    // If the time difference is 20 minutes (and not 10), we assume that the sensor was offline.
-    if (timeDifference === 20) {
-      countDifference /= 2;
-    }
+    // We want the counts per minute (RPM)
+    countDifference = countDifference / timeDifference;
 
     const fill: string =
-      countDifference / 10 > 11
+      countDifference > 10
         ? "#dc2626"
-        : countDifference / 10 < 6
+        : countDifference < 7
         ? "#dc2626"
         : "#2563eb";
 
@@ -54,7 +52,7 @@ export default function RevolutionChart(sensorData: SensorData) {
         }
       ),
       fill: fill,
-      count: countDifference / 10,
+      count: countDifference,
     };
   });
 
