@@ -320,7 +320,7 @@ In diesem Abschnitt wird das Fazit aus den bisherigen Erkenntnissen gezogen und 
 * **Restwasser von Schaufeln tropft auf Dach**  
     Ein Problem mit Tropfwasser auf dem Dach entsteht durch die Positionierung der Schaufeln. Weil die Schaufeln sich auf der einen Seite über dem Dach befinden, tropft konstant Wasser auf das Dach, wenn das Rad läuft. Mögliche Lösungen könnten eine Anpassung der Welle oder des Designs sein, um dieses Problem zu beheben..
 * **Einfluss von Wind auf die Drehzahl**  
-    Dank der beiden Gleitlager läuft das Wasserrad äusserst leicht. Allerdings kann starker Wind zu unerwünschter Rotation führen, wenn der Bach kein Wasser führt. Dies birgt die Gefahr von Schäden, sollte das Rad zu schnell drehen. Glücklicherweise bleibt die Drehzahl in den meisten Fällen unter 5 Umdrehungen pro Minute, selbst bei starkem Wind.
+    Dank der beiden Gleitlager läuft das Wasserrad äusserst leicht. Allerdings kann starker Wind zu unerwünschter Rotation führen, wenn der Bach kein Wasser führt. Dies birgt die Gefahr von Schäden, sollte das Rad zu schnell drehen. Glücklicherweise bleibt die Drehzahl in den meisten Fällen unter 5 Umdrehungen pro Minute, selbst bei starken Winden.
 * **Quiz zu umfangreich**  
     Nur wenige Besucher nehmen sich die Zeit, um die 10 Fragen zu beantworten. Allenfalls hätte man diese auf ca. 6 Fragen reduzieren müssen. Für jede Frage wird zudem eine Antwort bereitgestellt, egal ob man die Frage falsch oder richtige beantwortet hat. Diese Antworten werden ebenfalls nicht gelesen, obwohl es sich in den meisten Fällen um einen Einzeiler handelt.
 * **Wegweiser für Besucher**  
