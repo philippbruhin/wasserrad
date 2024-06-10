@@ -102,7 +102,7 @@ export default function About() {
       <figure>
         <img
           className="rounded-lg shadow w-full !mb-0"
-          src="./about/wasserrad_fusion_360.png"
+          src="./wasserrad_fusion_360.png"
           onLoad={() => setImageLoaded(true)}
           style={{ display: isImageLoaded ? "block" : "none" }}
           alt="Trophäenbild"

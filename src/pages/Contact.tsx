@@ -131,7 +131,7 @@ export default function Contact() {
             <p>
               Quelle:{" "}
               <a
-                href="./contact/TZP_Aufhebung_Gewaesserraum_Muehlebachkanal_20200918.pdf"
+                href="./TZP_Aufhebung_Gewaesserraum_Muehlebachkanal_20200918.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
