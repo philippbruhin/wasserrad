@@ -26,6 +26,7 @@ Ein Video auf YouTube zum Wasserrad gibt es [hier](https://youtu.be/QoVuPHz8Htk)
 3. [Rundenzähler-Sensor](#3-rundenzähler-sensor)
     1. [Dragino SN50v3-LB Sensor konfigurieren](#31-dragino-sn50v3-lb-sensor-konfigurieren)
     2. [The Things Network Cloud](#32-the-things-network-cloud)
+    3. [LoRaWAN Empfänger (Gateway)](#33-lorawan-emfaenger)
 4. [Webseite und Online-Quiz](#4-webseite-und-online-quiz)
 5. [Fazit und Ausblick](#5-fazit-und-ausblick)
 
@@ -247,7 +248,7 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 
 Um die Drehzahl des Wasserrades zu messen, respektive um zu eruieren, ob der Mühlebach Wasser führt, wird ein LoRaWAN Sensor Node verwendet, an welchem ein Reed-Kontakt (kontaktloser, magnetischer Schalter) angeschlossen ist.
 
-Der Reed-Kontakt schaltet bei jeder Umdrehung des Rades einmal. Der LoRaWAN-Node ([SN50V3-LB LoRaWAN Sensor Node 868MHz](https://www.bastelgarage.ch/lora/lora-sensoren/sn50v3-lb-lorawan-sensor-node-868mhz)) zählt die Schaltungen und sendet diese alle 10 Minuten an einen Server von [The Things Industries](https://www.thethingsindustries.com/), auf welchem die Zählerdaten der letzten 30 Tage gespeichert werden.
+Der Reed-Kontakt schaltet bei jeder Umdrehung des Rades einmal. Der LoRaWAN-Node ([SN50V3-LB LoRaWAN Sensor Node 868MHz](https://www.bastelgarage.ch/lora/lora-sensoren/sn50v3-lb-lorawan-sensor-node-868mhz)) zählt die Schaltungen und sendet diese alle 10 Minuten via Gateway (Empfänger) an einen Server von [The Things Industries](https://www.thethingsindustries.com/), auf welchem die Zählerdaten der letzten 30 Tage gespeichert werden.
 
 Der Reed-Kontakt wird an den Pins `VDD` und `PA8` angeschlossen:
 
@@ -285,6 +286,43 @@ Zusätzlich muss man einen API-Key erstellen, damit die Daten vom TTN Portal abg
 > Achtung, es wird hier keine REST-API zur Verfügung gestellt, sondern ein unendlich langer String mit allen Einträgen, welche man auch auf dem TTN-Portal sieht unter dem Menüpunkt `Live data`. Falls man die Daten auf einer Webseite präsentieren möchte, muss man somit aus dem String zuerst ein Array mit JSON-Objekten erstellen, wobei die Objekte die Messresultate repräsentieren.
 
 Die Sensoreinstellungen können (durch Administratoren von diesem Projekt) unter [waterwheel.console.cloud.thethings.industries](https://waterwheel.console.cloud.thethings.industries/) aktualisiert werden.
+
+### 3.3 Empfänger des Sensorsignals (Gateway)
+
+Das vom am Wasserrad montierten Sensor versendete Signal wird gleich von zwei Gateways (anderes Wort für Empfängerantenne) empfangen. Die eine Antenne befindet sich im Leuholz, die andere in der Nähe des Fussballplatzes in Siebnen.
+
+![Gateways in Reichweite](./docs/images/2024-06-14_22-01-05_LoraGateways.png)
+
+#### Erstes Gateway (Leuholz)
+
+- **Gateway ID**: tess-lora-gw1
+- **Forwarder Gateway EUI**: C0EE40FFFF2A6028
+- **RSSI**: -113
+- **SNR**: -11.2
+- **Location**: 47.19409413428462, 8.881038129329683
+- **Received At**: 2024-06-14T19:54:08.237033511Z
+
+#### Zweites Gateway (Fussballplatz Siebnen)
+
+- **Gateway ID**: eui-ac1f09fffe08e3a3-ictpower
+- **Forwarder Gateway EUI**: AC1F09FFFE08E3A3
+- **RSSI**: -113
+- **SNR**: -13
+- **Frequency Offset**: 565
+- **Location**: 47.1781551847011, 8.90455267329575
+- **Received At**: 2024-06-14T19:54:08.236217154Z
+
+### Analyse:
+
+- **RSSI (Received Signal Strength Indicator) und SNR (Signal-to-Noise Ratio)**: Beide Gateways haben ähnliche RSSI-Werte (-113), aber leicht unterschiedliche SNR-Werte (-11.2 für das erste Gateway und -13 für das zweite Gateway). Ein höherer SNR-Wert ist besser, da er ein besseres Signal-Rausch-Verhältnis anzeigt.
+- **Standort**: Die beiden Gateways befinden sich an unterschiedlichen Standorten, was durch die unterschiedlichen Koordinaten angezeigt wird.
+- **Empfangszeit**: Beide Gateways haben die Nachricht nahezu gleichzeitig empfangen.
+
+### Schlussfolgerung:
+
+Die Nachricht von dem Gerät wurde von beiden Gateways empfangen, und beide haben die Nachricht weitergeleitet. Welches Gateway letztendlich verwendet wird, hängt von der Netzwerklogik und den Parametern ab, die die TTN-Infrastruktur verwendet, um die beste Nachricht auszuwählen. In der Praxis bedeutet dies, dass beide Gateways erfolgreich als Empfänger fungiert haben und es keine einfache Möglichkeit gibt zu bestimmen, welches "primär" verwendet wurde, da dies dynamisch sein kann und von mehreren Faktoren abhängt, einschließlich der Netzwerklast und der Signalqualität.
+
+Wenn man feststellen möchte, welches Gateway tatsächlich für eine spezifische Aufgabe verwendet wurde (z.B. Bestätigung eines Downlinks), müsste man tiefer in die Netzwerkinformationen und Protokollierung eintauchen. Generell zeigt die `rx_metadata`, dass beide Gateways beteiligt waren und als Empfänger fungierten.
 
 ## 4. Webseite und Online-Quiz
 
