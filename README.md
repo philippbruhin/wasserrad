@@ -324,8 +324,23 @@ Die Nachricht vom LoRaWAN Sensor Node des Wasserrades wurde von beiden Gateways 
 
 Die Empfangssignale können anhand der RSSI- (Received Signal Strength Indicator) und SNR-Werte (Signal-to-Noise Ratio) beurteilt werden:
 
-* **RSSI**: Die RSSI-Werte von -113 dBm deuten auf ein schwaches Signal hin.
-* **SNR**: Ein SNR-Wert von -11.2 dB und -13 dB zeigt ein sehr schlechtes Signal-Rausch-Verhältnis an, was auf viel Rauschen im Vergleich zum Signal hinweist.
+#### RSSI
+
+* **-30 dBm bis -90 dBm:** Sehr gutes bis akzeptables Signal.
+* **-90 dBm bis -120 dBm:** Schwaches Signal.
+* **Weniger als -120 dBm:** Sehr schlechtes Signal, oft zu schwach für zuverlässige Kommunikation.
+
+Die RSSI-Werte von -113 dBm fallen in den Bereich eines schwachen Signals. Dies deutet darauf hin, dass das empfangene Signal nicht besonders stark ist.
+
+#### SNR
+
+* **Mehr als 10 dB:** Sehr gutes Signal.
+* **6 dB bis 10 dB:** Gutes Signal.
+* **0 dB bis 6 dB:** Akzeptables Signal.
+* **-10 dB bis 0 dB:** Schwaches Signal.
+* **Weniger als -10 dB:** Sehr schlechtes Signal.
+
+Ein SNR-Wert von -11.2 dB und -13 dB liegt im Bereich eines sehr schlechten Signals, was auf ein hohes Maß an Rauschen im Vergleich zum Signal hinweist.
 
 ### Verbesserungsmöglichkeiten
 
