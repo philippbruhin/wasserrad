@@ -320,6 +320,17 @@ Das vom am Wasserrad montierten Sensor versendete Signal wird gleich von zwei Ga
 
 Die Nachricht vom LoRaWAN Sensor Node des Wasserrades wurde von beiden Gateways empfangen, und beide haben die Nachricht weitergeleitet.
 
+### Bewertung der Empfangssignale
+
+Die Empfangssignale können anhand der RSSI- (Received Signal Strength Indicator) und SNR-Werte (Signal-to-Noise Ratio) beurteilt werden:
+
+* **RSSI**: Die RSSI-Werte von -113 dBm deuten auf ein schwaches Signal hin.
+* **SNR**: Ein SNR-Wert von -11.2 dB und -13 dB zeigt ein sehr schlechtes Signal-Rausch-Verhältnis an, was auf viel Rauschen im Vergleich zum Signal hinweist.
+
+### Verbesserungsmöglichkeiten
+
+Es wäre vorteilhaft, wenn in der Nähe ein weiteres Gateway installiert würde, um die Signalabdeckung und -qualität zu verbessern. Dadurch könnten die Zuverlässigkeit und die Qualität der Datenübertragung erhöht werden.
+
 Welches Gateway letztendlich verwendet wird, hängt von der Netzwerklogik und den Parametern ab, die die TTN-Infrastruktur verwendet, um die beste Nachricht auszuwählen. In der Praxis bedeutet dies, dass beide Gateways erfolgreich als Empfänger fungiert haben und es keine einfache Möglichkeit gibt, zu bestimmen, welches Gateway "primär" verwendet wurde, da dies dynamisch sein kann und von mehreren Faktoren abhängt, einschliesslich der Netzwerklast und der Signalqualität.
 
 ## 4. Webseite und Online-Quiz
