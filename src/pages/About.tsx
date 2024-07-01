@@ -3,7 +3,8 @@ import type { SensorData } from "../lib/ttnDataFetcher";
 import { ttnDataFetcher } from "../lib/ttnDataFetcher";
 import Maps from "../components/Maps/Maps";
 import Preloader from "../components/Preloader/Preloader";
-import RevolutionChart from "../components/BarChart/RevolutionChart";
+import RevolutionChartSensor from "../components/BarChart/RevolutionChartSensor";
+import RevolutionChartMonthly from "../components/BarChart/RevolutionChartMonthly";
 
 export default function About() {
   const [data, setData] = useState<SensorData>({ entries: [] });
@@ -42,7 +43,6 @@ export default function About() {
           height="315"
           src="https://www.youtube.com/embed/QoVuPHz8Htk?si=XQSZwJuiz6IdkMNc"
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
@@ -74,7 +74,7 @@ export default function About() {
         <Preloader />
       ) : (
         <>
-          <RevolutionChart {...data} />
+          <RevolutionChartSensor {...data} />
         </>
       )}
       <p>
@@ -83,6 +83,23 @@ export default function About() {
         Wasserrad dreht sich nur, wenn der Bach Wasser führt und der Wasserstand
         bis ganz nach oben reicht.
       </p>
+      <h3>Wasserrad Umdrehungen pro Monat</h3>
+      <p>
+        Die folgende Grafik zeigt die Anzahl der Umdrehungen des Wasserrades pro
+        Monat. Je mehr Umdrehungen das Rad in einem Monat macht, desto mehr
+        Wasser führte der Bach in diesem Zeitraum. Dies gibt einen interessanten
+        Einblick in die saisonalen Schwankungen des Wasservorkommens.
+      </p>
+      <RevolutionChartMonthly />
+      <p>Erläuterungen zu den Zahlen:</p>
+      <ul>
+        <li>April 2024: Das Rad ging erst am 26. April in Betrieb.</li>
+        <li>
+          Mai 2024: Ende Mai und anfangs Juni wurde das Bachbett beim
+          Unterwydenhof abgedichtet. Während dieser Zeit führte der Bach kein
+          Wasser.
+        </li>
+      </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>
         Für technische Details und Baupläne zu diesem Projekt, empfehlen wir,
