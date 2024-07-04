@@ -184,7 +184,7 @@ disp('Umdrehungen pro Minute nMin [1/min]')
 nMin = n * 60                 % 11.335
 ```
 
-> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 1'050 mm beträgt die errechnete Drehzahl **11.3 Umdrehungen pro Minute**. Nach Inbetriebnahme des Wasserrades zeigte sich, dass die reelle Drehzahl bei nur **8.3 Umdrehungen pro Minute** liegt.
+> ✅ Die Berechnung zeigt: Je grösser der Durchmesser, je niedriger die Drehzahl. Bei einem Durchmesser von 1'050 mm beträgt die errechnete Drehzahl **11.3 Umdrehungen pro Minute**. Nach Inbetriebnahme des Wasserrades zeigte sich, dass die reelle Drehzahl bei nur **7.8 Umdrehungen pro Minute** liegt.
 
 ## 2. Konstruktion und Bau
 
