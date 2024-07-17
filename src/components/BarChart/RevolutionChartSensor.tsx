@@ -39,7 +39,7 @@ export default function RevolutionChartSensor(sensorData: SensorData) {
     const fill: string =
       countDifference > 10
         ? "#dc2626"
-        : countDifference < 7
+        : countDifference < 6
         ? "#dc2626"
         : "#2563eb";
 
