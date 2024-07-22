@@ -1,4 +1,5 @@
 import { MouseEvent, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Quiz.css";
 import { data } from "../../assets/data";
 import Preloader from "../Preloader/Preloader";
@@ -110,6 +111,10 @@ function Quiz() {
               >
                 Bild herunterladen
               </button>
+            </p>
+            <p>
+              Wenn Sie mehr über das Wasserradprojekt erfahren möchten,{" "}
+              <Link to="/wasserrad/about">klicken Sie bitte hier</Link>.
             </p>
 
             {score < data.length && (

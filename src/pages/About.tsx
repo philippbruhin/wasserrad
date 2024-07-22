@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import type { SensorData } from "../lib/ttnDataFetcher";
 import { ttnDataFetcher } from "../lib/ttnDataFetcher";
 import Maps from "../components/Maps/Maps";
@@ -153,6 +154,11 @@ export default function About() {
       <div className="not-prose">
         <Maps />
       </div>
+      <p className="pt-6">
+        Wenn Sie uns kontaktieren möchten oder Interesse an den Quellen der
+        Inhalte dieser Webseite haben,{" "}
+        <Link to="/wasserrad/contact">klicken Sie bitte hier</Link>.
+      </p>
     </div>
   );
 }
