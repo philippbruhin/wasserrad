@@ -193,13 +193,13 @@ export default function Contact() {
           <div className="border px-4 rounded-b-lg">
             <p>
               Zusätzlich zum Sensor am Wasserrad, der anzeigt, ob der Bach
-              Wasser führt (siehe hierzu{" "}
+              Wasser führt (weitere Informationen hierzu finden Sie in der{" "}
               <HashLink to="/wasserrad/about#integrated-sensor">
-                Projekt
+                Projektbeschreibung
               </HashLink>
               ), gibt es auf dem Dach des Restaurants Krone in Siebnen eine
               Webcam. Diese zeigt das Wehr, das den Mühlebach mit Wasser speist.
-              Ein Blick auf{" "}
+              Ein Blick auf die Webseite{" "}
               <a
                 href="https://www.siebnen-webcam.ch/"
                 target="_blank"
@@ -207,8 +207,8 @@ export default function Contact() {
               >
                 www.siebnen-webcam.ch
               </a>{" "}
-              zeigt die aktuellen Wasserstände und die Steuerungen des Kanals
-              live.
+              ermöglicht es, die aktuellen Wasserstände und die Steuerungen des
+              Kanals live zu verfolgen.
             </p>
             {!isImageLoaded && <Preloader />}
             <figure>
