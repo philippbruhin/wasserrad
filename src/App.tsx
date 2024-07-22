@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -17,16 +17,48 @@ const App = () => {
       <nav className="py-6 prose">
         <ul className="flex list-none !pl-0">
           <li className="mr-6">
-            <Link to="/wasserrad/">Home</Link>
+            <NavLink
+              to="/wasserrad/"
+              end
+              className={({ isActive }) =>
+                !isActive ? "text-blue-500" : "text-blue-800"
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li className="mr-6">
-            <Link to="/wasserrad/quiz">Quiz</Link>
+            <NavLink
+              to="/wasserrad/quiz"
+              end
+              className={({ isActive }) =>
+                !isActive ? "text-blue-500" : "text-blue-800"
+              }
+            >
+              Quiz
+            </NavLink>
           </li>
           <li className="mr-6">
-            <Link to="/wasserrad/about">Projekt</Link>
+            <NavLink
+              to="/wasserrad/about"
+              end
+              className={({ isActive }) =>
+                !isActive ? "text-blue-500" : "text-blue-800"
+              }
+            >
+              Projekt
+            </NavLink>
           </li>
           <li className="mr-6">
-            <Link to="/wasserrad/contact">Kontakt</Link>
+            <NavLink
+              to="/wasserrad/contact"
+              end
+              className={({ isActive }) =>
+                !isActive ? "text-blue-500" : "text-blue-800"
+              }
+            >
+              Kontakt
+            </NavLink>
           </li>
         </ul>
       </nav>
