@@ -57,7 +57,7 @@ export default function About() {
         Bereicherung, diese Fähigkeiten zu nutzen und ein funktionierendes
         Wasserrad zu bauen.
       </p>
-      <h3>Integrierter Sensor zur Drehzahlmessung</h3>
+      <h3 id="integrated-sensor">Integrierter Sensor zur Drehzahlmessung</h3>
       <p>
         Die folgende Grafik zeigt die Drehgeschwindigkeit des Wasserrads der
         letzten Tage. Der integrierte Sensor speichert die Daten und sendet sie

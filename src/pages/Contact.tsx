@@ -1,11 +1,15 @@
 import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
+import Preloader from "../components/Preloader/Preloader";
 
 export default function Contact() {
   const [isClocksOpen, setIsClocksOpen] = useState(false);
   const [isCreditsOpen, setIsCreditsOpen] = useState(false);
   const [isMunicipalInfoOpen, setIsMunicipalInfoOpen] = useState(false);
   const [isEthPicsOpen, setIsEthPicsOpen] = useState(false);
+  const [isSiebnenWebcamOpen, setIsSiebnenWebcamOpen] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const [isImageLoaded, setImageLoaded] = useState<boolean>(false);
 
   return (
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
@@ -24,13 +28,13 @@ export default function Contact() {
         <a href="mailto:info%40philippbruhin.ch">info@philippbruhin.ch</a>
       </p>
       <p>
-        Die Entwicklung und der Bau des Wasserrades ist{" "}
+        Die Entwicklung und der Bau des Wasserrades ist auf{" "}
         <a
-          href="https://github.com/philippbruhin/wasserrad/blob/main/README.md"
+          href="https://github.com/philippbruhin/wasserrad"
           target="_blank"
           rel="noopener noreferrer"
         >
-          hier
+          GitHub
         </a>{" "}
         dokumentiert.
       </p>
@@ -175,6 +179,50 @@ export default function Contact() {
                 Bildarchiv e-pics der ETH-Bibliothek
               </a>
             </p>
+          </div>
+        )}
+
+        <button
+          className="w-full py-2 px-4 mt-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
+          onClick={() => setIsSiebnenWebcamOpen(!isSiebnenWebcamOpen)}
+        >
+          Webcam Siebnen mit Blick auf Start von Mühlebachkanal
+          <span>{isSiebnenWebcamOpen ? "-" : "+"}</span>
+        </button>
+        {isSiebnenWebcamOpen && (
+          <div className="border px-4 rounded-b-lg">
+            <p>
+              Zusätzlich zum Sensor am Wasserrad, der anzeigt, ob der Bach
+              Wasser führt (siehe hierzu{" "}
+              <HashLink to="/wasserrad/about#integrated-sensor">
+                Projekt
+              </HashLink>
+              ), gibt es auf dem Dach des Restaurants Krone in Siebnen eine
+              Webcam. Diese zeigt das Wehr, das den Mühlebach mit Wasser speist.
+              Ein Blick auf{" "}
+              <a
+                href="https://www.siebnen-webcam.ch/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.siebnen-webcam.ch
+              </a>{" "}
+              zeigt die aktuellen Wasserstände und die Steuerungen des Kanals
+              live.
+            </p>
+            {!isImageLoaded && <Preloader />}
+            <figure>
+              <img
+                className="rounded-lg shadow w-full !mb-0"
+                src="./2024-07-22_Siebnen_Webcam.jpg"
+                onLoad={() => setImageLoaded(true)}
+                style={{ display: isImageLoaded ? "block" : "none" }}
+                alt="Webcam Siebnen mit Bild Abzweiger Mühlebachkanal"
+              />
+              <figcaption className="text-gray-400">
+                Webcam Siebnen vom 22. Juli 2024 mit Abzweiger Mühlebachkanal
+              </figcaption>
+            </figure>
           </div>
         )}
 
