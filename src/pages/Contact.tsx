@@ -20,9 +20,19 @@ export default function Contact() {
         <br />
         Falkenstrasse 1<br />
         8854 Siebnen
+        <br />
+        <a href="mailto:info%40philippbruhin.ch">info@philippbruhin.ch</a>
       </p>
       <p>
-        <a href="mailto:info%40philippbruhin.ch">info@philippbruhin.ch</a>
+        Die Entwicklung und der Bau des Wasserrades ist{" "}
+        <a
+          href="https://github.com/philippbruhin/wasserrad/blob/main/README.md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          hier
+        </a>{" "}
+        dokumentiert.
       </p>
       <div className="w-full mx-auto">
         <button
