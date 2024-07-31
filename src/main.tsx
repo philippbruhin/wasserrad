@@ -6,6 +6,7 @@ import Home from './pages/Home.tsx';
 import Quiz from './pages/Quiz.tsx';
 import About from './pages/About.tsx';
 import Contact from './pages/Contact.tsx';
+import { DataProvider } from './lib/DataContext.tsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -35,6 +36,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <DataProvider>
+      <RouterProvider router={router} />
+    </DataProvider>
   </React.StrictMode>
 );

@@ -1,31 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import type { SensorData } from "../lib/ttnDataFetcher";
-import { ttnDataFetcher } from "../lib/ttnDataFetcher";
 import Maps from "../components/Maps/Maps";
 import Preloader from "../components/Preloader/Preloader";
 import RevolutionChartSensor from "../components/BarChart/RevolutionChartSensor";
 import RevolutionChartMonthly from "../components/BarChart/RevolutionChartMonthly";
+import { useData } from "../lib/DataContext";
 
 export default function About() {
-  const [data, setData] = useState<SensorData>({ entries: [] });
-  const [isTtnLoaded, setisTtnLoaded] = useState<boolean>(false);
+  const { data, isTtnLoaded } = useData();
   const [isImageLoaded, setImageLoaded] = useState<boolean>(false);
-
-  useEffect(() => {
-    const fetchTtnData = async () => {
-      try {
-        const sensorData = await ttnDataFetcher();
-        setData(sensorData);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setisTtnLoaded(true);
-      }
-    };
-
-    fetchTtnData();
-  }, []);
 
   return (
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
