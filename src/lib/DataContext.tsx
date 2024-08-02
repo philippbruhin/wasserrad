@@ -1,18 +1,26 @@
-import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useEffect,
+} from "react";
 import type { SensorData } from "../lib/ttnDataFetcher";
 import { ttnDataFetcher } from "../lib/ttnDataFetcher";
 
 // Define the shape of your data
-type DataContextType ={
+type DataContextType = {
   data: SensorData;
   isTtnLoaded: boolean;
-}
+};
 
 // Create the context with a default value
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
 // Create a provider component
-export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+export const DataProvider: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   const [data, setData] = useState<SensorData>({ entries: [] });
   const [isTtnLoaded, setisTtnLoaded] = useState<boolean>(false);
 
@@ -28,7 +36,12 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       }
     };
 
+    // Fetch data immediately on mount
     fetchTtnData();
+    // Set up interval to fetch data every 10 minutes
+    const intervalId = setInterval(fetchTtnData, 600000); // 600000 ms = 10 minutes
+    // Clear interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
@@ -43,7 +56,7 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 export const useData = () => {
   const context = useContext(DataContext);
   if (context === undefined) {
-    throw new Error('useData must be used within a DataProvider');
+    throw new Error("useData must be used within a DataProvider");
   }
   return context;
 };
