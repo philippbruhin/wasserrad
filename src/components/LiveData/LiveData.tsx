@@ -44,7 +44,7 @@ function LiveData() {
           isCountIncreasingByMoreThanSix ? 'bg-green-800' : 'bg-yellow-800'
         }`}></span>
       </span>
-      {isCountIncreasingByMoreThanSix ? 'Wasserrad läuft derzeit. Mehr erfahren...' : 'Wasserrad läuft derzeit nicht. Mehr erfahren...'}
+      {isCountIncreasingByMoreThanSix ? 'Wasserrad läuft. Mehr erfahren...' : 'Wasserrad läuft derzeit nicht. Mehr erfahren...'}
     </HashLink>
   );
 }

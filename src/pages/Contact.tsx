@@ -5,6 +5,7 @@ import Preloader from "../components/Preloader/Preloader";
 export default function Contact() {
   const [isClocksOpen, setIsClocksOpen] = useState(false);
   const [isCreditsOpen, setIsCreditsOpen] = useState(false);
+  const [isMediaOpen, setIsMediaOpen] = useState(false);
   const [isSiebnenWebcamOpen, setIsSiebnenWebcamOpen] = useState(false);
   const [isMunicipalInfoOpen, setIsMunicipalInfoOpen] = useState(false);
   const [isEthPicsOpen, setIsEthPicsOpen] = useState(false);
@@ -116,6 +117,32 @@ export default function Contact() {
                 zur Identifikation und Funktion unseres Projekts beiträgt.
               </li>
             </ul>
+          </div>
+        )}
+
+        <button
+          className="w-full py-2 px-4 mt-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
+          onClick={() => setIsMediaOpen(!isMediaOpen)}
+        >
+          Wasserrad im March-Anzeiger
+          <span>{isMediaOpen ? "-" : "+"}</span>
+        </button>
+        {isMediaOpen && (
+          <div className="border px-4 rounded-b-lg">
+            <p>
+              Ein Bericht über das Wasserrad wird im March-Anzeiger
+              veröffentlicht. Sobald wir das Datum der Ausgabe kennen, werden
+              wir es hier veröffentlichen.
+            </p>
+            <p>
+              <a
+                href="https://www.marchanzeiger.ch"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.marchanzeiger.ch
+              </a>
+            </p>
           </div>
         )}
 
