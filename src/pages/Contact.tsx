@@ -150,7 +150,7 @@ export default function Contact() {
           className="w-full py-2 px-4 mt-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
           onClick={() => setIsSiebnenWebcamOpen(!isSiebnenWebcamOpen)}
         >
-          Webcam Siebnen mit Blick auf Start von Mühlebachkanal
+          Webcam Siebnen Mühlebachkanal
           <span>{isSiebnenWebcamOpen ? "-" : "+"}</span>
         </button>
         {isSiebnenWebcamOpen && (
