@@ -241,7 +241,7 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 *Inbetriebnahme des Wasserrades am 26. April 2024.*
 
 ![Nachträglich montierter Wegweiser](./docs/images/2024-04-29_Nachtraeglich_montierter_Wegweiser.jpg)
-*Nachträglich montierter Wegweiser, sodass Spatziergänger und Besucher den QR-Code auf den ersten Blick wahrnehmen. Zuvor wurde dieser oft übersehen, da nur ein Code auf der Grundplatte des Wasserrades angebracht gewesen war.*
+*Nachträglich montierter Wegweiser, sodass Spaziergänger und Besucher den QR-Code auf den ersten Blick wahrnehmen. Zuvor wurde dieser oft übersehen, da nur ein Code auf der Grundplatte des Wasserrades angebracht gewesen war.*
 
 ![Schaufelverformung](./docs/images/2024-05-10_Schaufel_Verformung.jpg)
 *Trotz Oberflächenbehandlung mit Farbe und Bootslack hat sich das Holz an den Schaufeln nach 2 Wochen (Zählerstand: 50'000 Umdrehungen) in Betrieb gespalten und verzogen.*

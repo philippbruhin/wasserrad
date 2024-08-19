@@ -46,7 +46,7 @@ export default function Contact() {
           className="w-full py-2 px-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
           onClick={() => setIsReferenceOpen(!isReferenceOpen)}
         >
-          Quellenangaben zum Mühlebach Wasserrad Quiz
+          Quellenangaben zum Quiz
           <span>{isReferenceOpen ? "-" : "+"}</span>
         </button>
         {isReferenceOpen && (
