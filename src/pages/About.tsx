@@ -113,16 +113,23 @@ export default function About() {
         </figcaption>
       </figure>
       <p>
-        Alle Zeichnungen und der Programmcode sind{" "}
+        Alle Zeichnungen sind{" "}
+        <a
+          href="https://de.wikipedia.org/wiki/Open-Source-Hardware"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Hardware
+        </a>
+        . Der Programmcode ist{" "}
         <a
           href="https://de.wikipedia.org/wiki/Open_Source"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Open Source
-        </a>{" "}
-        und können frei verwendet werden, solange keine kommerziellen Ziele
-        verfolgt werden.
+          Open Source Software
+        </a>
+        . Die Pläne sowie der Quellcode können somit frei verwendet werden.
       </p>
       <h3>Standort des Rades</h3>
       <p>
