@@ -210,6 +210,8 @@ Das 3D-Modell kann [hier](https://a360.co/48MgMsR) online angesehen werden.
 ![Glocken- und Sensor-Aufhängung](./docs/images/2024-03-26_Glocken.gif)
 *Glocken- und Sensor-Aufhängung. Die Kunststoffteile wurden mittels 3D-Druck gefertigt.*
 
+Die beiden Glocken haben genau die richtige Grösse: Sie sind nicht zu laut, aber laut genug, um vorbeigehende Fussgänger auf das Wasserrad aufmerksam zu machen.
+
 Um das Wasserrad witterungsbeständig zu machen, wurde das Holz mit grüner und blauer Farbe besprüht sowie mit einem Bootslack überzogen.
 
 Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermöglichte, flexibel auf neue Anforderungen zu reagieren und gleichzeitig sicherzustellen, dass das Wasserradprojekt sowohl funktional als auch ästhetisch ansprechend daherkommt.
@@ -348,6 +350,8 @@ Es wäre vorteilhaft, wenn in der Nähe ein weiteres Gateway installiert würde,
 
 Welches Gateway letztendlich verwendet wird, hängt von der Netzwerklogik und den Parametern ab, die die TTN-Infrastruktur verwendet, um die beste Nachricht auszuwählen. In der Praxis bedeutet dies, dass beide Gateways erfolgreich als Empfänger fungiert haben und es keine einfache Möglichkeit gibt, zu bestimmen, welches Gateway "primär" verwendet wurde, da dies dynamisch sein kann und von mehreren Faktoren abhängt, einschliesslich der Netzwerklast und der Signalqualität.
 
+Zusätzlich sollte geprüft werden, ob sich der Empfang verbessert, wenn der Sensor etwa einen Meter über dem Boden installiert wird. Der Sensor befindet sich momentan mehr oder weniger auf Bodenniveau, was möglicherweise nicht optimal für die Signalqualität ist.
+
 ## 4. Webseite und Online-Quiz
 
 Am Wasserrad gibt es ein QR-Code, welcher auf folgende Quiz-Webseite verweist:
@@ -380,8 +384,6 @@ In diesem Abschnitt wird das Fazit aus den bisherigen Erkenntnissen gezogen und 
     Die Welle, auf welcher das Wasserrad läuft, basiert auf einer verzinkten M12 Stahl-Gewindestange. Diese ist für die gegebene Länge und die axial auftretende Kraft unterdmiensioniert. Allenfalls müsste ein grösserer Durchmesser oder ein Rohr gewählt werden beim nächsten Mal.
 * **Kosten für Material**  
     Es wurden insgesamt 4 Farbspraydosen für je CHF 10.00 gekauft. Dazu kommt eine Dose Bootslack für CHF 14.00, zwei Gleitlager von Contrad Electronic für je CHF 10.00 und der Dragino IoT Sensor für CHF 60.00 sowie der dazugehörige Reed-Kontakt für CHF 10.00. Zusätzlich wurde Holz und Schrauben für ~CHF 50.00 beschafft sowie Werkzeug. Die Materialkosten liegen somit bei über CHF 200.00, was für ein Bastelprojekt dieser Grössenordnung eine ganze Menge ist.
-* **Glocken und Lautstärke**  
-    Die Glocken machen Fussgänger auf das Wasserrad aufmerksam und verleihen dem Projekt zudem einen besoneren Charme. Dennoch ist die grössere Glocke etwas zu laut. Eine Reduktion der Anzahl oder Grösse der Glocken wird empfohlen.
 * **Restwasser von Schaufeln tropft auf Dach**  
     Ein Problem mit Tropfwasser auf dem Dach entsteht durch die Positionierung der Schaufeln. Weil die Schaufeln sich auf der einen Seite über dem Dach befinden, tropft konstant Wasser auf das Dach, wenn das Rad läuft. Mögliche Lösungen könnten eine Anpassung der Welle oder des Designs sein, um dieses Problem zu beheben.
 * **Einfluss von Wind auf die Drehzahl**  

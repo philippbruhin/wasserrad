@@ -3,6 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import Preloader from "../components/Preloader/Preloader";
 
 export default function Contact() {
+  const [isReferenceOpen, setIsReferenceOpen] = useState(false);
   const [isClocksOpen, setIsClocksOpen] = useState(false);
   const [isCreditsOpen, setIsCreditsOpen] = useState(false);
   const [isMediaOpen, setIsMediaOpen] = useState(false);
@@ -39,9 +40,69 @@ export default function Contact() {
         </a>{" "}
         dokumentiert.
       </p>
+
       <div className="w-full mx-auto">
         <button
           className="w-full py-2 px-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
+          onClick={() => setIsReferenceOpen(!isReferenceOpen)}
+        >
+          Quellenangaben zum Mühlebach Wasserrad Quiz
+          <span>{isReferenceOpen ? "-" : "+"}</span>
+        </button>
+        {isReferenceOpen && (
+          <div className="border px-4 rounded-b-lg">
+            <ul>
+              <li>
+                Historisches Lexikon der Schweiz:
+                <br />
+                <a
+                  href="./hls-007439-Siebnen.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Siebnen
+                </a>
+              </li>
+              <li>
+                Historisches Lexikon der Schweiz:
+                <br />
+                <a
+                  href="./hls-030410-Caspar_Honegger.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Caspar Honegger
+                </a>
+              </li>
+              <li>
+                Mitteilungen des historischen Vereins des Kantons Schwyz:
+                <br />
+                <a
+                  href="./mhv-001_2008_100__510_d.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Caspar Honegger und der Durchbruch der Textilindustrie in
+                  Siebnen
+                </a>
+              </li>
+              <li>
+                Mitteilungen des historischen Vereins des Kantons Schwyz:
+                <br />
+                <a
+                  href="./mhv-001_2008_100__546_d.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Siebnen: ein funktionierendes Kuriosum
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
+
+        <button
+          className="w-full py-2 px-4 mt-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
           onClick={() => setIsClocksOpen(!isClocksOpen)}
         >
           Hinweis zu den Glocken
@@ -130,18 +191,17 @@ export default function Contact() {
         {isMediaOpen && (
           <div className="border px-4 rounded-b-lg">
             <p>
-              Ein Bericht über das Wasserrad wird im March-Anzeiger
-              veröffentlicht. Sobald wir das Datum der Ausgabe kennen, werden
-              wir es hier veröffentlichen.
-            </p>
-            <p>
+              Ein Bericht über das Wasserrad wurde am Dienstag, 20. August 2024
+              im March-Anzeiger veröffentlicht. Wenn Sie ein Abonnement
+              besitzen, können Sie den Artikel jederzeit im E-Paper unter{" "}
               <a
                 href="https://www.marchanzeiger.ch"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 www.marchanzeiger.ch
-              </a>
+              </a>{" "}
+              nachlesen.
             </p>
           </div>
         )}
