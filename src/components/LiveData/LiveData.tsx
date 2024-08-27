@@ -4,7 +4,21 @@ import { useData } from "../../lib/DataContext";
 function LiveData() {
   const { data } = useData();
   let isCountIncreasingByMoreThanSix = false;
-  
+
+  if (!data.entries || data.entries.length === 0) {
+    return (
+      <HashLink
+        to="/wasserrad/about#integrated-sensor"
+        className="text-xs font-medium pl-1.5 pr-2.5 py-1 mb-8 md:mb-0 rounded-full inline-flex items-center justify-center bg-red-100 text-red-800"
+      >
+        <span className="relative flex h-3 w-3 mr-2">
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-red-800"></span>
+        </span>
+        Fehler beim Abrufen der Daten. Mehr erfahren...
+      </HashLink>
+    );
+  }
+
   // Check if data has at least two entries
   if (data.entries.length >= 2) {
     const lastEntry = data.entries[data.entries.length - 1];
@@ -31,20 +45,24 @@ function LiveData() {
     <HashLink
       to="/wasserrad/about#integrated-sensor"
       className={`text-xs font-medium pl-1.5 pr-2.5 py-1 mb-8 md:mb-0 rounded-full inline-flex items-center justify-center ${
-        isCountIncreasingByMoreThanSix ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
+        isCountIncreasingByMoreThanSix
+          ? "bg-green-100 text-green-800"
+          : "bg-yellow-100 text-yellow-800"
       }`}
     >
       <span className="relative flex h-3 w-3 mr-2">
         {isCountIncreasingByMoreThanSix && (
-          <span
-            className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-800 opacity-75"
-          ></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-800 opacity-75"></span>
         )}
-        <span className={`relative inline-flex rounded-full h-3 w-3 ${
-          isCountIncreasingByMoreThanSix ? 'bg-green-800' : 'bg-yellow-800'
-        }`}></span>
+        <span
+          className={`relative inline-flex rounded-full h-3 w-3 ${
+            isCountIncreasingByMoreThanSix ? "bg-green-800" : "bg-yellow-800"
+          }`}
+        ></span>
       </span>
-      {isCountIncreasingByMoreThanSix ? 'Wasserrad läuft. Mehr erfahren...' : 'Wasserrad läuft derzeit nicht. Mehr erfahren...'}
+      {isCountIncreasingByMoreThanSix
+        ? "Wasserrad läuft. Mehr erfahren..."
+        : "Wasserrad läuft derzeit nicht. Mehr erfahren..."}
     </HashLink>
   );
 }

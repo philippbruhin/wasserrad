@@ -15,6 +15,15 @@ import { useState } from "react";
 export default function RevolutionChartSensor(sensorData: SensorData) {
   const [numEntries, setNumEntries] = useState(1008);
 
+  if (!sensorData.entries || sensorData.entries.length === 0) {
+    return (
+      <div className="bg-gray-200 p-6 rounded-lg shadow text-center italic">
+        Derzeit leider keine Live-Sensordaten verfügbar. Bitte versuchen Sie es
+        zu einem späteren Zeitpunkt erneut.
+      </div>
+    );
+  }
+
   let previousCount =
     sensorData.entries[0].result.uplink_message.decoded_payload.Count;
 
