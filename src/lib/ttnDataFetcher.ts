@@ -48,7 +48,7 @@ export async function ttnDataFetcher() {
           f_port: 2,
           order: "-received_at",
           field_mask: "up.uplink_message.decoded_payload",
-          limit: 1000, // Should be 1008 for 7 days of data but TTN only allows 1000.
+          limit: 999, // Should be 1008 for 7 days of data but TTN only allows 1000.
         },
       }
     );
