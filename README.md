@@ -289,6 +289,8 @@ Zusätzlich muss man einen API-Key erstellen, damit die Daten vom TTN Portal abg
 
 Die Sensoreinstellungen können (durch Administratoren von diesem Projekt) unter [waterwheel.console.cloud.thethings.industries](https://waterwheel.console.cloud.thethings.industries/) aktualisiert werden.
 
+> Es scheint, dass das Limit für die Anzahl der Einträge Ende August 2024 auf 1'000 Einträge reduziert wurde. Ursprünglich haben wir Abfragen für 7 Tage x 24 Stunden x 6 (alle 10 Minuten) = 1'008 Werte durchgeführt. Jetzt können wir jedoch nur noch 1'000 Einträge abfragen. Leider wird in der Dokumentation der [Storage Integration API](https://www.thethingsindustries.com/docs/api/reference/grpc/storage_integration/) beim Feld `limit` keine Begrenzung erwähnt.
+
 ### 3.3 Empfänger des Sensorsignals (Gateway)
 
 Das vom am Wasserrad montierten Sensor versendete Signal wird gleich von zwei Gateways (anderes Wort für Empfängerantenne) empfangen. Die eine Antenne befindet sich im Leuholz, die andere in der Nähe des Fussballplatzes in Siebnen.
