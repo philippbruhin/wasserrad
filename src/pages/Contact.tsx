@@ -10,8 +10,10 @@ export default function Contact() {
   const [isSiebnenWebcamOpen, setIsSiebnenWebcamOpen] = useState(false);
   const [isMunicipalInfoOpen, setIsMunicipalInfoOpen] = useState(false);
   const [isEthPicsOpen, setIsEthPicsOpen] = useState(false);
+  const [isSrfTiktokWaegital, setIsSrfTiktokWaegital] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [isImageLoaded, setImageLoaded] = useState<boolean>(false);
+  const [isVideoLoaded, setVideoLoaded] = useState<boolean>(false);
 
   return (
     <div className="prose max-w-none sm:prose-sm  md:prose-md lg:prose-lg xl:prose-xl">
@@ -310,6 +312,37 @@ export default function Contact() {
                 Bildarchiv e-pics der ETH-Bibliothek
               </a>
             </p>
+          </div>
+        )}
+
+        <button
+          className="w-full py-2 px-4 mt-4 text-left rounded-t-lg flex justify-between items-center bg-gray-200 hover:bg-gray-300"
+          onClick={() => setIsSrfTiktokWaegital(!isSrfTiktokWaegital)}
+        >
+          SRF TikTok Video Wägital
+          <span>{isSrfTiktokWaegital ? "-" : "+"}</span>
+        </button>
+        {isSrfTiktokWaegital && (
+          <div className="border px-4 rounded-b-lg">
+            <p>
+              Das Wasser vom Mühlebach kommt aus dem Wägitalersee. Erfahre in
+              diesem zweiminütigen TikTok-Video die dramatische Geschichte des
+              Wägitals, in dem vor fast 100 Jahren Menschen vertrieben und die
+              Kirche gesprengt wurden, um Platz für den Bau der Staumauer zu
+              schaffen.
+            </p>
+            <div className="flex justify-center">
+              {!isVideoLoaded && <Preloader />}
+              <video
+                controls
+                className="w-full max-w-lg rounded-lg shadow"
+                onLoadedData={() => setVideoLoaded(true)}
+                style={{ display: isVideoLoaded ? "block" : "none" }}
+              >
+                <source src="./2024_tiktok_srf_waegital.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         )}
 
