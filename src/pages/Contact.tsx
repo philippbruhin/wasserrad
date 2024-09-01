@@ -332,7 +332,7 @@ export default function Contact() {
               schaffen.
             </p>
             <div className="flex justify-center">
-              {!isVideoLoaded && <Preloader />}
+              {!isVideoLoaded && <div className="pb-2"><Preloader /></div>}
               <video
                 controls
                 className="w-full max-w-lg rounded-lg shadow"
