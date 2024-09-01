@@ -331,8 +331,8 @@ export default function Contact() {
               Kirche gesprengt wurden, um Platz für den Bau der Staumauer zu
               schaffen.
             </p>
-            <div className="flex justify-center">
-              {!isVideoLoaded && <div className="pb-2"><Preloader /></div>}
+            <div className="flex not-prose justify-center pt-2 pb-8">
+              {!isVideoLoaded && <Preloader />}
               <video
                 controls
                 className="w-full max-w-lg rounded-lg shadow"
