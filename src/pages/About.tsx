@@ -85,7 +85,8 @@ export default function About() {
         </li>
         <li>
           Oktober 2024: Baggerarbeiten im Bachbett direkt neben dem Wasserrad.
-          Dies weil Wasser in den Stromschacht nebenan drückte.
+          Dies weil Wasser in den Stromschacht von Trafostation Unterwydenhof
+          drückte.
         </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
