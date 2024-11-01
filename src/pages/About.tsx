@@ -83,6 +83,10 @@ export default function About() {
           Unterwydenhof abgedichtet. Während dieser Zeit führte der Bach kein
           Wasser.
         </li>
+        <li>
+          Oktober 2024: Baggerarbeiten im Bachbett direkt neben dem Wasserrad.
+          Dies weil Wasser in den Stromschacht nebenan drückte.
+        </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>
