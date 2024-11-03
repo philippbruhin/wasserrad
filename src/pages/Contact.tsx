@@ -327,7 +327,7 @@ export default function Contact() {
             <p>
               Das Wasser vom Mühlebach kommt aus dem Wägitalersee. Erfahre in
               diesem zweiminütigen TikTok-Video die dramatische Geschichte des
-              Wägitals, in dem vor fast 100 Jahren Menschen vertrieben und die
+              Wägitals, in dem vor 100 Jahren Menschen vertrieben und die
               Kirche gesprengt wurden, um Platz für den Bau der Staumauer zu
               schaffen.
             </p>
