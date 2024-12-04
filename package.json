@@ -18,7 +18,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.0.1",
     "react-router-hash-link": "^2.4.3",
-    "recharts": "^2.13.3"
+    "recharts": "^2.14.1"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
