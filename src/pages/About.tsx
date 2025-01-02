@@ -88,6 +88,11 @@ export default function About() {
           Dies weil Wasser in den Stromschacht von Trafostation Unterwydenhof
           drückte.
         </li>
+        <li>
+          Dezember 2024: Kurz vor Silvester 2024/2025 ist es einige Tage sehr
+          kalt und neblig gewesen, sodass das Wasserrad gefror und nicht mehr
+          drehte.
+        </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>

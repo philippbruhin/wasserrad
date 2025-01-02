@@ -246,6 +246,9 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 ![Schaufelverformung](./docs/images/2024-05-10_Schaufel_Verformung.jpg)
 *Trotz Oberflächenbehandlung mit Farbe und Bootslack hat sich das Holz an den Schaufeln nach 2 Wochen (Zählerstand: 50'000 Umdrehungen) in Betrieb gespalten und verzogen.*
 
+![Gefrorenes Wasserrad](./docs/images/2025-01-01_gefrorenes_wasserrad.jpg)
+*An Silvester 2024/2025 ist es für einige Tage sehr kalt und Neblig gewesen. In dieser Zeit gefror das Wasserrad und drehte deshalb nicht mehr.*
+
 ## 3. Rundenzähler-Sensor
 
 Um die Drehzahl des Wasserrades zu messen, respektive um zu eruieren, ob der Mühlebach Wasser führt, wird ein LoRaWAN Sensor Node verwendet, an welchem ein Reed-Kontakt (kontaktloser, magnetischer Schalter) angeschlossen ist.
