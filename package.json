@@ -13,29 +13,29 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@react-google-maps/api": "^2.20.3",
-    "axios": "^1.7.9",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.1",
+    "axios": "^1.7.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.1",
     "react-router-hash-link": "^2.4.3",
-    "recharts": "^2.15.0"
+    "recharts": "^2.13.3"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.15",
-    "@types/react": "^19.0.2",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.1",
     "@types/react-router-hash-link": "^2.4.9",
-    "@typescript-eslint/eslint-plugin": "^8.19.0",
-    "@typescript-eslint/parser": "^8.19.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.16.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2",
-    "vite": "^6.0.6"
+    "vite": "^6.0.1"
   }
 }
