@@ -247,7 +247,10 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 *Trotz Oberflächenbehandlung mit Farbe und Bootslack hat sich das Holz an den Schaufeln nach 2 Wochen (Zählerstand: 50'000 Umdrehungen) in Betrieb gespalten und verzogen.*
 
 ![Gefrorenes Wasserrad](./docs/images/2025-01-01_gefrorenes_wasserrad.jpg)
-*An Silvester 2024/2025 ist es für einige Tage sehr kalt und Neblig gewesen. In dieser Zeit gefror das Wasserrad und drehte deshalb nicht mehr.*
+*An Silvester 2024/2025 ist es für einige Tage sehr kalt und neblig gewesen. In dieser Zeit gefror das Wasserrad und drehte deshalb nicht mehr.*
+
+![Abnutzung und Alterserscheinungen](./docs/images/2025-01-01_gefrorenes_wasserrad_02.jpg)
+*Im Dezember 2024 hat das Wasserrad bereits mehr als 870'000 Umdrehungen hinter sich. Deutliche Abnutzungs- und Verbrauchsspuren sind sichtbar, und an einigen Stellen hat sich Moos angesetzt.*
 
 ## 3. Rundenzähler-Sensor
 

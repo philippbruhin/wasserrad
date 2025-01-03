@@ -89,9 +89,9 @@ export default function About() {
           drückte.
         </li>
         <li>
-          Dezember 2024: Kurz vor Silvester 2024/2025 ist es einige Tage sehr
-          kalt und neblig gewesen, sodass das Wasserrad gefror und nicht mehr
-          drehte.
+          Dezember 2024: Kurz vor Silvester ist es 4 Tage sehr kalt und neblig
+          gewesen, sodass das Wasserrad gefror und nicht mehr drehte (30.12.2024
+          bis 02.01.2025).
         </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
