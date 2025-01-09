@@ -371,7 +371,7 @@ Ohne Programmierkentnisse ist es allenfalls etwas schwierig, die Webseite nachzu
 Um die Seite lokal auf dem Rechner laufen zu lassen, muss [Node.js](https://nodejs.org/en) in der Version `v20.11.0` installiert sein. Danach kann man folgende Befehle eingeben in der Kommandozeile:
 
 1. Pakete installieren mittels Befehl `npm install`
-2. Datei `env.example` kopieren und zu `env.local` umbenennen. Enviroment Variabeln von [The Things Stack Cloud Discovery](https://www.thethingsindustries.com/) einfügen.
+2. Datei `.env.example` kopieren und zu `.env.local` umbenennen. Enviroment Variabeln von [The Things Stack Cloud Discovery](https://www.thethingsindustries.com/) einfügen.
 3. Projekt im Entwicklungsmodus starten via `npm run dev`
 4. Produktions-Build erstellen mittels `npm run build`. Achtung, zuvor müssen auch hier noch die Enviroment Variablen gesetzt werden unter "Settings".
 
