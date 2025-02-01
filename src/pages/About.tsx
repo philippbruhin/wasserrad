@@ -93,6 +93,11 @@ export default function About() {
           gewesen, sodass das Wasserrad gefror und nicht mehr drehte (30.12.2024
           bis 02.01.2025).
         </li>
+        <li>
+          Januar 2024: Wasserrad gefror ebenfalls, wie schon im Dezember 2024.
+          Zusätzlich fanden noch Instandhaltungsarbeiten am Bach statt, welche
+          durch regionale Firmen ausgeführt wurden.
+        </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>
