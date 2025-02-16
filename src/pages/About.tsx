@@ -77,26 +77,33 @@ export default function About() {
       <RevolutionChartMonthly />
       <p>Erläuterungen zu den Zahlen:</p>
       <ul>
-        <li>April 2024: Das Rad ging erst am 26. April in Betrieb.</li>
         <li>
-          Mai 2024: Ende Mai und anfangs Juni wurde das Bachbett beim
-          Unterwydenhof abgedichtet. Während dieser Zeit führte der Bach kein
-          Wasser.
+          <strong>April 2024:</strong> Das Rad ging erst am 26. April in
+          Betrieb.
         </li>
         <li>
-          Oktober 2024: Baggerarbeiten im Bachbett direkt neben dem Wasserrad.
-          Dies weil Wasser in den Stromschacht von Trafostation Unterwydenhof
-          drückte.
+          <strong>Mai 2024:</strong> Ende Mai und anfangs Juni wurde das
+          Bachbett beim Unterwydenhof abgedichtet. Während dieser Zeit führte
+          der Bach kein Wasser.
         </li>
         <li>
-          Dezember 2024: Kurz vor Silvester ist es 4 Tage sehr kalt und neblig
-          gewesen, sodass das Wasserrad gefror und nicht mehr drehte (30.12.2024
-          bis 02.01.2025).
+          <strong>Oktober 2024:</strong> Baggerarbeiten im Bachbett direkt neben
+          dem Wasserrad. Dies weil Wasser in den Stromschacht von Trafostation
+          Unterwydenhof drückte.
         </li>
         <li>
-          Januar 2024: Wasserrad gefror ebenfalls, wie schon im Dezember 2024.
-          Zusätzlich fanden noch Instandhaltungsarbeiten am Bach statt, welche
-          durch regionale Firmen ausgeführt wurden.
+          <strong>Dezember 2024:</strong> Kurz vor Silvester ist es 4 Tage sehr
+          kalt und neblig gewesen, sodass das Wasserrad gefror und nicht mehr
+          drehte (30.12.2024 bis 02.01.2025).
+        </li>
+        <li>
+          <strong>Januar 2024:</strong> Wasserrad gefror ebenfalls, wie schon im
+          Dezember 2024. Zusätzlich fanden noch Instandhaltungsarbeiten am Bach
+          statt, welche durch regionale Firmen ausgeführt wurden.
+        </li>
+        <li>
+          <strong>15. Februar 2025:</strong> Das Wasserrad überschreitet die
+          Marke von 1 Million Umdrehungen seit Betriebsbeginn am 26. April 2024.
         </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
