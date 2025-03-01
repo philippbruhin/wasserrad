@@ -15,7 +15,7 @@
     "@react-google-maps/api": "^2.20.3",
     "axios": "^1.7.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.1",
     "react-router-hash-link": "^2.4.3",
     "recharts": "^2.13.3"
@@ -24,7 +24,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.15",
     "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.1",
+    "@types/react-dom": "^19.0.3",
     "@types/react-router-hash-link": "^2.4.9",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
