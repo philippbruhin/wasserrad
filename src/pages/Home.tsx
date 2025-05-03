@@ -36,6 +36,10 @@ export default function Home() {
           Zertifikat, welches heruntergeladen werden kann.
         </li>
       </ol>
+      <p>
+        Seit April 2024 ist dieses Wasserrad in Betrieb. Es hat seither
+        bereits über 1.2 Millionen Umdrehungen gemacht.
+      </p>
       <p>Viel Spass!</p>
       <p className="py-4 text-center">
         <Link

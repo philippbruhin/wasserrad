@@ -33,7 +33,7 @@ export const data: QuizQuestion[] = [
     ans: 1,
   },
   {
-    question: "Wann wurde der Mühlebach vom Bach zum Kanal umgebaut?",
+    question: "Wann wurde der Mühlebach vom Bach zum Kanal umgebaut (kanalisiert)?",
     image: "2024-03_begradigter_muehlebach.jpg",
     imageCaption: "Begradigter Mühlebachkanal in Siebnen. Im Hintergrund die ehemalige Spinnerei Honegger, heute bekannt als Alte Fabrik. In guten Zeiten arbeiteten in dieser Fabrik ca. 150 Personen.",
     options: ["1802", "1852", "1902", "1952"],
@@ -84,7 +84,7 @@ export const data: QuizQuestion[] = [
     question: "Wann läuft die Konzession (Vertrag) für das Kraftwerk Wägital mit der Stadt Zürich und der Axpo aus?",
     image: "SIK_05-IKS-SZ-1609-045.jpg",
     imageCaption: "Kraftwerk Wägital Zentrale Siebnen. Eine Konzession ist in diesem Fall eine Genehmigung für die Nutzung des Wassers vom Wägitalersee, welche der Bezirk March (und somit wir alle) an ein Unternehmen vergibt. Bild: Sylvia Bärtschi, ETH Bildarchiv.",
-    options: ["2025", "2040", "2050", "2060"],
+    options: ["2026", "2040", "2050", "2060"],
     description: "1921 gründeten die Stadt Zürich und die Nordostschweizerischen Kraftwerke AG (heute Axpo) gemeinsam die AG Kraftwerk Wägital. Die laufende Konzession für das Kraftwerk, die zwischen dem Bezirk March und der AG Kraftwerk Wägital besteht, wird im Jahre 2040 auslaufen. Der Bezirksrat der March hat Ende 2023 eine Arbeitsgruppe bestellt, die eine Strategie erarbeiten wird, wie es danach weitergehen soll.",
     ans: 1,
   },
