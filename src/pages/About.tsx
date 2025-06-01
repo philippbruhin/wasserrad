@@ -105,6 +105,11 @@ export default function About() {
           <strong>15. Februar 2025:</strong> Das Wasserrad überschreitet die
           Marke von 1 Million Umdrehungen seit Betriebsbeginn am 26. April 2024.
         </li>
+        <li>
+          <strong>Mai 2025:</strong> Das Wehr in Siebnen bei der Aabrücke
+          wurde revidiert, sodass der Mühlebach im Mai 2025 fast kein Wasser
+          führen konnte.
+        </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>
