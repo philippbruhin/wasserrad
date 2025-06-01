@@ -252,7 +252,7 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 ![Abnutzung und Alterserscheinungen](./docs/images/2025-01-01_gefrorenes_wasserrad_02.jpg)
 *Im Dezember 2024 hat das Wasserrad bereits mehr als 870'000 Umdrehungen hinter sich. Deutliche Abnutzungs- und Verbrauchsspuren sind sichtbar, und an einigen Stellen hat sich Moos angesetzt.*
 
-![Ausgetrocknetes Bachbett](./docs/images/2025-05_Ausgetrocknestes_Bachbett.jpeg)
+![Ausgetrocknetes Bachbett](./docs/images/2025-05_Ausgetrocknetes_Bachbett.jpeg)
 *Im Mai 2025 wurde das Wehr bei der Aabrücke in Siebnen revidiert. In dieser Zeit führte der Bach kein Wasser und das Bachbett trocknete aus.*
 
 ## 3. Rundenzähler-Sensor
