@@ -106,9 +106,15 @@ export default function About() {
           Marke von 1 Million Umdrehungen seit Betriebsbeginn am 26. April 2024.
         </li>
         <li>
-          <strong>Mai 2025:</strong> Das Wehr in Siebnen bei der Aabrücke
-          wurde revidiert, sodass der Mühlebach im Mai 2025 fast kein Wasser
-          führen konnte.
+          <strong>Mai 2025:</strong> Das Wehr in Siebnen bei der Aabrücke wurde
+          revidiert, sodass der Mühlebach im Mai 2025 fast kein Wasser führen
+          konnte.
+        </li>
+        <li>
+          <strong>Juni 2025:</strong> Wahrscheinlich durch die grosse Hitze
+          löste sich das Rad von der Gewindestange und drehte druch. Es wurden
+          somit für mehrere Tage keine Daten gesendet. Die angegebenen
+          Umdrehungen sind somit nicht korrekt.
         </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
