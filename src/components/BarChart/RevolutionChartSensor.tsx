@@ -46,7 +46,7 @@ export default function RevolutionChartSensor(sensorData: SensorData) {
     countDifference = countDifference / timeDifference;
 
     const fill: string =
-      countDifference > 10
+      countDifference > 11
         ? "#dc2626"
         : countDifference < 6
         ? "#dc2626"
