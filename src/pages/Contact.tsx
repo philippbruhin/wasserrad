@@ -163,9 +163,16 @@ export default function Contact() {
                 Materialien.
               </li>
               <li>
-                Roman Egli aus Wangen, für die hervorragende Arbeit bei der
-                Erstellung der 3D-Druckteile, die essentiell für die
-                Funktionalität unseres Wasserrads sind.
+                <a
+                  href="https://ibex3d.ch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ibex3D GmbH
+                </a>{" "}
+                aus Wangen, vertreten durch Herrn Roman Egli, für die
+                hervorragende Arbeit bei der Erstellung der 3D-Druckteile, die
+                essentiell für die Funktionalität unseres Wasserrads sind.
               </li>
               <li>
                 <a

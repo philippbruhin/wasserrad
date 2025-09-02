@@ -97,7 +97,7 @@ export default function About() {
           drehte (30.12.2024 bis 02.01.2025).
         </li>
         <li>
-          <strong>Januar 2024:</strong> Wasserrad gefror ebenfalls, wie schon im
+          <strong>Januar 2025:</strong> Wasserrad gefror ebenfalls, wie schon im
           Dezember 2024. Zusätzlich fanden noch Instandhaltungsarbeiten am Bach
           statt, welche durch regionale Firmen ausgeführt wurden.
         </li>
