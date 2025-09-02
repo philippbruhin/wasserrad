@@ -116,6 +116,16 @@ export default function About() {
           somit für mehrere Tage keine Daten gesendet. Die angegebenen
           Umdrehungen sind somit nicht korrekt.
         </li>
+        <li>
+          <strong>August 2025:</strong> In diesem Monat traten zwei Probleme
+          auf. Erstens schaltete sich der Sensor einmal aus, sodass einige
+          Umdrehungen nicht erfasst wurden. Zweitens löste sich die Hutmutter an
+          der Hauptwelle, die das Wasserrad fixiert. Dadurch drehte sich nur das
+          Rad, nicht jedoch die Welle und der Rundenzähler. Wir hatten Glück,
+          dass das Rad nicht abfiel. Sonst hätten wir es wohl im Einlaufrechen
+          des Kraftwerks Kopf oberhalb der Bahnlinie bergen müssen. Beide
+          Probleme konnten behoben werden.
+        </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>
