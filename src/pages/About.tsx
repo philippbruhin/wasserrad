@@ -47,7 +47,7 @@ export default function About() {
         alle 10 Minuten, sodass die Umdrehungen auf dieser Webseite angezeigt
         werden können. Dabei werden die Linien im Balkendiagramm nur{" "}
         <span className="bg-blue-600 text-white px-1">blau dargestellt</span>,
-        wenn die Drehzahl zwischen 6 und 11 Umdrehungen pro Minute liegt. Alle
+        wenn die Drehzahl zwischen 6 und 12 Umdrehungen pro Minute liegt. Alle
         anderen Umdrehungen (mehr oder weniger) werden in{" "}
         <span className="bg-red-600 text-white px-1">rot dargestellt</span>, da
         sie nicht durch den Bach verursacht wurden, sondern beispielsweise durch
