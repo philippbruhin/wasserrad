@@ -22,4 +22,5 @@ export const waterwheelMonthlyData: WaterwheelMonthlyData[] = [
   { value: 33881, date: new Date(2025, 6, 31) }, // July 2025
   { value: 18492, date: new Date(2025, 7, 31) }, // August 2025
   { value: 130695, date: new Date(2025, 8, 30) }, // September 2025
+  { value: 92034, date: new Date(2025, 9, 31) }, // October 2025
 ];
