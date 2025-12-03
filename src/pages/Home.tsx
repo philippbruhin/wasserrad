@@ -38,7 +38,7 @@ export default function Home() {
       </ol>
       <p>
         Seit April 2024 ist dieses Wasserrad in Betrieb. Es hat seither
-        bereits über 1.5 Millionen Umdrehungen gemacht.
+        bereits über 1.65 Millionen Umdrehungen gemacht.
       </p>
       <p>Viel Spass!</p>
       <p className="py-4 text-center">
