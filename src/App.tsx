@@ -66,6 +66,19 @@ const App = () => {
         </nav>
         <LiveData />
       </div>
+      <p className="pb-6 text-xs text-gray-500 text-left md:text-center">
+        Wenn Ihnen das Wasserrad Freude bereitet hat, freuen wir uns über eine
+        kurze{" "}
+        <a
+          href="https://g.page/r/CUQW8qQE5Q3LEAE/review"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-700"
+        >
+          Bewertung auf Google
+        </a>
+        .
+      </p>
     </main>
   );
 };
