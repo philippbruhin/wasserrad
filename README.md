@@ -256,7 +256,7 @@ Insgesamt war diese iterative Vorgehensweise äusserst hilfreich, da sie ermögl
 *Im Mai 2025 wurde das Wehr bei der Aabrücke in Siebnen revidiert. In dieser Zeit führte der Bach kein Wasser und das Bachbett trocknete aus.*
 
 ![Vereistes Wasserrad](./docs/images/2026-01-06_wasserrad-vereist.jpeg)
-*Im Januar 2026 war es mehrere Tage hintereinander nachts bis zu −10 °C kalt, und auch tagsüber herrschten Minusgrade. Das Rad drehte sich in dieser Zeit weiterhin, das heruntertropfende Wasser gefror jedoch.*
+*Im Januar 2026 war es mehrere Tage hintereinander nachts bis zu −11 °C kalt, und auch tagsüber herrschten Minusgrade. Das Rad drehte sich in dieser Zeit weiterhin, das heruntertropfende Wasser gefror jedoch. Der Rundenzähler steht bei über 1,8 Millionen Umdrehungen.*
 
 ## 3. Rundenzähler-Sensor
 
