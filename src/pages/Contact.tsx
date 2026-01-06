@@ -312,7 +312,7 @@ export default function Contact() {
             </p>
             <p>
               <a
-                href="https://ba.e-pics.ethz.ch/main/galleryview/qsr=Siebnen"
+                href="https://ba.e-pics.ethz.ch/#main-search-text=siebnen&main-search-mode=and"
                 target="_blank"
                 rel="noopener noreferrer"
               >
