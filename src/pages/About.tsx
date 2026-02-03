@@ -126,6 +126,11 @@ export default function About() {
           des Kraftwerks Kopf oberhalb der Bahnlinie bergen müssen. Beide
           Probleme konnten behoben werden.
         </li>
+        <li>
+          <strong>Januar 2026:</strong> Wasserrad gefror, wie schon im Dezember
+          2024 und 2025. Zusätzlich fanden wiederum Instandhaltungsarbeiten am
+          Bach statt, welche durch regionale Gartenbau-Firmen ausgeführt wurden.
+        </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>
