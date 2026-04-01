@@ -74,6 +74,10 @@ export default function About() {
         Wasser führte der Bach in diesem Zeitraum. Dies gibt einen interessanten
         Einblick in die saisonalen Schwankungen des Wasservorkommens.
       </p>
+      <p>
+        Mit der Aufzeichnung wurde Ende April 2024 begonnen. Deshalb sind die
+        blauen Balken nicht von Beginn des Jahres an vorhanden.
+      </p>
       <RevolutionChartMonthly />
       <p>Erläuterungen zu den Zahlen:</p>
       <ul>
