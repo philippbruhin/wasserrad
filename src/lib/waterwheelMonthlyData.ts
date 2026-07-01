@@ -30,4 +30,5 @@ export const waterwheelMonthlyData: WaterwheelMonthlyData[] = [
   { value: 105807, date: new Date(2026, 2, 31) }, // March 2026
   { value: 60076, date: new Date(2026, 3, 30) }, // April 2026
   { value: 34833, date: new Date(2026, 4, 31) }, // May 2026
+  { value: 43325, date: new Date(2026, 5, 30) }, // June 2026
 ];
