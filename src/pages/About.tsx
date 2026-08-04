@@ -135,6 +135,13 @@ export default function About() {
           2024 und 2025. Zusätzlich fanden wiederum Instandhaltungsarbeiten am
           Bach statt, welche durch regionale Gartenbau-Firmen ausgeführt wurden.
         </li>
+        <li>
+          <strong>Juli 2026:</strong> Wiederum hat sich die Mutter an der
+          Hauptwelle gelöst. Dadurch drehte sich zwar das Rad, die Welle und
+          somit auch der Rundenzähler jedoch nicht. Wir haben die Mutter an der
+          Hauptwelle sowie sämtliche weiteren Schrauben, beispielsweise an den
+          Schaufeln, kontrolliert und bei Bedarf nachgezogen.
+        </li>
       </ul>
       <h3>Baupläne und weiterführende technische Details</h3>
       <p>
